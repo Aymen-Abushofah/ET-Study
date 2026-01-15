@@ -117,7 +117,7 @@ foreach ($file in $orderedFiles) {
         foreach ($q in $chunkQs) {
             $opts = $q.options | ForEach-Object { "`"$(Escape-Json $_)`"" }
             $optsStr = $opts -join ", "
-            $qJson = "{ question: `"$($q.question)`", options: [$optsStr], answerIndex: $($q.answer) }"
+            $qJson = "{ question: `"$((Escape-Json $q.question))`", options: [$optsStr], answerIndex: $($q.answer) }"
             $jsonParts += $qJson
         }
         $jsonArray = "[$($jsonParts -join ',')]"
