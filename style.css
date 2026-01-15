@@ -103,7 +103,7 @@ body::before {
 
 h1 {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.5rem; /* Reduced font size */
+  font-size: clamp(1.25rem, 4vw, 1.75rem); /* Fluid scaling */
   font-weight: 700;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
@@ -157,9 +157,9 @@ h1 {
 
 /* Question Text */
 .question-text {
-  font-size: 1.15rem; /* Slightly smaller */
+  font-size: clamp(1rem, 3.5vw, 1.25rem); /* Fluid question text */
   font-weight: 500;
-  margin-bottom: 1rem; /* Reduced margin */
+  margin-bottom: 1.25rem;
   line-height: 1.45;
   color: var(--text-primary);
 }
@@ -193,10 +193,10 @@ h1 {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  padding: 0.8rem 1rem; /* Reduced padding */
+  padding: clamp(0.75rem, 2vh, 1rem) 1.25rem; /* Dynamic padding for touch targets */
   text-align: left;
   color: var(--text-secondary);
-  font-size: 0.95rem; /* Slightly smaller */
+  font-size: clamp(0.9rem, 2.5vw, 1rem); /* Fluid option text */
   font-family: "Inter", sans-serif;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -345,7 +345,6 @@ h1 {
 .results-actions > button:last-child:nth-child(odd) {
   grid-column: span 2;
   justify-self: center;
-  min-width: 200px;
 }
 
 /* Mobile */
@@ -371,34 +370,42 @@ h1 {
 @media (max-width: 650px) {
   body {
     padding: 0;
-    overflow: hidden; /* Prevent body scroll, handle inside container */
-    align-items: stretch; /* Stretch container to fill height */
+    overflow-x: hidden;
+    overflow-y: auto; /* Allow body scroll for hubs */
+    align-items: flex-start;
   }
 
   /* Reset main page layout for Mobile App feel */
   main {
       padding: 1rem !important;
-      overflow-y: auto;
-      height: 100vh;
+      width: 100%;
+  }
+
+  /* Quiz Overrides */
+  body:not(:has(.ambient-bg)) {
+      overflow: hidden; /* Lock scroll strictly for quizzes */
+      height: 100dvh;
+      display: flex;
   }
   
   .hub-container {
-      padding: 1rem;
+      padding: 1.5rem 1rem;
       min-height: 100vh;
       justify-content: flex-start;
-      padding-top: 4rem;
+      padding-top: 5rem;
   }
 
   #quiz-container {
     width: 100%;
     max-width: 100%;
     height: 100dvh; /* Fixed full viewport height */
-    min-height: 0; /* Override any min-height */
+    min-height: 0; 
     border-radius: 0;
     border: none;
     margin: 0;
     display: flex;
     flex-direction: column;
+    background: var(--bg-dark);
   }
 
   .quiz-header {
@@ -472,6 +479,17 @@ h1 {
   .nav-btn {
       padding: 0.6rem 1.2rem;
       font-size: 0.95rem;
+  }
+
+  /* Result screen button stacking */
+  .results-actions {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+  }
+  
+  .results-actions > button:last-child:nth-child(odd) {
+      grid-column: span 1;
+      min-width: 0;
   }
 }
 
@@ -724,6 +742,25 @@ footer {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid transparent;
+    z-index: 20;
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        padding-top: 4rem; /* Push title down to make room for back link */
+    }
+    
+    .back-link {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1rem;
+        width: auto;
+        white-space: nowrap;
+    }
+    
+    .back-link:hover {
+        transform: translateX(-50%) translateY(-2px);
+    }
 }
 
 .back-link:hover {
@@ -939,10 +976,11 @@ footer {
         position: relative;
         top: 0;
         left: 0;
-        align-self: flex-start;
-        margin-bottom: 0.75rem;
-        padding: 0.4rem 0.8rem;
+        align-self: center; /* Center back link on mobile */
+        margin: 0 auto 1rem;
+        padding: 0.4rem 1rem;
         font-size: 0.85rem;
+        width: fit-content;
     }
     
     main {
