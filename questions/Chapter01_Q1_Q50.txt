@@ -29,7 +29,7 @@ B. Android and iOS only
 C. Web only
 D. Android, iOS, Web, Desktop
 Correct Answer: D
-Q6. What does "write once, run everywhere" mean in Flutter?
+Q6. What does "Write once, run everywhere" mean in Flutter?
 A. Code runs only on Android
 B. Code runs only on iOS
 C. Same code works on multiple platforms
