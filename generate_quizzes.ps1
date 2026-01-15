@@ -48,7 +48,7 @@ $orderedFiles = $files | Sort-Object {
 
 foreach ($file in $orderedFiles) {
     Write-Host "Processing $($file.Name)..."
-    $content = Get-Content $file.FullName -Raw
+    $content = Get-Content $file.FullName -Raw -Encoding UTF8
     
     # Parse Questions
     $questions = @()
@@ -188,7 +188,7 @@ foreach ($file in $orderedFiles) {
 }
 
 # Update flutter.html
-$flutterHtml = Get-Content "flutter.html" -Raw
+$flutterHtml = Get-Content "flutter.html" -Raw -Encoding UTF8
 $newMainContent = "<main>`n" + ($dashboardSections -join "`n") + "`n</main>"
 $flutterHtmlRegex = "(?s)<main>(.*?)</main>"
 $updatedFlutterHtml = $flutterHtml -replace $flutterHtmlRegex, $newMainContent
