@@ -1,0 +1,309 @@
+Flutter MCQs – Chapter 1 (Q1–Q50)
+Q1. What is Flutter?
+A. A programming language
+B. A database system
+C. A framework for building multi-platform apps
+D. An operating system
+Correct Answer: C
+Q2. Flutter was created by which company?
+A. Microsoft
+B. Apple
+C. Facebook
+D. Google
+Correct Answer: D
+Q3. Which programming language is used by Flutter?
+A. Java
+B. Kotlin
+C. Dart
+D. Swift
+Correct Answer: C
+Q4. What is the main advantage of Flutter?
+A. Separate code for each platform
+B. One single codebase for multiple platforms
+C. Uses only WebView
+D. Requires native UI components
+Correct Answer: B
+Q5. Which platforms can Flutter target?
+A. Android only
+B. Android and iOS only
+C. Web only
+D. Android, iOS, Web, Desktop
+Correct Answer: D
+Q6. What does “write once, run everywhere” mean in Flutter?
+A. Code runs only on Android
+B. Code runs only on iOS
+C. Same code works on multiple platforms
+D. Code must be rewritten for each device
+Correct Answer: C
+Q7. What is a Widget in Flutter?
+A. Only a button
+B. Only text
+C. A building block of the UI
+D. A database object
+Correct Answer: C
+Q8. In Flutter, which of the following is a widget?
+A. Button
+
+B. Text
+C. Layout
+D. All of the above
+Correct Answer: D
+Q9. Flutter widgets are:
+A. Mutable and change directly
+B. Immutable and rebuilt when data changes
+C. Stored permanently in memory
+D. Updated manually
+Correct Answer: B
+Q10. What is Declarative UI?
+A. UI updated step by step manually
+B. UI described based on final state
+C. UI built only using XML
+D. UI controlled by WebView
+Correct Answer: B
+Q11. Which frameworks use Declarative UI?
+A. Flutter only
+B. Flutter, React, SwiftUI
+C. Java Swing only
+D. Old Android frameworks
+Correct Answer: B
+Q12. What happens when setState() is called in Flutter?
+A. The whole app restarts
+B. Only changed widgets are rebuilt
+C. The app crashes
+D. Widgets are permanently deleted
+Correct Answer: B
+Q13. Does Flutter rebuild the entire UI every time?
+A. Yes, always
+B. No, only changed widgets are rebuilt
+C. Yes, including GPU rendering
+D. Only in Release mode
+Correct Answer: B
+Q14. What is Skia in Flutter?
+A. A database engine
+B. A programming language
+C. A 2D graphics rendering engine
+D. A web framework
+Correct Answer: C
+Q15. Why does Flutter use Skia?
+A. To rely on native UI widgets
+B. To render UI consistently across platforms
+C. To load web pages
+D. To reduce Dart usage
+Correct Answer: B
+
+Q16. What is a WebView?
+A. A Flutter widget for animations
+B. A mini web browser inside an app
+C. A database viewer
+D. A state management tool
+Correct Answer: B
+Q17. Why does Flutter avoid using WebViews for UI?
+A. They are faster than Flutter widgets
+B. They give full native control
+C. They are slower and less consistent
+D. They improve GPU performance
+Correct Answer: C
+Q18. What does AOT stand for?
+A. Ahead Of Time
+B. After Output Time
+C. Around Object Tree
+D. Application Optimization Tool
+Correct Answer: A
+Q19. Which mode uses AOT compilation?
+A. Debug mode
+B. Release mode
+C. Development mode
+D. Test mode
+Correct Answer: B
+Q20. What does JIT stand for?
+A. Jump In Tree
+B. Java In Time
+C. Just In Time
+D. Job In Thread
+Correct Answer: C
+Q21. Which mode uses JIT compilation?
+A. Release mode
+B. Profile mode
+C. Debug mode
+D. Production mode
+Correct Answer: C
+Q22. What is Hot Reload?
+A. Restarting the app
+B. Reinstalling the app
+C. Seeing code changes instantly
+D. Compiling with AOT
+Correct Answer: C
+Q23. Why is JIT useful during development?
+A. Faster runtime performance
+B. Smaller app size
+C. Instant code updates
+D. No Dart VM
+Correct Answer: C
+
+Q24. Which file manages dependencies and assets in Flutter?
+A. main.dart
+B. android.gradle
+C. pubspec.yaml
+D. config.xml
+Correct Answer: C
+Q25. What is the main role of Flutter Engine?
+A. Writing Dart code
+B. Managing database connections
+C. Connecting widgets to Skia for rendering
+D. Running WebView
+Correct Answer: C
+Q26. What does Flutter Doctor do?
+A. Builds the app
+B. Checks system setup and dependencies
+C. Runs the UI
+D. Compiles Dart code
+Correct Answer: B
+Q27. Which command creates a new Flutter project?
+A. flutter build
+B. flutter doctor
+C. flutter create
+D. flutter run
+Correct Answer: C
+Q28. What is the main purpose of the pubspec.yaml file?
+A. Writing UI code
+B. Defining project dependencies and assets
+C. Running the app
+D. Compiling Dart code
+Correct Answer: B
+Q29. In Flutter, widgets are best described as:
+A. Heavy UI objects
+B. Mutable UI elements
+C. Lightweight configuration objects
+D. Database records
+Correct Answer: C
+Q30. What structure organizes Flutter widgets?
+A. Widget List
+B. Widget Stack
+C. Widget Tree
+D. Widget Map
+Correct Answer: C
+Q31. Which part of Flutter decides what actually gets redrawn?
+A. Widget Tree
+B. Element Tree
+C. Dart VM
+D. pubspec.yaml
+
+Correct Answer: B
+Q32. What happens when a widget has the same type and key during rebuild?
+A. It is destroyed
+B. It is rebuilt from scratch
+C. It is reused
+D. The app crashes
+Correct Answer: C
+Q33. What does “Look and Feel” mainly describe?
+A. App size and memory usage
+B. Visual appearance and interaction behavior
+C. Database structure
+D. Network speed
+Correct Answer: B
+Q34. Which design system is associated with Android in Flutter?
+A. Cupertino
+B. Fluent
+C. Material Design
+D. Skia
+Correct Answer: C
+Q35. Which design system is associated with iOS in Flutter?
+A. Material Design
+B. Cupertino
+C. Skia
+D. Dart UI
+Correct Answer: B
+Q36. What role does the GPU play in Flutter?
+A. Writing Dart code
+B. Managing widgets
+C. Rendering graphics drawn by Skia
+D. Running WebView
+Correct Answer: C
+Q37. Which of the following is NOT a Flutter run mode?
+A. Debug
+B. Release
+C. Profile
+D. Compile
+Correct Answer: D
+Q38. Why are Flutter apps fast even though build() runs many times?
+A. Widgets are cached permanently
+B. Widgets are heavy objects
+C. Only changed parts are rebuilt
+D. Dart code runs in WebView
+Correct Answer: C
+Q39. What is the main disadvantage of WebView?
+A. High performance
+B. Full native look
+
+C. Slower performance and inconsistent UI
+D. Direct GPU access
+Correct Answer: C
+Q40. Which compilation method removes the need for Dart VM at runtime?
+A. JIT
+B. Debug
+C. AOT
+D. Profile
+Correct Answer: C
+Q41. Which compilation method enables Hot Reload?
+A. AOT
+B. Native Compilation
+C. JIT
+D. Skia Rendering
+Correct Answer: C
+Q42. What is the primary goal of Hot Reload?
+A. Reduce app size
+B. Improve release performance
+C. Speed up development
+D. Remove bugs automatically
+Correct Answer: C
+Q43. Which of the following best describes Flutter’s rendering approach?
+A. Uses native UI components
+B. Uses HTML and CSS
+C. Draws UI using its own engine
+D. Depends on WebView
+Correct Answer: C
+Q44. What does “Ahead of Time” compilation mainly improve?
+A. Development speed
+B. Runtime performance
+C. Hot Reload
+D. Debugging tools
+Correct Answer: B
+Q45. Why is Flutter considered cross-platform?
+A. It runs only on Android
+B. It uses JavaScript
+C. It supports multiple platforms from one codebase
+D. It uses native UI only
+Correct Answer: C
+Q46. Which Flutter component converts widgets into pixels?
+A. Dart VM
+B. Flutter Framework
+C. Skia
+D. pubspec.yaml
+Correct Answer: C
+
+Q47. What is the correct rendering flow in Flutter?
+A. Dart → GPU → Widgets → Screen
+B. Widgets → Engine → Skia → Screen
+C. Widgets → WebView → Browser
+D. Dart → HTML → CSS → Screen
+Correct Answer: B
+Q48. Which statement about Flutter widgets is TRUE?
+A. Widgets store heavy state
+B. Widgets directly control the GPU
+C. Widgets describe the UI
+D. Widgets are mutable
+Correct Answer: C
+Q49. What is the main benefit of using one codebase?
+A. Larger app size
+B. Slower development
+C. Easier maintenance
+D. Platform limitation
+Correct Answer: C
+Q50. Flutter is best described as:
+A. A database engine
+B. A game engine only
+C. A UI framework
+D. A scripting language
+Correct Answer: C
+
+

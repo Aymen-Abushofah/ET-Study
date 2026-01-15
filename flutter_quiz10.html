@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 10 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Chapter 4: State Management</div>
+            <h1>Flutter Quiz 10</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "Widgets rebuild when:", options: ["App starts", "setState is called", "App closes", "Isolate runs"], answerIndex: 1 },{ question: "Flutter UI style is:", options: ["Imperative", "Declarative", "Sequential", "Static"], answerIndex: 1 },{ question: "Declarative UI means:", options: ["Manual updates", "Describe final UI state", "No rebuilds", "No state"], answerIndex: 1 },{ question: "Flutter rendering engine is:", options: ["HTML", "WebView", "Skia", "Canvas only"], answerIndex: 2 },{ question: "Flutter avoids WebView mainly for:", options: ["Security", "Performance and control", "Size", "Plugins"], answerIndex: 1 },{ question: "pubspec.yaml is used for:", options: ["UI layout", "Dependencies and assets", "State", "Navigation"], answerIndex: 1 },{ question: "Hot Reload works because of:", options: ["AOT", "JIT", "Isolate", "Skia"], answerIndex: 1 },{ question: "Release mode uses:", options: ["JIT", "Debug VM", "AOT", "Interpreter"], answerIndex: 2 },{ question: "Widgets are lightweight because they are:", options: ["Static", "Immutable", "Cached", "Global"], answerIndex: 1 },{ question: "build() must return a:", options: ["State", "Context", "Widget", "Future"], answerIndex: 2 },{ question: "StreamBuilder is used to:", options: ["Create streams", "Build UI from stream data", "Stop streams", "Convert futures"], answerIndex: 1 },{ question: "TextField is used for:", options: ["Output", "Input", "Styling", "Navigation"], answerIndex: 1 },{ question: "ListView.builder is used for:", options: ["Static lists", "Lazy lists", "Animations", "Forms"], answerIndex: 1 },{ question: "GridView is best for:", options: ["Single widget", "Vertical list", "Grid layout", "Stack layout"], answerIndex: 2 },{ question: "Padding adds space:", options: ["Outside widget", "Inside widget", "Around screen", "Between pages"], answerIndex: 1 },{ question: "Margin is space:", options: ["Inside widget", "Outside widget", "Text only", "Image only"], answerIndex: 1 },{ question: "Flutter rebuilds widgets but reuses:", options: ["Widgets", "Render objects", "State only", "GPU"], answerIndex: 1 },{ question: "StatelessWidget can call setState().", options: ["True", "False", "Sometimes", "Only async"], answerIndex: 1 },{ question: "Which widget provides AppBar?", options: ["MaterialApp", "Scaffold", "Column", "Center"], answerIndex: 1 },{ question: "Which widget is root of most apps?", options: ["Scaffold", "Container", "MaterialApp", "Column"], answerIndex: 2 },{ question: "Which widget handles navigation routes?", options: ["Scaffold", "MaterialApp", "Container", "Stack"], answerIndex: 1 },{ question: "Streams are best for:", options: ["One-time results", "Continuous updates", "Layout", "Styling"], answerIndex: 1 },{ question: "Which widget shows dialogs?", options: ["AlertDialog", "Text", "Column", "Container"], answerIndex: 0 },{ question: "Flutter apps are built using:", options: ["XML", "HTML", "Widget tree", "Native UI only"], answerIndex: 2 },{ question: "Flutter performance is high because it:", options: ["Uses WebView", "Uses native UI", "Controls its own rendering", "Uses JavaScript"], answerIndex: 2 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

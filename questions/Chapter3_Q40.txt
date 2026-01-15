@@ -1,0 +1,287 @@
+Flutter vs Other Frameworks – MCQ (Chapter 3) Q1–Q40
+Q1. What does “Native Development” mean?
+A. Using one codebase for all platforms
+B. Using platform-specific languages and tools
+C. Using web technologies only
+D. Using plugins for hardware access
+Correct Answer: B
+
+Q2. Which language is officially used for Android native development today?
+A. JavaScript
+B. Swift
+C. Kotlin
+D. Dart
+Correct Answer: C
+
+Q3. One main advantage of native apps is:
+A. Larger app size
+B. Slower performance
+C. Direct access to device features
+D. One shared codebase
+Correct Answer: C
+
+Q4. Why can project management be harder with native development?
+A. Lack of UI tools
+B. Needing separate teams for each platform
+C. No access to plugins
+D. Poor performance
+Correct Answer: B
+
+Q5. What feature makes Flutter development faster during UI changes?
+A. Garbage Collection
+B. Hot Reload
+C. WebView
+D. Compilation
+Correct Answer: B
+
+Q6. Flutter apps are usually larger in size because:
+A. Dart is slow
+B. Flutter uses JavaScript
+C. Flutter engine is bundled with the app
+D. Plugins increase size only
+Correct Answer: C
+
+Q7. Which framework uses JavaScript and native modules?
+A. Xamarin
+B. Flutter
+
+C. React Native
+D. Cordova
+Correct Answer: C
+
+Q8. Cordova apps mainly run inside:
+A. Native UI widgets
+B. Dart engine
+C. Virtual Machine
+D. WebView
+Correct Answer: D
+
+Q9. Why does native development usually provide the best performance?
+A. It avoids using UI frameworks
+B. It has no abstraction or bridge layer
+C. It uses compiled JavaScript
+D. It reduces app size only
+Correct Answer: B
+
+Q10. Which problem is more common when building separate native apps?
+A. Plugin incompatibility
+B. UI inconsistency between platforms
+C. Lack of documentation
+D. No access to APIs
+Correct Answer: B
+
+Q11. Flutter achieves near-native performance mainly because:
+A. It uses JavaScript bridges
+B. It relies on WebView
+C. Dart is compiled to native code
+D. It runs on JVM
+Correct Answer: C
+
+Q12. What is a disadvantage of relying heavily on plugins in Flutter?
+A. Plugins increase UI speed
+B. Some platform features may lag behind native
+C. Plugins remove Hot Reload
+D. Plugins reduce code reuse
+Correct Answer: B
+
+Q13. Xamarin.Forms was mainly designed to:
+A. Replace React Native
+B. Increase code sharing across platforms
+C. Improve JavaScript performance
+D. Eliminate C# usage
+Correct Answer: B
+
+Q14. Why is Cordova performance generally worse than Flutter?
+A. Uses Dart language
+B. Depends on native rendering
+
+C. Runs apps inside a browser layer
+D. Has strong native bindings
+Correct Answer: C
+
+Q15. According to popularity trends, which statement is correct?
+A. Xamarin popularity is increasing rapidly
+B. Cordova is the most popular framework
+C. Flutter and React Native are growing
+D. Native development is declining completely
+Correct Answer: C
+
+Q16. One risk of Flutter being relatively new is:
+A. No access to device hardware
+B. Frequent framework migrations
+C. No community support
+D. Poor documentation
+Correct Answer: B
+
+Q17. Which factor best explains why companies move away from native development?
+A. Lack of performance
+B. Limited UI control
+C. Higher cost and multiple codebases
+D. No access to app stores
+Correct Answer: C
+
+Q18. What does “Learn once, write anywhere” imply in React Native?
+A. 100% identical code on all platforms
+B. Minimal platform differences
+C. Core knowledge reused, code adapted per platform
+D. No native code required at all
+Correct Answer: C
+
+Q19. Which scenario best justifies choosing native development over Flutter?
+A. A startup with a small team and limited budget
+B. An app requiring maximum performance and deep hardware integration
+C. A project targeting Android, iOS, and Web simultaneously
+D. A prototype with frequent UI changes
+Correct Answer: B
+
+Q20. What is the main technical reason Flutter apps are not considered fully native?
+A. Flutter uses Dart instead of Java/Kotlin/Swift
+B. Flutter renders its own UI using a custom engine
+C. Flutter cannot access platform APIs
+D. Flutter depends entirely on plugins
+Correct Answer: B
+
+Q21. Why does Flutter not use native UI widgets directly?
+A. To reduce app size
+B. To ensure consistent UI across platforms
+
+C. To avoid plugins
+D. To improve JavaScript performance
+Correct Answer: B
+
+Q22. Which aspect is most improved by Flutter’s single codebase?
+A. Hardware access
+B. Development speed
+C. Native UX fidelity
+D. App security
+Correct Answer: B
+
+Q23. Why can bug fixing be faster in Flutter projects?
+A. Bugs do not occur often
+B. One fix applies to all platforms
+C. No native code is used
+D. Dart removes bugs automatically
+Correct Answer: B
+
+Q24. Which Flutter feature best supports rapid prototyping?
+A. Garbage collection
+B. Plugin system
+C. Hot Reload
+D. App bundling
+Correct Answer: C
+
+Q25. Why is Flutter engine included inside the app?
+A. To reduce dependencies
+B. To render UI consistently
+C. To replace native APIs
+D. To improve network speed
+Correct Answer: B
+
+Q26. What makes React Native depend on a bridge architecture?
+A. Dart compilation
+B. JavaScript execution
+C. Native UI rendering
+D. Plugin isolation
+Correct Answer: B
+
+Q27. Which factor most affects Cordova’s poor performance?
+A. C# compilation
+B. WebView rendering
+C. Native widgets
+D. Dart engine
+Correct Answer: B
+
+Q28. Flutter plugins mainly solve which problem?
+A. UI inconsistency
+B. Platform feature access
+
+C. App size reduction
+D. Dart limitations
+Correct Answer: B
+
+Q29. Which project type benefits most from Flutter?
+A. OS-level applications
+B. Cross-platform business apps
+C. Embedded systems
+D. Device drivers
+Correct Answer: B
+
+Q30. Why do native apps usually have smaller sizes?
+A. Less UI
+B. No bundled engine
+C. Fewer features
+D. Slower performance
+Correct Answer: B
+
+Q31. Which decision increases long-term maintenance cost in native apps?
+A. Hot Reload
+B. Separate platform codebases
+C. Plugin usage
+D. Dart language
+Correct Answer: B
+
+Q32. What does Flutter’s abstraction layer primarily control?
+A. Network calls
+B. UI rendering
+C. Database access
+D. App permissions
+Correct Answer: B
+
+Q33. Why is Flutter suitable for startups?
+A. Lowest app size
+B. Single codebase and fast iteration
+C. Best hardware access
+D. No learning curve
+Correct Answer: B
+
+Q34. Which framework is closest to web development?
+A. Flutter
+B. React Native
+C. Xamarin
+D. Cordova
+Correct Answer: D
+
+Q35. Which limitation may require platform-specific Flutter code?
+A. UI layout
+B. Business logic
+
+C. Certain native features
+D. Hot Reload
+Correct Answer: C
+
+Q36. What is the biggest architectural difference between Flutter and React Native?
+A. Programming language
+B. UI rendering approach
+C. Plugin system
+D. App size
+Correct Answer: B
+
+Q37. Which trend contributed to Flutter’s rapid adoption?
+A. Decline of native apps
+B. Strong community and tooling
+C. Removal of plugins
+D. Smaller app sizes
+Correct Answer: B
+
+Q38. Why might large enterprises still prefer native development?
+A. Faster prototyping
+B. Maximum platform control
+C. Smaller teams
+D. Single codebase
+Correct Answer: B
+
+Q39. What risk comes with frequent Flutter updates?
+A. Reduced performance
+B. Code migration effort
+C. Plugin removal
+D. App store rejection
+Correct Answer: B
+
+Q40. Which statement best summarizes Flutter’s trade-off?
+A. Maximum performance with high cost
+B. Balanced productivity and performance
+C. Web-only solution
+D. Replacement for native apps
+Correct Answer: B
+
+

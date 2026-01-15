@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header"><h1>CSS Quiz 5</h1></div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [
+            { question: "Which property rotates an element?", options: ["<code>animation</code>", "<code>skew</code>", "<code>transform</code>", "<code>rotate</code>"], answerIndex: 2 },
+            { question: "Which transform function scales an element?", options: ["<code>scale()</code>", "<code>translate()</code>", "<code>rotate()</code>", "<code>skew()</code>"], answerIndex: 0 },
+            { question: "Which property defines animation name?", options: ["<code>keyframes</code>", "<code>animation-name</code>", "<code>animation-type</code>", "<code>animation-style</code>"], answerIndex: 1 },
+            { question: "Which at-rule defines animations?", options: ["<code>@frames</code>", "<code>@animate</code>", "<code>@transition</code>", "<code>@keyframes</code>"], answerIndex: 3 },
+            { question: "Which property sets minimum width?", options: ["<code>width</code>", "<code>minimum-width</code>", "<code>min-width</code>", "<code>width-min</code>"], answerIndex: 2 },
+            { question: "Which property sets maximum height?", options: ["<code>max-height</code>", "<code>height</code>", "<code>limit-height</code>", "<code>height-max</code>"], answerIndex: 0 },
+            { question: "Which media query targets screen size?", options: ["<code>@screen</code>", "<code>@media</code>", "<code>@responsive</code>", "<code>@query</code>"], answerIndex: 1 },
+            { question: "Which color will be applied?<pre>p { color: red; }\n.text { color: blue; }\n\n&lt;p class=&quot;text&quot;&gt;Hello&lt;/p&gt;</pre>", options: ["blue", "red", "none", "browser default"], answerIndex: 0 },
+            { question: "Which color will be applied?<pre>#title { color: green; }\n.title { color: blue; }\n\n&lt;h1 id=&quot;title&quot; class=&quot;title&quot;&gt;Hello&lt;/h1&gt;</pre>", options: ["none", "both", "blue", "green"], answerIndex: 3 },
+            { question: "Which color will be applied?<pre>div p { color: red; }\np { color: blue; }\n\n&lt;div&gt;\n  &lt;p&gt;Hello&lt;/p&gt;\n&lt;/div&gt;</pre>", options: ["default", "red", "blue", "none"], answerIndex: 1 },
+            { question: "Which background color will be applied?<pre>.btn { background: red; }\nbutton { background: blue; }\n\n&lt;button class=&quot;btn&quot;&gt;Click&lt;/button&gt;</pre>", options: ["blue", "none", "red", "both"], answerIndex: 2 },
+            { question: "When the mouse is over the link, which color is applied?<pre>a { color: red; }\na:hover { color: blue; }</pre>", options: ["purple", "unchanged", "red", "blue"], answerIndex: 3 },
+            { question: "Which color will be applied?<pre>#box p { color: green; }\n.box p { color: blue; }\n\n&lt;div id=&quot;box&quot; class=&quot;box&quot;&gt;\n  &lt;p&gt;Text&lt;/p&gt;\n&lt;/div&gt;</pre>", options: ["green", "blue", "default", "both"], answerIndex: 0 },
+            { question: "Which rule is applied?<pre>p { color: red; }\np { color: blue; }</pre>", options: ["error", "default", "red", "blue"], answerIndex: 3 },
+            { question: "Which color will be applied?<pre>p.text { color: red; }\n.text { color: blue; }\n\n&lt;p class=&quot;text&quot;&gt;Hello&lt;/p&gt;</pre>", options: ["red", "blue", "none", "default"], answerIndex: 0 },
+            { question: "Which color will be applied?<pre>div .item { color: red; }\n.item { color: blue; }\n\n&lt;div&gt;\n  &lt;span class=&quot;item&quot;&gt;Text&lt;/span&gt;\n&lt;/div&gt;</pre>", options: ["none", "blue", "red", "both"], answerIndex: 2 },
+            { question: "Which border will be applied?<pre>input { border: 1px solid black; }\ninput[type=&quot;text&quot;] { border: 1px solid red; }\n\n&lt;input type=&quot;text&quot;&gt;</pre>", options: ["none", "default", "red", "black"], answerIndex: 2 },
+            { question: "Which color will be applied?<pre>#menu a { color: red; }\na { color: blue; }\n\n&lt;div id=&quot;menu&quot;&gt;\n  &lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;\n&lt;/div&gt;</pre>", options: ["red", "purple", "blue", "none"], answerIndex: 0 },
+            { question: "Which color will be applied?<pre>li { color: red; }\nul li { color: blue; }\n\n&lt;ul&gt;\n  &lt;li&gt;Item&lt;/li&gt;\n&lt;/ul&gt;</pre>", options: ["default", "none", "red", "blue"], answerIndex: 3 },
+            { question: "Which color will be applied?<pre>p { color: red; }\np.active { color: blue; }\n\n&lt;p class=&quot;active&quot;&gt;Text&lt;/p&gt;</pre>", options: ["red", "blue", "both", "default"], answerIndex: 1 },
+            { question: "Which color will be applied?<pre>div p { color: red; }\ndiv > p { color: blue; }\n\n&lt;div&gt;\n  &lt;p&gt;Text&lt;/p&gt;\n&lt;/div&gt;</pre>", options: ["blue", "none", "red", "default"], answerIndex: 0 },
+            { question: "Which color will be applied?<pre>* { color: red; }\np { color: blue; }\n\n&lt;p&gt;Hello&lt;/p&gt;</pre>", options: ["none", "red", "blue", "default"], answerIndex: 2 },
+            { question: "Which selector selects only direct child elements?", options: ["<code>&gt;</code>", "<code>~</code>", "<code>+</code>", "<code>&nbsp;&nbsp;&nbsp;</code>(space)"], answerIndex: 0 },
+            { question: "Which selector selects the first element immediately after another?", options: ["<code>div p</code>", "<code>div + p</code>", "<code>div ~ p</code>", "<code>div &gt; p</code>"], answerIndex: 1 },
+            { question: "Which selector targets elements with a specific attribute?", options: ["<code>.class</code>", "<code>#id</code>", "<code>[attribute]</code>", "<code>::attribute</code>"], answerIndex: 2 },
+            { question: "Which selector matches elements with type=\"text\"?", options: ["<code>input#text</code>", "<code>input.text</code>", "<code>input[type=&quot;text&quot;]</code>", "<code>input:text</code>"], answerIndex: 2 }
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

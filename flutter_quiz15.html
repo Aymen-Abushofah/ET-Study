@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 15 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Chapter 6: Networking & Data</div>
+            <h1>Flutter Quiz 15</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "Why are user interactions important in Flutter apps?", options: ["To increase app size", "To make apps useful and responsive", "To reduce widgets", "To compile faster"], answerIndex: 1 },{ question: "Flutter handles gestures using how many main layers?", options: ["One", "Two", "Three", "Four"], answerIndex: 1 },{ question: "Which layer collects raw touch data in Flutter?", options: ["Gesture layer", "UI layer", "Pointer layer", "Render layer"], answerIndex: 2 },{ question: "What does the gesture layer do?", options: ["Draws widgets", "Interprets pointer movements", "Manages state", "Builds layouts"], answerIndex: 1 },{ question: "Which event occurs when a finger first touches the screen?", options: ["PointerMoveEvent", "PointerUpEvent", "PointerCancelEvent", "PointerDownEvent"], answerIndex: 3 },{ question: "What is hit testing in Flutter?", options: ["Measuring performance", "Detecting which widget is touched", "Rendering animations", "Managing layouts"], answerIndex: 1 },{ question: "Which widget listens to raw pointer events?", options: ["GestureDetector", "InkWell", "Listener", "Container"], answerIndex: 2 },{ question: "Why do most apps avoid using pointer layer directly?", options: ["Deprecated", "Complex and low-level", "Slow", "Android only"], answerIndex: 1 },{ question: "What is a gesture in Flutter?", options: ["Widget", "Layout", "Interpretation of pointer movement", "State"], answerIndex: 2 },{ question: "Which widget is commonly used to detect gestures?", options: ["Listener", "GestureDetector", "Scaffold", "Column"], answerIndex: 1 },{ question: "Which gesture detects a quick touch and release?", options: ["Long press", "Drag", "Tap", "Scale"], answerIndex: 2 },{ question: "Which callback is triggered when tap is detected?", options: ["onPressed", "onTap", "onClick", "onTouch"], answerIndex: 1 },{ question: "Which gesture involves two quick taps?", options: ["Tap", "Pan", "DoubleTap", "Scale"], answerIndex: 2 },{ question: "Which callback detects a long press?", options: ["onTap", "onHold", "onLongPress", "onPress"], answerIndex: 2 },{ question: "Drag gestures are divided into:", options: ["One type", "Horizontal and vertical", "Pan and scale", "Touch and click"], answerIndex: 1 },{ question: "Which drag allows free movement in all directions?", options: ["Horizontal", "Vertical", "Pan", "Tap"], answerIndex: 2 },{ question: "Which callback fires at start of horizontal drag?", options: ["onHorizontalDragUpdate", "onHorizontalDragEnd", "onHorizontalDragStart", "onPanStart"], answerIndex: 2 },{ question: "What does DragUpdateDetails.delta represent?", options: ["Screen size", "Widget size", "Movement since last update", "Total distance"], answerIndex: 2 },{ question: "Which gesture recognizes movement in X and Y axes?", options: ["Horizontal drag", "Vertical drag", "Pan", "Tap"], answerIndex: 2 },{ question: "Which gesture is used for zooming?", options: ["Pan", "Drag", "Scale", "Tap"], answerIndex: 2 },{ question: "Scale gesture usually involves:", options: ["One finger", "Two or more fingers", "Mouse only", "Stylus only"], answerIndex: 1 },{ question: "Which callback gives scale factor?", options: ["onScaleStart", "onScaleUpdate", "onScaleEnd", "onPanUpdate"], answerIndex: 1 },{ question: "Why canâ€™t drag, pan, and scale be used together?", options: ["Syntax error", "Performance issue", "Gesture conflict", "Deprecated"], answerIndex: 2 },{ question: "Which widget already handles gestures internally?", options: ["Text", "ElevatedButton", "Column", "SizedBox"], answerIndex: 1 },{ question: "Which widget provides ripple animation?", options: ["GestureDetector", "Listener", "InkWell", "Stack"], answerIndex: 2 },{ question: "InkWell belongs to which design system?", options: ["Cupertino", "Fluent", "Material", "Custom"], answerIndex: 2 },{ question: "InkWell must be inside which widget?", options: ["Container", "Material", "Column", "Expanded"], answerIndex: 1 },{ question: "ElevatedButton internally uses:", options: ["GestureDetector", "Listener", "InkWell", "Stack"], answerIndex: 2 },{ question: "Which callback is commonly used with InkWell?", options: ["onPressed", "onTap", "onClick", "onTouch"], answerIndex: 1 },{ question: "Why might you not need GestureDetector?", options: ["Slow", "Widgets already handle gestures", "Deprecated", "Breaks UI"], answerIndex: 1 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

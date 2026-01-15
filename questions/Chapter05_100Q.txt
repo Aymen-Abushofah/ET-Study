@@ -1,0 +1,711 @@
+Flutter – 100 MCQs (Complete Final Version)
+Q1. What is a widget in Flutter?
+A. A database
+B. A screen only
+C. A basic building block of UI
+D. A backend service
+Correct Answer: C
+
+Q2. Flutter UI is built using:
+A. Activities
+B. Fragments
+C. Widgets
+D. Controllers
+Correct Answer: C
+
+Q3. Which language is used to write Flutter apps?
+A. Java
+B. Kotlin
+C. Dart
+D. Swift
+Correct Answer: C
+
+Q4. Widgets in Flutter are:
+A. Mutable
+B. Immutable
+C. Dynamic only
+D. Optional
+Correct Answer: B
+
+Q5. Which method is mandatory in every widget?
+A. initState()
+B. dispose()
+C. build()
+D. create()
+Correct Answer: C
+
+Q6. StatelessWidget is used when:
+A. UI changes frequently
+B. Data never changes
+C. State is required
+D. Database is connected
+Correct Answer: B
+
+Q7. StatefulWidget is used when:
+A. UI never changes
+B. App has no logic
+C. UI depends on data changes
+D. No interaction exists
+Correct Answer: C
+
+Q8. Which class holds mutable state?
+
+A. Widget
+B. StatelessWidget
+C. State
+D. BuildContext
+Correct Answer: C
+
+Q9. Which method notifies Flutter to rebuild UI?
+A. rebuild()
+B. refresh()
+C. setState()
+D. update()
+Correct Answer: C
+
+Q10. Where is setState() defined?
+A. Widget class
+B. State class
+C. BuildContext
+D. MaterialApp
+Correct Answer: B
+
+Q11. What does BuildContext represent?
+A. App theme
+B. Widget tree location
+C. App state
+D. Database connection
+Correct Answer: B
+
+Q12. Which widget is the root of a Material app?
+A. Scaffold
+B. Container
+C. MaterialApp
+D. AppBar
+Correct Answer: C
+
+Q13. Which widget provides app structure like AppBar and body?
+A. Container
+B. Column
+C. Scaffold
+D. Stack
+Correct Answer: C
+
+Q14. AppBar is placed inside:
+A. MaterialApp
+B. Scaffold
+C. Column
+D. Container
+Correct Answer: B
+
+Q15. Which widget aligns children vertically?
+A. Row
+B. Stack
+C. Column
+D. Align
+Correct Answer: C
+
+Q16. Which widget aligns children horizontally?
+A. Column
+B. Row
+C. Stack
+D. Padding
+Correct Answer: B
+
+Q17. mainAxisAlignment controls:
+A. Cross axis
+B. Child size
+C. Primary direction alignment
+D. Widget color
+Correct Answer: C
+
+Q18. Which widget adds spacing inside a widget?
+A. Margin
+B. Padding
+C. Align
+D. Center
+Correct Answer: B
+
+Q19. Which widget centers its child?
+A. Align
+B. Padding
+C. Center
+D. Stack
+Correct Answer: C
+
+Q20. Which widget allows overlapping children?
+A. Column
+B. Row
+C. Stack
+D. ListView
+Correct Answer: C
+
+Q21. Which widget is scrollable?
+A. Column
+B. Row
+C. ListView
+D. Container
+Correct Answer: C
+
+Q22. Which widget is used for grids?
+A. ListView
+B. Stack
+C. GridView
+D. Column
+Correct Answer: C
+
+Q23. Which widget displays text?
+A. Label
+B. Text
+C. Paragraph
+
+D. String
+Correct Answer: B
+
+Q24. Which property limits number of text lines?
+A. maxText
+B. maxLines
+C. overflow
+D. lines
+Correct Answer: B
+
+Q25. Which widget displays images from internet?
+A. Image.asset
+B. Image.file
+C. Image.network
+D. Image.memory
+Correct Answer: C
+
+Q26. Which widget handles user text input?
+A. Text
+B. Label
+C. TextField
+D. InputBox
+Correct Answer: C
+
+Q27. Which widget is a clickable button?
+A. Text
+B. ElevatedButton
+C. Padding
+D. Align
+Correct Answer: B
+
+Q28. FloatingActionButton is usually used for:
+A. Navigation
+B. Primary action
+C. Text input
+D. Images
+Correct Answer: B
+
+Q29. Which widget shows dialogs?
+A. Alert
+B. DialogBox
+C. showDialog
+D. Popup
+Correct Answer: C
+
+Q30. Checkbox is a:
+A. Layout widget
+B. Selection widget
+C. Input widget
+D. Display widget
+Correct Answer: B
+
+Q31. Switch widget is used for:
+
+A. Navigation
+B. Boolean values
+C. Numbers
+D. Text
+Correct Answer: B
+
+Q32. Slider is used to select:
+A. Text
+B. Dates
+C. Range of values
+D. Images
+Correct Answer: C
+
+Q33. Which widget allows date selection?
+A. Calendar
+B. DateWidget
+C. showDatePicker
+D. TimePicker
+Correct Answer: C
+
+Q34. Cupertino widgets are designed for:
+A. Android
+B. Web
+C. iOS
+D. Windows
+Correct Answer: C
+
+Q35. Material widgets follow:
+A. Apple design
+B. Google Material Design
+C. Microsoft Fluent
+D. Custom design
+Correct Answer: B
+
+Q36. Which widget passes data down the widget tree?
+A. StatefulWidget
+B. StatelessWidget
+C. InheritedWidget
+D. Container
+Correct Answer: C
+
+Q37. Theme.of(context) uses:
+A. StatelessWidget
+B. StatefulWidget
+C. InheritedWidget
+D. Stream
+Correct Answer: C
+
+Q38. Keys are used to:
+A. Improve UI design
+B. Identify widgets uniquely
+C. Change colors
+D. Handle streams
+Correct Answer: B
+
+Q39. Keys are mostly needed when:
+A. Using Text
+B. Widgets change order
+C. App starts
+D. Using MaterialApp
+Correct Answer: B
+
+Q40. Which widget has children property?
+A. Text
+B. Image
+C. Column
+D. Icon
+Correct Answer: C
+
+Q41. Which widget has child (singular) property?
+A. Column
+B. Row
+C. Container
+D. ListView
+Correct Answer: C
+
+Q42. What does Stream represent?
+A. Single value
+B. Static data
+C. Sequence of async data
+D. UI widget
+Correct Answer: C
+
+Q43. Stream.listen() is used to:
+A. Stop stream
+B. Create stream
+C. Receive data
+D. Delete data
+Correct Answer: C
+
+Q44. Streams are useful for:
+A. Static UI
+B. Reactive programming
+C. Layout design
+D. Styling
+Correct Answer: B
+
+Q45. Which widget rebuilds when stream emits data?
+A. StreamBuilder
+B. ListView
+C. Column
+D. Container
+Correct Answer: A
+
+Q46. Widget tree represents:
+A. App files
+B. Widget hierarchy
+C. Database structure
+
+D. Folder system
+Correct Answer: B
+
+Q47. Hot Reload helps to:
+A. Restart app
+B. Install app
+C. See UI changes instantly
+D. Compile code
+Correct Answer: C
+
+Q48. Hot Restart does:
+A. Preserves state
+B. Clears state
+C. Updates UI only
+D. Deletes code
+Correct Answer: B
+
+Q49. Which widget controls alignment inside Row/Column?
+A. mainAxisAlignment
+B. padding
+C. margin
+D. size
+Correct Answer: A
+
+Q50. Expanded widget is used to:
+A. Increase font size
+B. Take available space
+C. Add padding
+D. Align widgets
+Correct Answer: B
+
+Q51. Flexible widget is similar to:
+A. Container
+B. Expanded
+C. Padding
+D. Align
+Correct Answer: B
+
+Q52. Which widget clips content?
+A. ClipRRect
+B. Padding
+C. Align
+D. Stack
+Correct Answer: A
+
+Q53. MediaQuery is used to get:
+A. Database info
+B. Screen size
+C. Theme data
+D. Streams
+Correct Answer: B
+
+Q54. Navigator is used for:
+
+A. Styling
+B. Navigation between screens
+C. Layout
+D. Animation
+Correct Answer: B
+
+Q55. Which method pushes a new screen?
+A. Navigator.pop
+B. Navigator.push
+C. Navigator.replace
+D. Navigator.remove
+Correct Answer: B
+
+Q56. ScaffoldMessenger is used for:
+A. Dialogs
+B. SnackBars
+C. Alerts
+D. Modals
+Correct Answer: B
+
+Q57. SnackBar is a:
+A. Dialog
+B. Notification
+C. Layout widget
+D. Image
+Correct Answer: B
+
+Q58. Which widget shows icons?
+A. Icon
+B. Image
+C. Symbol
+D. Text
+Correct Answer: A
+
+Q59. Which property changes widget size?
+A. padding
+B. margin
+C. width/height
+D. alignment
+Correct Answer: C
+
+Q60. Which widget detects gestures?
+A. GestureDetector
+B. Listener
+C. TapWidget
+D. Clickable
+Correct Answer: A
+
+Q61. onTap is used with:
+A. Text
+B. GestureDetector
+C. Container only
+D. Column
+Correct Answer: B
+
+Q62. Which widget animates UI?
+A. AnimatedContainer
+B. Container
+C. Padding
+D. Align
+Correct Answer: A
+
+Q63. Future represents:
+A. Multiple values
+B. One async value
+C. UI widget
+D. Layout
+Correct Answer: B
+
+Q64. FutureBuilder listens to:
+A. Streams
+B. Futures
+C. Widgets
+D. Themes
+Correct Answer: B
+
+Q65. Which widget creates tabs?
+A. TabBar
+B. ListView
+C. Stack
+D. Drawer
+Correct Answer: A
+
+Q66. Drawer appears from:
+A. Bottom
+B. Right
+C. Left
+D. Center
+Correct Answer: C
+
+Q67. Which widget controls app theme?
+A. Scaffold
+B. ThemeData
+C. AppBar
+D. Container
+Correct Answer: B
+
+Q68. Which widget removes debug banner?
+A. Scaffold
+B. MaterialApp
+C. Container
+D. Column
+Correct Answer: B
+
+Q69. debugShowCheckedModeBanner is property of:
+A. Scaffold
+B. Widget
+C. MaterialApp
+
+D. Theme
+Correct Answer: C
+
+Q70. Which widget builds lazily?
+A. Column
+B. Row
+C. ListView.builder
+D. Stack
+Correct Answer: C
+
+Q71. ListView.builder improves:
+A. Design
+B. Performance
+C. Colors
+D. Fonts
+Correct Answer: B
+
+Q72. Which widget adds background color?
+A. Padding
+B. Container
+C. Align
+D. Center
+Correct Answer: B
+
+Q73. Decoration is property of:
+A. Column
+B. Row
+C. Container
+D. Text
+Correct Answer: C
+
+Q74. BoxDecoration is used for:
+A. Layout
+B. Styling
+C. Navigation
+D. Animation
+Correct Answer: B
+
+Q75. Which widget creates rounded corners?
+A. Padding
+B. BorderRadius
+C. Align
+D. Center
+Correct Answer: B
+
+Q76. Which widget listens to inherited data changes?
+A. StatelessWidget
+B. StatefulWidget
+C. InheritedWidget
+D. Stream
+Correct Answer: C
+
+Q77. Widgets are rebuilt when:
+
+A. App starts only
+B. State changes
+C. Code compiles
+D. App closes
+Correct Answer: B
+
+Q78. Flutter follows which architecture?
+A. MVC
+B. MVP
+C. Reactive
+D. Monolithic
+Correct Answer: C
+
+Q79. Which widget is used for spacing between widgets?
+A. Padding
+B. SizedBox
+C. Container
+D. Align
+Correct Answer: B
+
+Q80. SizedBox with height is used in:
+A. Row
+B. Column
+C. Stack
+D. Grid
+Correct Answer: B
+
+Q81. Which widget creates bottom navigation?
+A. BottomAppBar
+B. BottomNavigationBar
+C. AppBar
+D. TabBar
+Correct Answer: B
+
+Q82. BottomNavigationBar is property of:
+A. Column
+B. MaterialApp
+C. Scaffold
+D. Stack
+Correct Answer: C
+
+Q83. Which widget handles orientation changes?
+A. MediaQuery
+B. Container
+C. Align
+D. Center
+Correct Answer: A
+
+Q84. SafeArea prevents:
+A. Overflows
+B. UI under system bars
+C. Crashes
+D. Animations
+Correct Answer: B
+
+Q85. Which widget creates scroll effect?
+A. ScrollView
+B. SingleChildScrollView
+C. Column
+D. Stack
+Correct Answer: B
+
+Q86. SingleChildScrollView is best for:
+A. Long lists
+B. Small content
+C. Grids
+D. Streams
+Correct Answer: B
+
+Q87. Which widget creates shadows?
+A. Container
+B. BoxShadow
+C. Text
+D. Padding
+Correct Answer: B
+
+Q88. Which widget is immutable?
+A. State
+B. Widget
+C. Stream
+D. Future
+Correct Answer: B
+
+Q89. Flutter redraws UI by calling:
+A. initState
+B. dispose
+C. build
+D. main
+Correct Answer: C
+
+Q90. Which widget detects long press?
+A. GestureDetector
+B. Listener
+C. Button
+D. Ink
+Correct Answer: A
+
+Q91. InkWell is used for:
+A. Gesture effects
+B. Animations
+C. Layout
+D. Styling
+Correct Answer: A
+
+Q92. Which widget adds ripple effect?
+A. GestureDetector
+B. InkWell
+C. Container
+
+D. Align
+Correct Answer: B
+
+Q93. Which widget holds app routes?
+A. Scaffold
+B. Navigator
+C. MaterialApp
+D. AppBar
+Correct Answer: C
+
+Q94. Navigator stack works as:
+A. Queue
+B. Stack
+C. Tree
+D. Map
+Correct Answer: B
+
+Q95. Which widget allows custom painting?
+A. CustomPaint
+B. Canvas
+C. Painter
+D. Draw
+Correct Answer: A
+
+Q96. Which widget improves performance by const?
+A. StatelessWidget
+B. const widgets
+C. StatefulWidget
+D. Streams
+Correct Answer: B
+
+Q97. const widgets are:
+A. Rebuilt always
+B. Cached
+C. Mutable
+D. Dynamic
+Correct Answer: B
+
+Q98. Flutter layouts are based on:
+A. XML
+B. HTML
+C. Widgets
+D. CSS
+Correct Answer: C
+
+Q99. Flutter widgets describe:
+A. How app looks
+B. How app behaves
+C. Both UI and behavior
+D. Database logic
+Correct Answer: C
+
+Q100. Flutter rebuilds widgets:
+
+A. Automatically
+B. When state changes
+C. When setState is called
+D. All of the above
+Correct Answer: D
+
+

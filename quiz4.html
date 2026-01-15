@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header"><h1>HTML Quiz 4</h1></div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [
+            { question: "Which is the correct syntax to include a comment in an HTML document ?", options: ["<code>&lt;!-- Comment --&gt;</code>", "<code>/ * Comment * /</code>", "<code>// Comment //</code>", "None of the above"], answerIndex: 0 },
+            { question: "The ____ element can be used to identify your html file to the outside world.", options: ["<code>title</code>", "<code>body</code>", "<code>head</code>", "none of the above"], answerIndex: 0 },
+            { question: "The symbol that identifies that HREF attribute as the name of a NAME anchor rather than an address or filename is..", options: ["&", "$", "#", "!"], answerIndex: 2 },
+            { question: "What does the required attribute do in HTML5 forms?", options: ["Prevents form submission entirely", "Forces server-side validation", "Prevents submission if the field is empty", "Highlights the field only"], answerIndex: 2 },
+            { question: "Which HTML tag is best for wrapping standalone content like blog posts?", options: ["<code>&lt;section&gt;</code>", "<code>&lt;article&gt;</code>", "<code>&lt;div&gt;</code>", "<code>&lt;aside&gt;</code>"], answerIndex: 1 },
+            { question: "What does the <code>&lt;meta viewport&gt;</code> tag control?", options: ["SEO ranking", "Character encoding", "Page responsiveness", "Page security"], answerIndex: 2 },
+            { question: "Which input type provides built-in email validation?", options: ["<code>text</code>", "<code>mail</code>", "<code>email</code>", "<code>validate-email</code>"], answerIndex: 2 },
+            { question: "Which element represents tangentially related content?", options: ["<code>&lt;article&gt;</code>", "<code>&lt;section&gt;</code>", "<code>&lt;aside&gt;</code>", "<code>&lt;nav&gt;</code>"], answerIndex: 2 },
+            { question: "Which HTML tag is used for marking up time or dates?", options: ["<code>&lt;date&gt;</code>", "<code>&lt;time&gt;</code>", "<code>&lt;datetime&gt;</code>", "<code>&lt;clock&gt;</code>"], answerIndex: 1 },
+            { question: "Which tag improves accessibility by defining a caption for a table?", options: ["<code>&lt;thead&gt;</code>", "<code>&lt;summary&gt;</code>", "<code>&lt;caption&gt;</code>", "<code>&lt;title&gt;</code>"], answerIndex: 2 },
+            { question: "Which input type hides user-entered characters?", options: ["<code>text</code>", "<code>hidden</code>", "<code>password</code>", "<code>secure</code>"], answerIndex: 2 },
+            { question: "Which HTML element is used to embed audio?", options: ["<code>&lt;sound&gt;</code>", "<code>&lt;music&gt;</code>", "<code>&lt;audio&gt;</code>", "<code>&lt;media&gt;</code>"], answerIndex: 2 },
+            { question: "Which attribute specifies the relationship between the document and a linked resource?", options: ["<code>href</code>", "<code>rel</code>", "<code>link</code>", "<code>type</code>"], answerIndex: 1 },
+            { question: "Which attribute groups radio buttons together?", options: ["<code>id</code>", "<code>group</code>", "<code>name</code>", "<code>value</code>"], answerIndex: 2 },
+            { question: "Which tag groups table header content?", options: ["<code>&lt;thead&gt;</code>", "<code>&lt;thgroup&gt;</code>", "<code>&lt;header&gt;</code>", "<code>&lt;top&gt;</code>"], answerIndex: 0 },
+            { question: "Which attribute specifies the maximum length of text input?", options: ["<code>limit</code>", "<code>maxlength</code>", "<code>size</code>", "<code>length</code>"], answerIndex: 1 },
+            { question: "Which HTML tag is used to define an image map?", options: ["<code>&lt;map&gt;</code>", "<code>&lt;area&gt;</code>", "<code>&lt;imgmap&gt;</code>", "<code>&lt;imagemap&gt;</code>"], answerIndex: 0 },
+            { question: "Which attribute of <code>&lt;img&gt;</code> connects an image to a map?", options: ["<code>id</code>", "<code>map</code>", "<code>usemap</code>", "<code>href</code>"], answerIndex: 2 },
+            { question: "Which <code>&lt;area&gt;</code> attribute specifies the clickable region’s shape?", options: ["<code>coords</code>", "<code>shape</code>", "<code>type</code>", "<code>region</code>"], answerIndex: 1 },
+            { question: "Which value of the shape attribute defines a rectangular clickable area?", options: ["<code>square</code>", "<code>box</code>", "<code>rect</code>", "<code>rectangle</code>"], answerIndex: 2 },
+            { question: "Which HTML attribute specifies the URL of the page to embed in an iframe?", options: ["<code>href</code>", "<code>link</code>", "<code>src</code>", "<code>data</code>"], answerIndex: 2 },
+            { question: "Which HTML tag is used to define a favicon?", options: ["<code>&lt;icon&gt;</code>", "<code>&lt;meta&gt;</code>", "<code>&lt;link&gt;</code>", "<code>&lt;favicon&gt;</code>"], answerIndex: 2 },
+            { question: "Which <code>rel</code> value is most commonly used to specify a favicon?", options: ["<code>icon</code>", "<code>shortcut-icon</code>", "<code>favicon</code>", "<code>site-icon</code>"], answerIndex: 0 },
+            { question: "Which attribute specifies the favicon file location?", options: ["<code>src</code>", "<code>href</code>", "<code>path</code>", "<code>url</code>"], answerIndex: 1 },
+            { question: 'Consider the following HTML code:<pre>&lt;form action="submit.php"&gt;\n  &lt;button&gt;Send&lt;/button&gt;\n  &lt;input type="submit" value="Submit"&gt;\n&lt;/form&gt;</pre>Which statement is CORRECT?', options: ["Clicking Send does nothing because type is missing", "Clicking Send submits the form to submit.php", "Only the <code>&lt;input&gt;</code> submits the form", "The form submits only if method is specified"], answerIndex: 1 }
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

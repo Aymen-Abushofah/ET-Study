@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header"><h1>CSS Quiz 2</h1></div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [
+            { question: "Which of the following CSS property defines the space between cells in a table?", options: ["<code>border-spacing</code>", "<code>border-style</code>", "<code>border</code>", "none of the mentioned"], answerIndex: 0 },
+            { question: "In CSS, h1 can be called as", options: ["Selector", "Attribute", "Value", "Tag"], answerIndex: 0 },
+            { question: "In css, \"color:red\" can be called as", options: ["Selector", "Rule", "Declaration", "Value"], answerIndex: 2 },
+            { question: "In CSS, \"font-size\" can be called as", options: ["Selector", "Rule", "Property", "Property-Name"], answerIndex: 3 },
+            { question: "Which of the following element is used by the filter property to blur the images?", options: ["<code>opaque()</code>", "<code>scatter()</code>", "<code>blur()</code>", "all of the mentioned"], answerIndex: 2 },
+            { question: "Which of the following function converts an element's color to a shade of gray, for use by the filter property?", options: ["<code>shade()</code>", "<code>grayscale()</code>", "<code>black()</code>", "<code>brightness()</code>"], answerIndex: 1 },
+            { question: "Which of the following value is supposed to be a slightly bolder weight than standard bold in font attribute?", options: ["emphasize", "light", "lighter", "dark"], answerIndex: 3 },
+            { question: "Which of the following is not a value for font-style property?", options: ["normal", "italic", "oblique", "none of the above"], answerIndex: 3 },
+            { question: "\"font-style comes first than font-weight in font attribute\".", options: ["True", "False"], answerIndex: 1 },
+            { question: "Which CSS property is Equivalent for the align attribute?", options: ["<code>float</code>", "<code>text-align</code>", "<code>center</code>", "<code>float</code> & <code>text-align</code>"], answerIndex: 1 },
+            { question: "Which of the following CSS property is used to give a line over the text?", options: ["<code>text-decoration: underline</code>", "<code>text-decoration: overline</code>", "<code>text-decoration: line-through</code>", "<code>text-decoration: none</code>"], answerIndex: 1 },
+            { question: "Which of the following measurement defines measurement as a percentage?", options: ["%", "cm", "em", "in"], answerIndex: 0 },
+            { question: "Which of the following property sets the amount of spacing between letters?", options: ["<code>space</code>", "<code>line-height</code>", "<code>letter-spacing</code>", "<code>letter-space</code>"], answerIndex: 2 },
+            { question: "Which of the following is not an Absolute Unit?", options: ["px", "em", "pt", "mm"], answerIndex: 1 },
+            { question: "Which of the following is a shorthand for any or all background properties?", options: ["<code>font</code>", "<code>background</code>", "<code>background-color</code>", "<code>background-position</code>"], answerIndex: 1 },
+            { question: "Which of the following is not a attribute of the audio element?", options: ["<code>controls</code>", "<code>src</code>", "<code>check</code>", "<code>loop</code>"], answerIndex: 2 },
+            { question: "Identify the CSS property defining bottom-left corner shape of the border?", options: ["<code>border-radius</code>", "<code>border-corner-radius</code>", "<code>border-bottom-left-radius</code>", "<code>border-left-radius</code>"], answerIndex: 2 },
+            { question: "Select the CSS property that sets the width of an element's bottom border?", options: ["<code>border-width</code>", "<code>border-bottom</code>", "<code>border-width-down</code>", "<code>border-bottom-width</code>"], answerIndex: 3 },
+            { question: "Which of the following sets the color of any text decoration, such as underlines, overlines and strike", options: ["<code>text-font</code>", "<code>text-format</code>", "<code>text-color</code>", "<code>text-decoration-color</code>"], answerIndex: 3 },
+            { question: "Which of the following value specifies a dashed border?", options: ["dash", "dashed", "double-dash", "all of the mentioned"], answerIndex: 1 },
+            { question: "Which of the following value specifies a solid border?", options: ["bold", "rock", "solid", "dashed"], answerIndex: 2 },
+            { question: "Which of the following property controls the horizontal overflow of a block or inline block?", options: ["<code>overflow-x</code>", "<code>overflow</code>", "<code>overflow-y</code>", "<code>overflow-k</code>"], answerIndex: 0 },
+            { question: "Which of the following Overflow property value is described by scrollbars should be provided if the content is too big, but actual implementation is left up to the browser?", options: ["visible", "scroll", "auto", "hidden"], answerIndex: 2 },
+            { question: "Which of the following property sets an element's background color?", options: ["<code>background-image</code>", "<code>background-color</code>", "<code>background-colors</code>", "<code>background-position</code>"], answerIndex: 1 },
+            { question: "Which of the following property defines the color of an element's right border?", options: ["<code>border-right-colors</code>", "<code>border-right-color</code>", "<code>border-right</code>", "<code>border-color</code>"], answerIndex: 1 }
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+

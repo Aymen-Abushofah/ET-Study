@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 8 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Chapter 4: State Management</div>
+            <h1>Flutter Quiz 8</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "Static members belong to:", options: ["Object", "Instance", "Class", "File"], answerIndex: 2 },{ question: "Static methods can access instance variables.", options: ["True", "False", "Sometimes", "Only with this"], answerIndex: 1 },{ question: "Which keyword defines a constant at compile time?", options: ["final", "var", "const", "static"], answerIndex: 2 },{ question: "Which feature hides data in Dart?", options: ["Inheritance", "Polymorphism", "Encapsulation", "Abstraction"], answerIndex: 2 },{ question: "Which OOP concept allows code reuse without inheritance?", options: ["Interface", "Mixin", "Enum", "Factory"], answerIndex: 1 },{ question: "Dart is primarily:", options: ["Multi-threaded", "Single-threaded", "Dual-threaded", "Threadless"], answerIndex: 1 },{ question: "What is a Future?", options: ["Past value", "Immediate value", "Value available later", "Static value"], answerIndex: 2 },{ question: "Which keyword marks an async function?", options: ["await", "async", "Future", "isolate"], answerIndex: 1 },{ question: "await is used to:", options: ["Block UI", "Stop execution", "Wait without blocking", "End function"], answerIndex: 2 },{ question: "async functions always return:", options: ["void", "int", "Future", "Stream"], answerIndex: 2 },{ question: "Why async is important in Flutter?", options: ["Styling", "Navigation", "Prevent UI freezing", "Memory cleanup"], answerIndex: 2 },{ question: "What handles async task scheduling in Dart?", options: ["GPU", "Event Loop", "Thread Manager", "Isolate"], answerIndex: 1 },{ question: "Which function causes blocking?", options: ["Future.delayed", "await", "sleep", "async"], answerIndex: 2 },{ question: "What is an isolate?", options: ["Widget", "Async function", "Parallel worker", "Stream"], answerIndex: 2 },{ question: "Isolates share memory.", options: ["True", "False", "Sometimes", "Only static"], answerIndex: 1 },{ question: "Communication between isolates uses:", options: ["Shared variables", "Global state", "Messages", "Futures"], answerIndex: 2 },{ question: "Which method creates a new isolate?", options: ["Isolate.create", "Isolate.start", "Isolate.spawn", "Isolate.run"], answerIndex: 2 },{ question: "Isolates are best for:", options: ["UI updates", "HTTP calls", "Heavy CPU tasks", "Delays"], answerIndex: 2 },{ question: "async/await provides:", options: ["Parallelism", "Concurrency", "Multithreading", "Isolates"], answerIndex: 1 },{ question: "Which runs in true parallel?", options: ["async", "Future", "await", "isolate"], answerIndex: 3 },{ question: "What does Stream represent?", options: ["Single value", "Multiple values over time", "Widget tree", "Static data"], answerIndex: 1 },{ question: "Which method listens to stream data?", options: ["watch", "read", "listen", "await"], answerIndex: 2 },{ question: "Streams are common in:", options: ["Layout", "Firebase", "Styling", "Navigation"], answerIndex: 1 },{ question: "onPressed expects:", options: ["Widget", "Value", "Callback function", "Stream"], answerIndex: 2 },{ question: "Callback means:", options: ["Returned value", "Function passed as argument", "Widget", "State"], answerIndex: 1 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header"><h1>CSS Quiz 8</h1></div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [
+            { question: "What happens to .box?<pre>.box {\n  display: none;\n  visibility: visible;\n}</pre>", options: ["It is visible", "It is invisible but takes space", "It is removed completely", "Browser throws an error"], answerIndex: 2 },
+            { question: "What is the height of .child?<pre>.parent {\n  height: auto;\n}\n.child {\n  height: 100%;\n}</pre>", options: ["100% of viewport", "0", "100% of content", "Auto"], answerIndex: 3 },
+            { question: "Relative to what is .child positioned?<pre>.parent {\n  position: static;\n}\n.child {\n  position: absolute;\n  top: 0;\n}</pre>", options: ["Body content", ".parent", "Nearest flex container", "Viewport"], answerIndex: 3 },
+            { question: "What happens?<pre>.box {\n  z-index: 10;\n}</pre>", options: ["z-index is ignored", "Element moves backward", "Element moves forward", "z-index works"], answerIndex: 0 },
+            { question: "What happens?<pre>span {\n  width: 200px;\n  height: 200px;\n}</pre>", options: ["Neither applies", "Only width applies", "Width and height apply", "Only height applies"], answerIndex: 0 },
+            { question: "Two divs stacked vertically — space between them is:<pre>div {\n  margin-top: 30px;\n  margin-bottom: 20px;\n}</pre>", options: ["10px", "20px", "50px", "30px"], answerIndex: 3 },
+            { question: "What happens?<pre>.parent {\n  position: relative;\n  overflow: hidden;\n}\n.child {\n  position: absolute;\n  top: -50px;\n}</pre>", options: ["Child remains visible", "Overflow ignored", "Child is clipped", "Child moves viewport"], answerIndex: 2 },
+            { question: ".child is positioned relative to:<pre>.parent {\n  transform: translateZ(0);\n}\n.child {\n  position: fixed;\n}</pre>", options: [".parent", "Body", "HTML", "Viewport"], answerIndex: 3 },
+            { question: "Container width is 200px. What happens?<pre>.container {\n  display: flex;\n}\n.item {\n  width: 300px;\n  flex-shrink: 1;\n}</pre>", options: ["Item shrinks", "Layout breaks", "Item overflows", "Item wraps"], answerIndex: 0 },
+            { question: "What is .item height?<pre>.container {\n  display: flex;\n  height: 200px;\n}\n.item {\n  height: 100%;\n}</pre>", options: ["viewport height", "content height", "200px", "auto"], answerIndex: 2 },
+            { question: "You place 5 items. What happens?<pre>.container {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n}</pre>", options: ["Items disappear", "Extra rows are created", "Error", "Items overlap"], answerIndex: 1 },
+            { question: "What happens?<pre>.item {\n  width: 500px;\n}\n// Placed inside grid-template-columns: 1fr;</pre>", options: ["Grid breaks", "Width ignored", "Width becomes auto", "Item overflows"], answerIndex: 3 },
+            { question: "What happens?<pre>.box {\n  transition: all 0.5s;\n  display: none;\n}\n.box:hover {\n  display: block;\n}</pre>", options: ["Browser error", "Smooth fade", "No transition", "Smooth display"], answerIndex: 2 },
+            { question: "What happens to surrounding elements?<pre>.box {\n  transform: translateX(100px);\n}</pre>", options: ["They move", "Nothing changes", "Margin collapses", "Layout changes"], answerIndex: 1 },
+            { question: "After animation ends:<pre>@keyframes move {\n  to { transform: translateX(100px); }\n}\n.box {\n  animation: move 1s;\n}</pre>", options: ["Returns to start", "Disappears", "Repeats", "Stays at 100px"], answerIndex: 0 },
+            { question: "Padding-top is based on:<pre>.box {\n  width: 200px;\n  padding-top: 50%;\n}</pre>", options: ["Box height", "Parent width", "Viewport", "Box width"], answerIndex: 3 },
+            { question: "What does cover do?<pre>div {\n  background-size: cover;\n}</pre>", options: ["Fill container, may crop", "Repeat image", "Fit entire image", "Stretch image"], answerIndex: 0 },
+            { question: "What happens?<pre>body {\n  overflow: hidden;\n}\n.box {\n  position: fixed;\n}</pre>", options: ["Box scrolls", "Box remains visible", "Page breaks", "Box clipped"], answerIndex: 1 },
+            { question: "Why is there space between them?<pre>&lt;span&gt;A&lt;/span&gt;\n&lt;span&gt;B&lt;/span&gt;</pre>", options: ["HTML whitespace", "Margin", "Line-height", "Padding"], answerIndex: 0 },
+            { question: "Child opacity becomes:<pre>.parent {\n  opacity: 0.5;\n}\n.child {\n  opacity: 1;\n}</pre>", options: ["0", "Auto", "0.5", "1"], answerIndex: 2 },
+            { question: "When does .box start sticking?<pre>.box {\n  position: sticky;\n  top: 0;\n}</pre>", options: ["It always stays fixed", "When it reaches the top of viewport", "Immediately on page load", "When page finishes loading"], answerIndex: 1 },
+            { question: "What is the final height?<pre>.box {\n  height: 100px;\n  min-height: 200px;\n}</pre>", options: ["100px", "auto", "200px", "150px"], answerIndex: 2 },
+            { question: "What is the line-height of .child?<pre>.parent {\n  font-size: 20px;\n  line-height: 1.5;\n}\n.child {\n  font-size: 10px;\n}</pre>", options: ["10px", "1.5", "30px", "15px"], answerIndex: 3 },
+            { question: "Final width is:<pre>.box {\n  width: 600px;\n  max-width: 400px;\n}</pre>", options: ["500px", "600px", "auto", "400px"], answerIndex: 3 },
+            { question: "When do scrollbars appear?<pre>.box {\n  width: 200px;\n  height: 100px;\n  overflow: auto;\n}</pre>", options: ["Only when content overflows", "Only vertically", "Never", "Always"], answerIndex: 0 }
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+

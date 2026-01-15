@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 21 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Appendix: Gradle Build System</div>
+            <h1>Flutter Quiz 21</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "What is Gradle?", options: ["A programming language", "A UI framework", "A build automation tool", "A database system"], answerIndex: 2 },{ question: "Gradle is mainly used for building:", options: ["iOS apps", "Web applications", "Desktop software", "Android applications"], answerIndex: 3 },{ question: "Which of the following is NOT a responsibility of Gradle?", options: ["Compiling Android Java/Kotlin code", "Managing Android dependencies", "Writing Dart UI code", "Generating APK or AAB files"], answerIndex: 2 },{ question: "What file formats does Gradle generate for Android apps?", options: [".exe and .msi", ".ipa only", ".apk and .aab", ".zip and .rar"], answerIndex: 2 },{ question: "Does Flutter replace Gradle when building Android apps?", options: ["Yes, completely", "Yes, in release mode only", "No, Flutter still uses Gradle", "Only when Firebase is used"], answerIndex: 2 },{ question: "When you run flutter run, what happens first?", options: ["Gradle compiles Android code", "Flutter compiles Dart code", "The app is signed", "The APK is uploaded"], answerIndex: 1 },{ question: "After Dart code is compiled, Flutter:", options: ["Stops the build", "Passes control to Gradle", "Uploads the app", "Runs iOS build"], answerIndex: 1 },{ question: "Which folder contains the Android project that uses Gradle?", options: ["lib/", "ios/", "assets/", "android/"], answerIndex: 3 },{ question: "Why canâ€™t Gradle be skipped in Flutter Android builds?", options: ["Dart code wonâ€™t compile", "Widgets wonâ€™t render", "Native Android code and plugins wonâ€™t build", "Hot reload wonâ€™t work"], answerIndex: 2 },{ question: "Which statement best describes Flutter and Gradle?", options: ["Flutter replaces Gradle", "Gradle replaces Flutter", "Flutter builds Dart, Gradle builds Android", "Both build Dart code"], answerIndex: 2 },{ question: "What happens if Gradle is not available?", options: ["UI disappears", "Dart stops working", "Android app cannot be built", "Flutter crashes"], answerIndex: 2 },{ question: "Which command triggers Gradle in Flutter?", options: ["dart run", "flutter clean", "flutter run", "flutter doctor"], answerIndex: 2 },{ question: "Which component compiles Dart code?", options: ["Gradle", "Android Studio", "Flutter / Dart SDK", "Firebase CLI"], answerIndex: 2 },{ question: "Which language code does Gradle compile in android/?", options: ["Dart", "Java and Kotlin", "JavaScript", "Swift"], answerIndex: 1 },{ question: "What does Gradle manage?", options: ["Widgets", "UI layout", "Android dependencies", "Dart syntax"], answerIndex: 2 },{ question: "What is .aab?", options: ["Android App Backup", "Android App Bundle", "Android Build Binary", "App Asset Bundle"], answerIndex: 1 },{ question: "When does Gradle sign the app?", options: ["Debug mode", "Release mode", "Always", "Never"], answerIndex: 1 },{ question: "What is Flutterâ€™s main role?", options: ["Build Android APK", "Sign the app", "Compile Dart code", "Manage Gradle"], answerIndex: 2 },{ question: "Where are Gradle config files located?", options: ["lib/", "ios/", "android/", "assets/"], answerIndex: 2 },{ question: "Which statement is TRUE?", options: ["Gradle is optional", "Flutter builds everything", "Flutter and Gradle work together", "Gradle builds Dart"], answerIndex: 2 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

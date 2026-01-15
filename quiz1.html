@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header"><h1>HTML Quiz 1</h1></div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [
+            { question: "What is HTML?", options: ["HTML describes the structure of a webpage", "HTML is the standard markup language mainly used to create web pages", "HTML consists of a set of elements that helps the browser how to view the content", "All of the mentioned"], answerIndex: 3 },
+            { question: "Who is the father of HTML?", options: ["Rasmus Lerdorf", "Tim Berners-Lee", "Brendan Eich", "Sergey Brin"], answerIndex: 1 },
+            { question: "HTML stands for", options: ["HyperText Markup Language", "HyperText Machine Language", "HyperText Marking Language", "HighText Marking Language"], answerIndex: 0 },
+            { question: "What is the correct syntax of doctype in HTML5?", options: ["<code>&lt;/doctype html&gt;</code>", "<code>&lt;doctype html&gt;</code>", "<code>&lt;doctype html!&gt;</code>", "<code>&lt;!doctype html&gt;</code>"], answerIndex: 3 },
+            { question: "Which of the following is used to read an HTML page and render it?", options: ["Web server", "Web network", "Web browser", "Web matrix"], answerIndex: 2 },
+            { question: "Which of the following tag is used for inserting the largest heading in HTML?", options: ["<code>head</code>", "<code>&lt;h1&gt;</code>", "<code>&lt;h6&gt;</code>", "<code>heading</code>"], answerIndex: 1 },
+            { question: "In which part Of the HTML metadata is contained?", options: ["<code>head</code> tag", "<code>title</code> tag", "<code>html</code> tag", "<code>body</code> tag"], answerIndex: 0 },
+            { question: "Which element is used to get highlighted text in HTML5?", options: ["<code>&lt;u&gt;</code>", "<code>&lt;mark&gt;</code>", "<code>&lt;highlight&gt;</code>", "<code>&lt;b&gt;</code>"], answerIndex: 1 },
+            { question: "Which of the following elements in HTML5 defines video or movie content?", options: ["<code>&lt;video&gt;</code>", "<code>&lt;movie&gt;</code>", "<code>&lt;audio&gt;</code>", "<code>&lt;media&gt;</code>"], answerIndex: 0 },
+            { question: "Which element is used for styling HTML5 layout?", options: ["CSS", "jQuery", "JavaScript", "PHP"], answerIndex: 0 },
+            { question: "Which HTML tag is used for making character appearance bold?", options: ["<code>&lt;u&gt;</code>", "<code>&lt;b&gt;</code>", "<code>&lt;br&gt;</code>", "<code>&lt;i&gt;</code>"], answerIndex: 1 },
+            { question: "Which HTML tag is used to insert an image?", options: ['<code>&lt;img url="htmllogo.jpg"/&gt;</code>', '<code>&lt;img alt="htmllogo.jpg"/&gt;</code>', '<code>&lt;img src="htmllogo.jpg"/&gt;</code>', '<code>&lt;img link="htmllogo.jpg"/&gt;</code>'], answerIndex: 2 },
+            { question: "Which Of the following tag is used to insert a line-break in HTML?", options: ["<code>&lt;p&gt;</code>", "<code>&lt;br&gt;</code>", "<code>&lt;hr&gt;</code>", "<code>&lt;a&gt;</code>"], answerIndex: 1 },
+            { question: "How to create an ordered list in HTML?", options: ["<code>&lt;ol&gt;</code>", "<code>&lt;ul&gt;</code>", "<code>&lt;href&gt;</code>", "<code>&lt;b&gt;</code>"], answerIndex: 0 },
+            { question: "HOW to create an unordered list in HTML?", options: ["<code>&lt;ol&gt;</code>", "<code>&lt;ul&gt;</code>", "<code>&lt;href&gt;</code>", "<code>&lt;b&gt;</code>"], answerIndex: 1 },
+            { question: "HTML files are saved by default with the extension?", options: [".h", ".html", ".ht", "None of above"], answerIndex: 1 },
+            { question: "In HTML, which attribute is used to create a link that opens in a new window tab?", options: ['<code>src="_blank"</code>', '<code>alt="_blank"</code>', '<code>target="_self"</code>', '<code>target="_blank"</code>'], answerIndex: 3 },
+            { question: "Which of the following HTML tag is used to add a row in a table?", options: ["<code>&lt;th&gt;</code>", "<code>&lt;td&gt;</code>", "<code>&lt;tr&gt;</code>", "<code>&lt;tt&gt;</code>"], answerIndex: 2 },
+            { question: "Which tag is used to create a text area in HTML Form?", options: ["<code>&lt;textarea&gt;&lt;/textarea&gt;</code>", "<code>&lt;text&gt;&lt;/text&gt;</code>", '<code>&lt;input type="text"/&gt;</code>', '<code>&lt;input type="textarea"/&gt;</code>'], answerIndex: 0 },
+            { question: "Which tag is used to create a dropdown in HTML Form?", options: ["<code>&lt;input&gt;</code>", "<code>&lt;select&gt;</code>", "<code>&lt;text&gt;</code>", "<code>&lt;textarea&gt;</code>"], answerIndex: 1 },
+            { question: "How to create a checkbox in HTML Form?", options: ['<code>&lt;input type="text"&gt;</code>', '<code>&lt;input type="textarea"&gt;</code>', '<code>&lt;input type="checkbox"&gt;</code>', '<code>&lt;input type="button"&gt;</code>'], answerIndex: 2 },
+            { question: "Which HTML tag is used to convert the plain text into italic format?", options: ["<code>&lt;b&gt;</code>", "<code>&lt;p&gt;</code>", "<code>&lt;i&gt;</code>", "<code>&lt;a&gt;</code>"], answerIndex: 2 },
+            { question: "What is the use of <code>&lt;hr&gt;</code> tag in HTML?", options: ["For making content appearance italics", "To create vertical rule between sections", "TO create a break", "To create horizontal rule between sections"], answerIndex: 3 },
+            { question: "Which attribute is not essential under <code>&lt;iframe&gt;</code>?", options: ["frameborder", "width", "height", "src"], answerIndex: 0 },
+            { question: "Which tag is used to underline the text in HTML?", options: ["<code>&lt;p&gt;</code>", "<code>&lt;u&gt;</code>", "<code>&lt;i&gt;</code>", "<code>&lt;ul&gt;</code>"], answerIndex: 1 }
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

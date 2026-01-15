@@ -1,0 +1,249 @@
+MCQ – What Gradle Is (Q1–Q40)
+All questions with full options and correct answers
+Q1. What is Gradle?
+A. A programming language
+B. A UI framework
+C. A build automation tool
+D. A database system
+Correct Answer: C
+Q2. Gradle is mainly used for building:
+A. iOS apps
+B. Web applications
+C. Desktop software
+D. Android applications
+Correct Answer: D
+Q3. Which of the following is NOT a responsibility of Gradle?
+A. Compiling Android Java/Kotlin code
+B. Managing Android dependencies
+C. Writing Dart UI code
+D. Generating APK or AAB files
+Correct Answer: C
+Q4. What file formats does Gradle generate for Android apps?
+A. .exe and .msi
+B. .ipa only
+C. .apk and .aab
+D. .zip and .rar
+Correct Answer: C
+Q5. Does Flutter replace Gradle when building Android apps?
+A. Yes, completely
+B. Yes, in release mode only
+C. No, Flutter still uses Gradle
+D. Only when Firebase is used
+Correct Answer: C
+Q6. When you run flutter run, what happens first?
+A. Gradle compiles Android code
+B. Flutter compiles Dart code
+C. The app is signed
+D. The APK is uploaded
+Correct Answer: B
+Q7. After Dart code is compiled, Flutter:
+A. Stops the build
+B. Passes control to Gradle
+C. Uploads the app
+D. Runs iOS build
+Correct Answer: B
+
+Q8. Which folder contains the Android project that uses Gradle?
+A. lib/
+B. ios/
+C. assets/
+D. android/
+Correct Answer: D
+Q9. Why can’t Gradle be skipped in Flutter Android builds?
+A. Dart code won’t compile
+B. Widgets won’t render
+C. Native Android code and plugins won’t build
+D. Hot reload won’t work
+Correct Answer: C
+Q10. Which statement best describes Flutter and Gradle?
+A. Flutter replaces Gradle
+B. Gradle replaces Flutter
+C. Flutter builds Dart, Gradle builds Android
+D. Both build Dart code
+Correct Answer: C
+Q11. What happens if Gradle is not available?
+A. UI disappears
+B. Dart stops working
+C. Android app cannot be built
+D. Flutter crashes
+Correct Answer: C
+Q12. Which command triggers Gradle in Flutter?
+A. dart run
+B. flutter clean
+C. flutter run
+D. flutter doctor
+Correct Answer: C
+Q13. Which component compiles Dart code?
+A. Gradle
+B. Android Studio
+C. Flutter / Dart SDK
+D. Firebase CLI
+Correct Answer: C
+Q14. Which language code does Gradle compile in android/?
+A. Dart
+B. Java and Kotlin
+C. JavaScript
+D. Swift
+Correct Answer: B
+Q15. What does Gradle manage?
+A. Widgets
+B. UI layout
+C. Android dependencies
+D. Dart syntax
+Correct Answer: C
+
+Q16. What is .aab?
+A. Android App Backup
+B. Android App Bundle
+C. Android Build Binary
+D. App Asset Bundle
+Correct Answer: B
+Q17. When does Gradle sign the app?
+A. Debug mode
+B. Release mode
+C. Always
+D. Never
+Correct Answer: B
+Q18. What is Flutter’s main role?
+A. Build Android APK
+B. Sign the app
+C. Compile Dart code
+D. Manage Gradle
+Correct Answer: C
+Q19. Where are Gradle config files located?
+A. lib/
+B. ios/
+C. android/
+D. assets/
+Correct Answer: C
+Q20. Which statement is TRUE?
+A. Gradle is optional
+B. Flutter builds everything
+C. Flutter and Gradle work together
+D. Gradle builds Dart
+Correct Answer: C
+Q21. What does build automation mean?
+A. Designing UI
+B. Automatic compiling and packaging
+C. Manual testing
+D. Writing code
+Correct Answer: B
+Q22. Which tool produces APK/AAB?
+A. Flutter
+B. Dart VM
+C. Gradle
+D. Emulator
+Correct Answer: C
+Q23. Which code is compiled first?
+A. Java
+B. Kotlin
+C. Dart
+D. XML
+
+Correct Answer: C
+Q24. What does Gradle package?
+A. Dart files only
+B. Assets, resources, manifest
+C. Widgets only
+D. UI code
+Correct Answer: B
+Q25. Which file lists dependencies with native code?
+A. main.dart
+B. pubspec.yaml
+C. build.gradle
+D. analysis_options.yaml
+Correct Answer: B
+Q26. Firebase plugins need Gradle because they:
+A. Are UI-based
+B. Contain native Android code
+C. Replace Flutter
+D. Use Dart only
+Correct Answer: B
+Q27. Which output is used for Play Store?
+A. .apk
+B. .zip
+C. .aab
+D. .jar
+Correct Answer: C
+Q28. What happens after Dart compilation?
+A. App launches
+B. Gradle builds Android
+C. App signs
+D. Upload starts
+Correct Answer: B
+Q29. Where does Gradle run?
+A. lib/
+B. ios/
+C. android/
+D. build/
+Correct Answer: C
+Q30. Which is correct about Gradle?
+A. Optional tool
+B. Android build system
+C. Dart compiler
+D. UI engine
+Correct Answer: B
+Q31. Correct build sequence?
+A. Gradle → Flutter
+B. Flutter → Gradle → APK
+C. Flutter only
+
+D. Gradle only
+Correct Answer: B
+Q32. Why does Flutter use Gradle?
+A. Flutter is slow
+B. Gradle is Android’s build system
+C. Dart is deprecated
+D. Android Studio requires it
+Correct Answer: B
+Q33. What fails without Gradle?
+A. Hot reload
+B. Dart syntax
+C. Native plugin compilation
+D. Widget tree
+Correct Answer: C
+Q34. Why can’t Flutter build APK alone?
+A. No Dart support
+B. No Android packaging/signing
+C. No UI
+D. No assets
+Correct Answer: B
+Q35. Which task is ONLY Gradle’s?
+A. Dart compilation
+B. Widget rendering
+C. Java/Kotlin compilation
+D. Hot reload
+Correct Answer: C
+Q36. Native plugins are integrated by:
+A. Flutter
+B. Dart VM
+C. Gradle
+D. Skia
+Correct Answer: C
+Q37. Why Flutter still needs Gradle?
+A. UI limitation
+B. Platform-specific build needed
+C. Dart is weak
+D. Widgets depend on it
+Correct Answer: B
+Q38. Why is .aab handled by Gradle?
+A. Flutter doesn’t support files
+B. It’s Android-specific packaging
+C. It’s debug-only
+D. Dart limitation
+Correct Answer: B
+Q39. Which statement is most accurate?
+A. Flutter builds Android runtime shell
+B. Gradle builds Dart
+
+C. Flutter builds Dart, Gradle builds Android runtime
+D. Both do same job
+Correct Answer: C
+Q40. If Gradle is removed, what breaks first?
+A. UI
+B. Dart compilation
+C. Android dependency resolution
+D. Hot reload
+Correct Answer: C
+
+

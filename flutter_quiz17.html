@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 17 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Appendix: Theming & Styling</div>
+            <h1>Flutter Quiz 17</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "What is ThemeData in Flutter?", options: ["A widget for layouts", "A class for app logic", "A class that defines app design and styles", "A database manager"], answerIndex: 2 },{ question: "Where is ThemeData usually defined?", options: ["Inside Scaffold", "Inside MaterialApp", "Inside main()", "Inside AppBar"], answerIndex: 1 },{ question: "What does ThemeData mainly control?", options: ["App performance", "Navigation", "UI appearance", "Database"], answerIndex: 2 },{ question: "What does primarySwatch provide?", options: ["One color", "Font", "Color palette", "Animation"], answerIndex: 2 },{ question: "What does fontFamily do in ThemeData?", options: ["Change language", "Set default font", "Resize buttons", "Control animation"], answerIndex: 1 },{ question: "Which widget holds ThemeData?", options: ["Scaffold", "Column", "MaterialApp", "Expanded"], answerIndex: 2 },{ question: "What does ThemeMode.system mean?", options: ["Always dark", "Always light", "Follow device theme", "Disable theme"], answerIndex: 2 },{ question: "What does ElevatedButtonThemeData customize?", options: ["Text", "Icons", "ElevatedButton", "AppBar"], answerIndex: 2 },{ question: "What is centralized styling?", options: ["Styling each widget", "Styling from one place", "Styling database", "Styling animations"], answerIndex: 1 },{ question: "Which property hides debug banner?", options: ["hideDebug", "showDebug", "debugShowCheckedModeBanner", "debugBanner"], answerIndex: 2 },{ question: "Expanded widget must be inside?", options: ["Stack", "Container", "Row or Column", "ListView"], answerIndex: 2 },{ question: "What does Expanded do?", options: ["Adds padding", "Takes remaining space", "Shrinks widget", "Adds margin"], answerIndex: 1 },{ question: "Default flex value is?", options: ["0", "1", "2", "Auto"], answerIndex: 1 },{ question: "Expanded in Column expands along?", options: ["Horizontal", "Vertical", "Diagonal", "Z-axis"], answerIndex: 1 },{ question: "Expanded in Row expands along?", options: ["Vertical", "Horizontal", "Circular", "Stack"], answerIndex: 1 },{ question: "Which property styles AppBar globally?", options: ["barTheme", "appBarTheme", "headerTheme", "topTheme"], answerIndex: 1 },{ question: "Which property styles text globally?", options: ["textTheme", "fontTheme", "styleTheme", "labelTheme"], answerIndex: 0 },{ question: "What happens if Expanded used wrongly?", options: ["Works", "UI ignores", "Compile error", "Warning"], answerIndex: 2 },{ question: "primaryColor vs primarySwatch?", options: ["Same", "Swatch gives palette", "Color faster", "No difference"], answerIndex: 1 },{ question: "What does Theme.of(context) return?", options: ["Widget", "ThemeData", "Color", "AppBar"], answerIndex: 1 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

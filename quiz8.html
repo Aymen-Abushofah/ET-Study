@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header"><h1>CSS Quiz 4</h1></div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [
+            { question: "Which of the following CSS property defines how an image or video fits into container with established height and width?", options: ["<code>object-position</code>", "None of the above", "<code>position</code>", "<code>object-fit</code>"], answerIndex: 3 },
+            { question: "The CSS property used to specify the order of flex item in the flex container is —", options: ["<code>order</code>", "<code>float</code>", "<code>overflow</code>", "None of the above"], answerIndex: 0 },
+            { question: "Which unit is relative to the root element?", options: ["%", "rem", "px", "em"], answerIndex: 1 },
+            { question: "Which selector has the highest specificity?", options: ["ID selector", "class selector", "element selector", "universal selector"], answerIndex: 0 },
+            { question: "What is the default position value of an element?", options: ["relative", "fixed", "static", "absolute"], answerIndex: 2 },
+            { question: "Which property adds space inside an element?", options: ["border", "margin", "spacing", "padding"], answerIndex: 3 },
+            { question: "Which property adds space outside an element?", options: ["padding", "margin", "spacing", "outline"], answerIndex: 1 },
+            { question: "What does z-index work on?", options: ["Only block elements", "Positioned elements", "Any element", "Inline elements only"], answerIndex: 1 },
+            { question: "Which value centers a block element horizontally?", options: ["<code>align: center</code>", "<code>margin: auto</code>", "<code>margin: center</code>", "<code>text-align: center</code>"], answerIndex: 1 },
+            { question: "Which property controls line spacing?", options: ["<code>word-spacing</code>", "<code>line-height</code>", "<code>letter-spacing</code>", "<code>text-indent</code>"], answerIndex: 1 },
+            { question: "Which selector selects all elements?", options: ["all", "#", "*", "."], answerIndex: 2 },
+            { question: "Which value makes an element invisible but keeps its space?", options: ["<code>hidden</code>", "<code>display: none</code>", "<code>opacity: 0</code>", "<code>visibility: hidden</code>"], answerIndex: 3 },
+            { question: "Which pseudo-class targets mouse hover?", options: ["<code>:focus</code>", "<code>:hover</code>", "<code>:active</code>", "<code>:visited</code>"], answerIndex: 1 },
+            { question: "Which property controls background image repetition?", options: ["<code>background-clip</code>", "<code>background-position</code>", "<code>background-repeat</code>", "<code>background-size</code>"], answerIndex: 2 },
+            { question: "Which value makes a flex container horizontal by default?", options: ["column", "row", "block", "inline"], answerIndex: 1 },
+            { question: "Which property enables flexbox?", options: ["<code>flex: enable</code>", "<code>position: flex</code>", "<code>display: flex</code>", "<code>display: block</code>"], answerIndex: 2 },
+            { question: "Which property aligns items vertically in flexbox (row)?", options: ["<code>align-items</code>", "<code>justify-content</code>", "<code>vertical-align</code>", "<code>align-content</code>"], answerIndex: 0 },
+            { question: "Which property aligns items horizontally in flexbox (row)?", options: ["<code>align-items</code>", "<code>align-self</code>", "<code>text-align</code>", "<code>justify-content</code>"], answerIndex: 3 },
+            { question: "Which property changes list bullet style?", options: ["<code>list-type</code>", "<code>list-style-type</code>", "<code>marker</code>", "<code>bullet-style</code>"], answerIndex: 1 },
+            { question: "Which position value is relative to viewport?", options: ["fixed", "static", "relative", "absolute"], answerIndex: 0 },
+            { question: "Which property defines grid columns?", options: ["<code>grid-template-rows</code>", "<code>grid-columns</code>", "<code>grid-template-columns</code>", "<code>grid-auto-flow</code>"], answerIndex: 2 },
+            { question: "Which property enables CSS Grid?", options: ["<code>display: grid</code>", "<code>grid: on</code>", "<code>position: grid</code>", "<code>layout: grid</code>"], answerIndex: 0 },
+            { question: "Which property controls spacing between grid items?", options: ["margin", "spacing", "padding", "gap"], answerIndex: 3 },
+            { question: "Which pseudo-class selects the first child?", options: ["<code>:start</code>", "<code>:child-first</code>", "<code>:first-child</code>", "<code>:first</code>"], answerIndex: 2 },
+            { question: "Which property allows smooth transitions?", options: ["<code>animation</code>", "<code>transition</code>", "<code>effect</code>", "<code>transform</code>"], answerIndex: 1 }
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+Dart MCQs – Chapter 02 (50 Questions)
+(ALL 50 QUESTIONS INCLUDED)
+Q1. What is Dart?
+A. A database system
+B. A UI framework
+C. A programming language used by Flutter
+D. An operating system
+Correct Answer: C
+Q2. Dart is mainly used with which framework?
+A. React Native
+B. Xamarin
+C. Flutter
+D. Angular
+Correct Answer: C
+Q3. Which company developed Dart?
+A. Apple
+B. Microsoft
+C. Facebook
+D. Google
+Correct Answer: D
+Q4. Where can you practice Dart online?
+A. GitHub
+B. DartPad
+C. Stack Overflow
+D. Firebase
+Correct Answer: B
+Q5. Which feature helps manage memory automatically in Dart?
+A. Hot Reload
+B. Garbage Collection
+C. Null Safety
+D. Compilation
+Correct Answer: B
+Q6. Dart supports which programming paradigm?
+A. Functional only
+B. Procedural only
+C. Object-Oriented Programming
+D. Assembly-based
+Correct Answer: C
+Q7. Which keyword lets Dart infer the variable type automatically?
+A. int
+B. dynamic
+C. var
+D. late
+Correct Answer: C
+Q8. Which symbol allows a variable to be nullable?
+A. !
+B. ?
+C. &
+D. #
+Correct Answer: B
+
+Q9. What does Hot Reload do?
+A. Restarts the app completely
+B. Deletes old code
+C. Shows changes instantly without restart
+D. Compiles to JavaScript
+Correct Answer: C
+Q10. Which Dart function is the entry point of any program?
+A. start()
+B. init()
+C. run()
+D. main()
+Correct Answer: D
+Q11. Which data type represents whole numbers?
+A. double
+B. String
+C. int
+D. bool
+Correct Answer: C
+Q12. Which data type represents true/false values?
+A. bool
+B. int
+C. String
+D. num
+Correct Answer: A
+Q13. Which collection stores ordered values?
+A. Map
+B. Set
+C. List
+D. Object
+Correct Answer: C
+Q14. What does break do in a loop?
+A. Skips one iteration
+B. Ends the loop
+C. Repeats the loop
+D. Pauses execution
+Correct Answer: B
+Q15. What does continue do in a loop?
+A. Ends the program
+B. Ends the loop
+C. Skips current iteration
+D. Restarts the app
+Correct Answer: C
+Q16. Everything in Dart is considered a(n):
+A. Function
+B. Variable
+C. Object
+D. Class
+Correct Answer: C
+Q17. Which keyword promises to initialize a variable later?
+A. var
+B. final
+C. late
+D. const
+Correct Answer: C
+
+Q18. Dart syntax is similar to which languages?
+A. Python only
+B. C and JavaScript
+C. Ruby and PHP
+D. Swift only
+Correct Answer: B
+Q19. What is string interpolation in Dart?
+A. Combining lists
+B. Using $ to insert variables into strings
+C. Printing variables
+D. Converting strings to numbers
+Correct Answer: B
+Q20. Which compilation method is used for fast development?
+A. AOT
+B. JS Compilation
+C. JIT
+D. Native
+Correct Answer: C
+Q21. What does JIT stand for?
+A. Java Integrated Tool
+B. Just In Time
+C. Joint Interface Technology
+D. Java In Type
+Correct Answer: B
+Q22. Which compilation method is used in Flutter release mode?
+A. JIT
+B. VM
+C. AOT
+D. JS
+Correct Answer: C
+Q23. What does AOT improve?
+A. Code readability
+B. Development speed
+C. App performance
+D. Debugging
+Correct Answer: C
+Q24. Dart can be compiled to JavaScript mainly for:
+A. Desktop apps
+B. Mobile apps
+C. Web apps
+D. Embedded systems
+Correct Answer: C
+Q25. What happens if you use ! incorrectly on a null value?
+A. App runs normally
+B. Compiler ignores it
+C. Runtime error occurs
+D. Variable resets
+Correct Answer: C
+Q26. Which parameter type improves readability in functions?
+A. Positional
+B. Optional positional
+C. Named
+D. Anonymous
+Correct Answer: C
+
+Q27. Anonymous functions are also called:
+A. Main functions
+B. Lambda functions
+C. Static functions
+D. Global functions
+Correct Answer: B
+Q28. Which loop guarantees at least one execution?
+A. for
+B. while
+C. do-while
+D. foreach
+Correct Answer: C
+Q29. What is the main disadvantage of Native development?
+A. Low performance
+B. Single platform support
+C. Multiple codebases
+D. Lack of security
+Correct Answer: C
+Q30. Which framework uses JavaScript with native components?
+A. Flutter
+B. Xamarin
+C. React Native
+D. Cordova
+Correct Answer: C
+Q31. Which cross-platform framework is declining in popularity?
+A. Flutter
+B. React Native
+C. Xamarin
+D. Dart
+Correct Answer: C
+Q32. Which framework runs apps inside a WebView?
+A. Flutter
+B. Cordova
+C. Native
+D. Xamarin
+Correct Answer: B
+Q33. What is Flutter’s minimum app size approximately?
+A. 1 MB
+B. 3 MB
+C. 5 MB
+D. 10 MB
+Correct Answer: C
+Q34. Flutter compiles Dart code into:
+A. Java bytecode
+B. JavaScript only
+C. Native machine code
+D. HTML
+Correct Answer: C
+Q35. Which site hosts Dart and Flutter packages?
+A. npm
+B. GitHub
+C. pub.dev
+D. Firebase
+Correct Answer: C
+
+Q36. Why is Flutter faster than React Native?
+A. Uses fewer widgets
+B. Uses Dart without a JavaScript bridge
+C. Has more plugins
+D. Uses HTML
+Correct Answer: B
+Q37. Which Dart feature helps detect errors early?
+A. Hot Reload
+B. Static Typing
+C. Garbage Collection
+D. JIT
+Correct Answer: B
+Q38. What does “portability” mean in Dart?
+A. Faster apps
+B. Smaller apps
+C. Runs on multiple platforms
+D. Better UI
+Correct Answer: C
+Q39. Which statement about Null Safety is true?
+A. All variables are nullable by default
+B. Null values are ignored
+C. Variables are non-null by default
+D. Null Safety is optional in Flutter only
+Correct Answer: C
+Q40. Which Dart version made it strong for Flutter?
+A. Dart 1.0
+B. Dart 1.5
+C. Dart 2.0
+D. Dart 3.0
+Correct Answer: C
+Q41. Why is Native development considered expensive?
+A. Low performance
+B. Requires more hardware
+C. Separate teams and codebases
+D. Limited UI options
+Correct Answer: C
+Q42. Which compilation is used for web support in Dart?
+A. AOT
+B. JIT
+C. JavaScript Compilation
+D. VM
+Correct Answer: C
+Q43. What is Flutter’s biggest weakness mentioned in the PDF?
+A. Poor documentation
+B. No community
+C. Frequent breaking updates
+D. Slow UI
+Correct Answer: C
+Q44. Which Dart feature enables Hot Reload?
+A. AOT
+B. Garbage Collection
+C. JIT
+D. Null Safety
+Correct Answer: C
+
+Q45. What does “Learn once, write anywhere” refer to?
+A. Native apps
+B. Dart language
+C. Cross-platform development
+D. Java
+Correct Answer: C
+Q46. Which platform combination best describes Flutter?
+A. Android only
+B. iOS only
+C. Web only
+D. Mobile, Web, Desktop
+Correct Answer: D
+Q47. Which framework is replacing Xamarin?
+A. Flutter
+B. React Native
+C. MAUI
+D. Cordova
+Correct Answer: C
+Q48. Why is Cordova performance weaker?
+A. Uses Dart
+B. Uses native code
+C. Runs inside WebView
+D. Uses AOT
+Correct Answer: C
+Q49. What makes Dart suitable for large apps?
+A. Dynamic typing only
+B. No OOP
+C. Type safety and structure
+D. JavaScript compatibility
+Correct Answer: C
+Q50. What is the main goal of comparing frameworks in the chapter?
+A. To reject Native development
+B. To promote Flutter blindly
+C. To understand design choices
+D. To learn JavaScript
+Correct Answer: C
+
+

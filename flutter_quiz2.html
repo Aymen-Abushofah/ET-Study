@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 2 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Chapter 1: The Foundation</div>
+            <h1>Flutter Quiz 2</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "What does Flutter Doctor do?", options: ["Builds the app", "Checks system setup and dependencies", "Runs the UI", "Compiles Dart code"], answerIndex: 1 },{ question: "Which command creates a new Flutter project?", options: ["flutter build", "flutter doctor", "flutter create", "flutter run"], answerIndex: 2 },{ question: "What is the main purpose of the pubspec.yaml file?", options: ["Writing UI code", "Defining project dependencies and assets", "Running the app", "Compiling Dart code"], answerIndex: 1 },{ question: "In Flutter, widgets are best described as:", options: ["Heavy UI objects", "Mutable UI elements", "Lightweight configuration objects", "Database records"], answerIndex: 2 },{ question: "What structure organizes Flutter widgets?", options: ["Widget List", "Widget Stack", "Widget Tree", "Widget Map"], answerIndex: 2 },{ question: "Which part of Flutter decides what actually gets redrawn?", options: ["Widget Tree", "Element Tree", "Dart VM", "pubspec.yaml"], answerIndex: 1 },{ question: "What happens when a widget has the same type and key during rebuild?", options: ["It is destroyed", "It is rebuilt from scratch", "It is reused", "The app crashes"], answerIndex: 2 },{ question: "What does â€œLook and Feelâ€ mainly describe?", options: ["App size and memory usage", "Visual appearance and interaction behavior", "Database structure", "Network speed"], answerIndex: 1 },{ question: "Which design system is associated with Android in Flutter?", options: ["Cupertino", "Fluent", "Material Design", "Skia"], answerIndex: 2 },{ question: "Which design system is associated with iOS in Flutter?", options: ["Material Design", "Cupertino", "Skia", "Dart UI"], answerIndex: 1 },{ question: "What role does the GPU play in Flutter?", options: ["Writing Dart code", "Managing widgets", "Rendering graphics drawn by Skia", "Running WebView"], answerIndex: 2 },{ question: "Which of the following is NOT a Flutter run mode?", options: ["Debug", "Release", "Profile", "Compile"], answerIndex: 3 },{ question: "Why are Flutter apps fast even though build() runs many times?", options: ["Widgets are cached permanently", "Widgets are heavy objects", "Only changed parts are rebuilt", "Dart code runs in WebView"], answerIndex: 2 },{ question: "What is the main disadvantage of WebView?", options: ["High performance", "Full native look", "Slower performance and inconsistent UI", "Direct GPU access"], answerIndex: 2 },{ question: "Which compilation method removes the need for Dart VM at runtime?", options: ["JIT", "Debug", "AOT", "Profile"], answerIndex: 2 },{ question: "Which compilation method enables Hot Reload?", options: ["AOT", "Native Compilation", "JIT", "Skia Rendering"], answerIndex: 2 },{ question: "What is the primary goal of Hot Reload?", options: ["Reduce app size", "Improve release performance", "Speed up development", "Remove bugs automatically"], answerIndex: 2 },{ question: "Which of the following best describes Flutterâ€™s rendering approach?", options: ["Uses native UI components", "Uses HTML and CSS", "Draws UI using its own engine", "Depends on WebView"], answerIndex: 2 },{ question: "What does â€œAhead of Timeâ€ compilation mainly improve?", options: ["Development speed", "Runtime performance", "Hot Reload", "Debugging tools"], answerIndex: 1 },{ question: "Why is Flutter considered cross-platform?", options: ["It runs only on Android", "It uses JavaScript", "It supports multiple platforms from one codebase", "It uses native UI only"], answerIndex: 2 },{ question: "Which Flutter component converts widgets into pixels?", options: ["Dart VM", "Flutter Framework", "Skia", "pubspec.yaml"], answerIndex: 2 },{ question: "What is the correct rendering flow in Flutter?", options: ["Dart â†’ GPU â†’ Widgets â†’ Screen", "Widgets â†’ Engine â†’ Skia â†’ Screen", "Widgets â†’ WebView â†’ Browser", "Dart â†’ HTML â†’ CSS â†’ Screen"], answerIndex: 1 },{ question: "Which statement about Flutter widgets is TRUE?", options: ["Widgets store heavy state", "Widgets directly control the GPU", "Widgets describe the UI", "Widgets are mutable"], answerIndex: 2 },{ question: "What is the main benefit of using one codebase?", options: ["Larger app size", "Slower development", "Easier maintenance", "Platform limitation"], answerIndex: 2 },{ question: "Flutter is best described as:", options: ["A database engine", "A game engine only", "A UI framework", "A scripting language"], answerIndex: 2 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

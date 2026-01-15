@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header"><h1>HTML Quiz 3</h1></div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [
+            { question: "When is the content of a table shown ?", options: ["Before the border loads", "After the table is loaded", "In pieces as it loads", "None of the above"], answerIndex: 1 },
+            { question: "The default value of the BORDER attribute is ?", options: ["1 pixel", "2 pixel", "3 pixel", "None of the above"], answerIndex: 0 },
+            { question: "Which tag can set the background color for your page ?", options: ["<code>&lt;font&gt;</code>", "<code>&lt;body&gt;</code>", "<code>&lt;head&gt;</code>", "<code>&lt;title&gt;</code>"], answerIndex: 1 },
+            { question: "Generally, there are", options: ["4 headers in most HTML page", "5 headers in most HTML page", "6 headers in most HTML page", "7 headers in most HTML page"], answerIndex: 2 },
+            { question: "<code>&lt;p&gt;</code> is called ?", options: ["Head tag", "Container tag", "Paragraph tag", "None of the above"], answerIndex: 2 },
+            { question: "Which HTML tag is used to define strike a line through deleted text ?", options: ["<code>&lt;del&gt;</code>", "<code>&lt;delete&gt;</code>", "<code>&lt;deleted&gt;</code>", "<code>&lt;through&gt;</code>"], answerIndex: 0 },
+            { question: "What will be added using <code>&lt;td&gt;</code> and <code>&lt;/td&gt;</code> tag ?", options: ["Cell", "Rows", "Columns", "Steps"], answerIndex: 0 },
+            { question: "Which HTML tag is used to define acronym or abbreviation ?", options: ["<code>&lt;acr&gt;</code>", "<code>&lt;acronym&gt;</code>", "<code>&lt;abbreviation&gt;</code>", "<code>&lt;abbr&gt;</code>"], answerIndex: 3 },
+            { question: "To change the size of an image in HTML, use ?", options: ["pliers", "Top and bottom", "Height and width", "Bigger and smaller"], answerIndex: 2 },
+            { question: "Which tag contains meta information about the HTML page ?", options: ["<code>&lt;html&gt;</code>", "<code>&lt;title&gt;</code>", "<code>&lt;head&gt;</code>", "<code>&lt;body&gt;</code>"], answerIndex: 2 },
+            { question: "HTML tags with no content are called ?", options: ["Special tags", "Advanced tags", "Empty tags", "Other tags"], answerIndex: 2 },
+            { question: "Text within <code>&lt;strong&gt;</code> tag is displayed as ?", options: ["bold", "italic", "underline", "list"], answerIndex: 0 },
+            { question: "The correct sequence of HTML tags to start a webpage is -", options: ["head, title, html, body", "html, body, title, head", "html, head, title, body", "body, head, title, html"], answerIndex: 2 },
+            { question: "Can we hide content using the comment ?", options: ["Yes", "No"], answerIndex: 0 },
+            { question: "Can we hide inline content using the comment ?", options: ["Yes", "No"], answerIndex: 0 },
+            { question: "Which HTML tag is used to define emphasized text ?", options: ["<code>&lt;italic&gt;</code>", "<code>&lt;em&gt;</code>", "<code>&lt;it&gt;</code>", "<code>&lt;i&gt;</code>"], answerIndex: 1 },
+            { question: "Can we use class name with multiple HTML elements ?", options: ["Yes", "No"], answerIndex: 0 },
+            { question: "Can we use id attribute with multiple HTML elements ?", options: ["Yes", "No"], answerIndex: 1 },
+            { question: "<code>&lt;a&gt;</code> and <code>&lt;/a&gt;</code> are the tags used for", options: ["Aligning text", "Adding image", "Audio-voiced text", "Adding links to your page"], answerIndex: 3 },
+            { question: "Which tag is used to display picture in HTML page ?", options: ["picture", "image", "img", "src"], answerIndex: 2 },
+            { question: "Fundamental HTML Block is known as", options: ["HTML Attribute", "HTML Element", "HTML Body", "HTML Tag"], answerIndex: 3 },
+            { question: "Nested HTML elements are allowed in HTML ?", options: ["Yes", "No"], answerIndex: 0 },
+            { question: "Which attribute specifies where to open the linked document ?", options: ["<code>target</code>", "<code>href</code>", "<code>link</code>", "<code>src</code>"], answerIndex: 0 },
+            { question: "Which tag is used to define description lists ?", options: ["<code>&lt;dl&gt; ... &lt;/dl&gt;</code>", "<code>&lt;dd&gt; ... &lt;/dd&gt;</code>", "<code>&lt;dlist&gt; ... &lt;/dlist&gt;</code>", "<code>&lt;check&gt; ... &lt;/check&gt;</code>"], answerIndex: 0 },
+            { question: "Defining clickable sub-areas on an image is called ?", options: ["image linking", "image mapping", "multiple mapping", "none of the above"], answerIndex: 1 }
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

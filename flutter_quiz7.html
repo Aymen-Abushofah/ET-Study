@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 7 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Chapter 4: State Management</div>
+            <h1>Flutter Quiz 7</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "What is Dart?", options: ["A database system", "A UI framework", "A programming language", "An operating system"], answerIndex: 2 },{ question: "Dart is mainly used with which framework?", options: ["React Native", "Flutter", "Xamarin", "Angular"], answerIndex: 1 },{ question: "Everything in Dart is:", options: ["A function", "A file", "An object", "A widget"], answerIndex: 2 },{ question: "What is an object?", options: ["A file", "A variable only", "Data and methods", "A constructor"], answerIndex: 2 },{ question: "What is a class?", options: ["An object", "A blueprint for objects", "A function", "A package"], answerIndex: 1 },{ question: "Which keyword is used for inheritance in Dart?", options: ["inherit", "implements", "extends", "with"], answerIndex: 2 },{ question: "Dart supports which inheritance type?", options: ["Multiple inheritance", "Single inheritance", "No inheritance", "Hybrid inheritance"], answerIndex: 1 },{ question: "Which symbol makes a variable private in Dart?", options: ["#", "$", "_", "@"], answerIndex: 2 },{ question: "What is the purpose of a constructor?", options: ["Delete objects", "Initialize objects", "Print values", "Import files"], answerIndex: 1 },{ question: "Which constructor can return an existing object?", options: ["Default", "Named", "Factory", "Static"], answerIndex: 2 },{ question: "Dart supports constructor overloading like Java.", options: ["True", "False", "Sometimes", "Only with static"], answerIndex: 1 },{ question: "What is a named constructor?", options: ["Constructor without parameters", "Constructor with custom name", "Constructor without body", "Static constructor"], answerIndex: 1 },{ question: "Which annotation is used to override a method?", options: ["override", "@change", "@override", "replace"], answerIndex: 2 },{ question: "What is polymorphism?", options: ["Multiple classes", "Same object, different behavior", "Multiple constructors", "Data hiding"], answerIndex: 1 },{ question: "What is an abstract class?", options: ["Can create objects", "Cannot be inherited", "Cannot create objects", "Has no methods"], answerIndex: 2 },{ question: "Which keyword is used to implement an interface?", options: ["extends", "with", "implements", "abstract"], answerIndex: 2 },{ question: "What is a mixin used for?", options: ["Database access", "Multiple inheritance", "Code reuse", "UI design"], answerIndex: 2 },{ question: "Which keyword applies a mixin?", options: ["mixin", "extends", "implements", "with"], answerIndex: 3 },{ question: "What is an enum?", options: ["A function", "A fixed set of values", "A class", "A variable"], answerIndex: 1 },{ question: "What does List mean?", options: ["List of any type", "List of integers", "List of strings only", "Nullable list"], answerIndex: 2 },{ question: "What does String? represent?", options: ["Constant string", "Nullable string", "Static string", "Final string"], answerIndex: 1 },{ question: "What keyword allows late initialization?", options: ["final", "const", "late", "async"], answerIndex: 2 },{ question: "What does the ! operator mean in Dart?", options: ["Negation", "Null assertion", "Casting", "Comparison"], answerIndex: 1 },{ question: "Functions in Dart are:", options: ["Not objects", "First-class objects", "Static only", "Private only"], answerIndex: 1 },{ question: "Passing a function as a parameter is called:", options: ["Inheritance", "Callback", "Override", "Mixin"], answerIndex: 1 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

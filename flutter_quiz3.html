@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 3 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Chapter 2: Dart Basics</div>
+            <h1>Flutter Quiz 3</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "What is Dart?", options: ["A database system", "A UI framework", "A programming language used by Flutter", "An operating system"], answerIndex: 2 },{ question: "Dart is mainly used with which framework?", options: ["React Native", "Xamarin", "Flutter", "Angular"], answerIndex: 2 },{ question: "Which company developed Dart?", options: ["Apple", "Microsoft", "Facebook", "Google"], answerIndex: 3 },{ question: "Where can you practice Dart online?", options: ["GitHub", "DartPad", "Stack Overflow", "Firebase"], answerIndex: 1 },{ question: "Which feature helps manage memory automatically in Dart?", options: ["Hot Reload", "Garbage Collection", "Null Safety", "Compilation"], answerIndex: 1 },{ question: "Dart supports which programming paradigm?", options: ["Functional only", "Procedural only", "Object-Oriented Programming", "Assembly-based"], answerIndex: 2 },{ question: "Which keyword lets Dart infer the variable type automatically?", options: ["int", "dynamic", "var", "late"], answerIndex: 2 },{ question: "Which symbol allows a variable to be nullable?", options: ["!", "?", "&", "#"], answerIndex: 1 },{ question: "What does Hot Reload do?", options: ["Restarts the app completely", "Deletes old code", "Shows changes instantly without restart", "Compiles to JavaScript"], answerIndex: 2 },{ question: "Which Dart function is the entry point of any program?", options: ["start()", "init()", "run()", "main()"], answerIndex: 3 },{ question: "Which data type represents whole numbers?", options: ["double", "String", "int", "bool"], answerIndex: 2 },{ question: "Which data type represents true/false values?", options: ["bool", "int", "String", "num"], answerIndex: 0 },{ question: "Which collection stores ordered values?", options: ["Map", "Set", "List", "Object"], answerIndex: 2 },{ question: "What does break do in a loop?", options: ["Skips one iteration", "Ends the loop", "Repeats the loop", "Pauses execution"], answerIndex: 1 },{ question: "What does continue do in a loop?", options: ["Ends the program", "Ends the loop", "Skips current iteration", "Restarts the app"], answerIndex: 2 },{ question: "Everything in Dart is considered a(n):", options: ["Function", "Variable", "Object", "Class"], answerIndex: 2 },{ question: "Which keyword promises to initialize a variable later?", options: ["var", "final", "late", "const"], answerIndex: 2 },{ question: "Dart syntax is similar to which languages?", options: ["Python only", "C and JavaScript", "Ruby and PHP", "Swift only"], answerIndex: 1 },{ question: "What is string interpolation in Dart?", options: ["Combining lists", "Using $ to insert variables into strings", "Printing variables", "Converting strings to numbers"], answerIndex: 1 },{ question: "Which compilation method is used for fast development?", options: ["AOT", "JS Compilation", "JIT", "Native"], answerIndex: 2 },{ question: "What does JIT stand for?", options: ["Java Integrated Tool", "Just In Time", "Joint Interface Technology", "Java In Type"], answerIndex: 1 },{ question: "Which compilation method is used in Flutter release mode?", options: ["JIT", "VM", "AOT", "JS"], answerIndex: 2 },{ question: "What does AOT improve?", options: ["Code readability", "Development speed", "App performance", "Debugging"], answerIndex: 2 },{ question: "Dart can be compiled to JavaScript mainly for:", options: ["Desktop apps", "Mobile apps", "Web apps", "Embedded systems"], answerIndex: 2 },{ question: "What happens if you use ! incorrectly on a null value?", options: ["App runs normally", "Compiler ignores it", "Runtime error occurs", "Variable resets"], answerIndex: 2 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

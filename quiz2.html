@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header"><h1>HTML Quiz 2</h1></div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [
+            { question: "Which Of the following attribute is used to provide a unique name to an element?", options: ["<code>type</code>", "<code>article</code>", "<code>id</code>", "<code>class</code>"], answerIndex: 2 },
+            { question: "HOW to set a font for a whole page?", options: ["<code>&lt;targetfont&gt;</code>", "<code>&lt;defaultfont&gt;</code>", "<code>&lt;font&gt;</code>", "None of the above"], answerIndex: 2 },
+            { question: 'How to create a hyperlink in HTML?', options: ['<code>&lt;a href: "www.javatpoint.com"&gt; javaTpoint.com &lt;/a&gt;</code>', '<code>&lt;a url = "www.javatpoint.com" javaTpoint.com /a&gt;</code>', '<code>&lt;a link = "www.javatpoint.com"&gt; javaTpoint.com &lt;/a&gt;</code>', '<code>&lt;a&gt; www.javatpoint.com"&gt; javaTpoint.com &lt;/a&gt;</code>'], answerIndex: 0 },
+            { question: "<code>&lt;input&gt;</code> is—", options: ["a format tag.", "an empty tag.", "All of the above", "None of the above"], answerIndex: 1 },
+            { question: "HTML tags are enclosed in.", options: ["# and #", "{ and }", "! and ?", "&lt; and &gt;"], answerIndex: 3 },
+            { question: "Which of the following HTML tag is the special formatting tag?", options: ["<code>&lt;p&gt;</code>", "<code>&lt;b&gt;</code>", "<code>&lt;pre&gt;</code>", "None of the above"], answerIndex: 2 },
+            { question: "Which of the following is the container for <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> ?", options: ["<code>&lt;data&gt;</code>", "<code>&lt;table&gt;</code>", "<code>&lt;group&gt;</code>", "All of the above"], answerIndex: 1 },
+            { question: "How to insert a background image in HTML?", options: ['<code>&lt;body background = "img.png"&gt;</code>', '<code>&lt;img background = "img.png"&gt;</code>', '<code>&lt;bg-image = "img.png"&gt;</code>', "None Of the above"], answerIndex: 0 },
+            { question: "Which of the following is the correct way to create a list using the lowercase letters?", options: ['<code>&lt;ol alpha = "a"&gt;</code>', '<code>&lt;ol type = "a"&gt;</code>', '<code>&lt;ol letter = "a"&gt;</code>', "None of the above"], answerIndex: 1 },
+            { question: "The tags in HTML are —", options: ["case-sensitive", "in upper case", "not case sensitive", "in lowercase"], answerIndex: 2 },
+            { question: "Which of the following is the root tag Of the HTML document?", options: ["<code>&lt;body&gt;</code>", "<code>&lt;head&gt;</code>", "<code>&lt;title&gt;</code>", "<code>&lt;html&gt;</code>"], answerIndex: 3 },
+            { question: "Which HTML tag is used to display the power in expression, i.e., (x² - y²)?", options: ["<code>&lt;sup&gt;</code>", "<code>&lt;sub&gt;</code>", "<code>&lt;p&gt;</code>", "None of the above"], answerIndex: 0 },
+            { question: "Which HTML tag is used to define subscript text? Ex: H₂O", options: ["<code>&lt;sub&gt;</code>", "<code>&lt;subscript&gt;</code>", "<code>&lt;s&gt;</code>", "<code>&lt;subscripted&gt;</code>"], answerIndex: 0 },
+            { question: "Which HTML tag is used to define smaller text?", options: ["<code>&lt;normal&gt;</code>", "<code>&lt;span&gt;</code>", "<code>&lt;smaller&gt;</code>", "<code>&lt;small&gt;</code>"], answerIndex: 3 },
+            { question: "Which HTML tag is used to define a short quotation?", options: ["<code>&lt;quotation&gt;</code>", "<code>&lt;quote&gt;</code>", "<code>&lt;qut&gt;</code>", "<code>&lt;q&gt;</code>"], answerIndex: 3 },
+            { question: "Which attribute specifies an alternate text for the image?", options: ["<code>alt</code>", "<code>alternate</code>", "<code>alttext</code>", "All of the above"], answerIndex: 0 },
+            { question: "Which tag is used to define list items?", options: ["<code>&lt;ol&gt;...&lt;/ol&gt;</code>", "<code>&lt;ul&gt;...&lt;/ul&gt;</code>", "<code>&lt;list&gt; ... &lt;/list&gt;</code>", "<code>&lt;li&gt; ... &lt;/li&gt;</code>"], answerIndex: 3 },
+            { question: "Which tag is a block-level element?", options: ["<code>&lt;block&gt;...&lt;/block&gt;</code>", "<code>&lt;b&gt;...&lt;/b&gt;</code>", "<code>&lt;div&gt;...&lt;/div&gt;</code>", "<code>&lt;divx&gt;...&lt;/divx&gt;</code>"], answerIndex: 2 },
+            { question: "Which attribute is often used to point to a class name in a style sheet?", options: ["<code>style</code>", "<code>css</code>", "<code>src</code>", "<code>class</code>"], answerIndex: 3 },
+            { question: "Which tag is used to create an HTML form for user input?", options: ["<code>&lt;form&gt;</code>", "<code>&lt;input&gt;</code>", "<code>&lt;form_put&gt;</code>", "<code>&lt;form_get&gt;</code>"], answerIndex: 0 },
+            { question: "Which tag is used to display a radio button?", options: ["<code>&lt;radio&gt;</code>", '<code>&lt;input type="text"&gt;</code>', '<code>&lt;input type="checkbox"&gt;</code>', '<code>&lt;input type="radio"&gt;</code>'], answerIndex: 3 },
+            { question: "Which tag is used to display a submit button?", options: ['<code>&lt;input type="submit"&gt;</code>', '<code>&lt;input type="button"&gt;</code>', '<code>&lt;input type="checkbox"&gt;</code>', '<code>&lt;input type="radio"&gt;</code>'], answerIndex: 0 },
+            { question: "HTML uses", options: ["Predefined tags", "User-defined tags", "Fixed tags defined by the language", "Tags for links only"], answerIndex: 2 },
+            { question: "In HTML, tags that include both on and off tags are called ?", options: ["document tag", "comment tag", "container tag", "None of the above"], answerIndex: 2 },
+            { question: "Which program do you need to write HTML ?", options: ["HTML -development suite 4", "A graphics program", "Any text editor", "All of these"], answerIndex: 2 }
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

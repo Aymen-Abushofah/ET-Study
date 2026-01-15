@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header"><h1>CSS Quiz 3</h1></div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [
+            { question: "Which of the following property defines a shadow effect for text?", options: ["<code>box-shadow</code>", "<code>img-shadow</code>", "<code>text-shadow</code>", "none of the mentioned"], answerIndex: 2 },
+            { question: "Which of the following property sets list-style-type, list-style-position, and list-style-image?", options: ["<code>style</code>", "<code>list-style</code>", "<code>menu-style</code>", "<code>img-style</code>"], answerIndex: 1 },
+            { question: "Which of the following CSS Gradient Functions creates a circular or elliptical gradient, and optionally sets its shape, size, and position?", options: ["<code>radial-gradient()</code>", "<code>circular-gradient()</code>", "<code>elliptical-gradient()</code>", "none of the mentioned"], answerIndex: 0 },
+            { question: "What will be the output of following code snippet?<pre>&lt;style h1 {color: green;}&gt; \n&lt;h1&gt;Hello&lt;/h1&gt;</pre>", options: ["h1 heading becomes green", "error", "h1 heading disappears", "nothing happens"], answerIndex: 3 },
+            { question: "What will be the output of below mentioned code snippet?<pre>&lt;p style=&quot;color: red&quot;&gt;text&lt;/p&gt;</pre>", options: ["make that specific paragraph red.", "error", "nothing happens", "make all paragraphs red."], answerIndex: 0 },
+            { question: "Which of the following CSS list properties is/are correct?", options: ["Set different list item markers for ordered lists", "Set different list item markers for unordered lists", "Set an image as the list item marker", "All of the mentioned"], answerIndex: 3 },
+            { question: "A ____ is used to define a special state of an element.", options: ["pseudo-tag", "pseudo-element", "pseudo-id", "pseudo-class"], answerIndex: 3 },
+            { question: "Which style is this?<pre>&lt;body style=&quot;background-color: lightcyan&quot;&gt;</pre>", options: ["Inline Styles", "External Style Sheet", "Internal Style Sheet", "None of the mentioned"], answerIndex: 0 },
+            { question: "What type of selector is used in this case?<pre>p {\n  line-height: 150%;\n}</pre>", options: ["class Selectors", "element Selectors", "id Selectors", "none of the mentioned"], answerIndex: 1 },
+            { question: "By applying an ____ a style can be applied to just a single tag.", options: ["class rule", "element rule", "id rule", "none of the mentioned"], answerIndex: 2 },
+            { question: "What will be the output of below mentioned code snippet?<pre>p strong {\n  background-color: yellow;\n}</pre>", options: ["Strong have yellow background", "Strong element within a p element have a yellow background", "Both p and strong have yellow background", "None of the mentioned"], answerIndex: 1 },
+            { question: "Which of the following CSS property sets the opacity level or an element?", options: ["<code>opacity</code>", "<code>transparency</code>", "<code>transparent</code>", "all of the mentioned"], answerIndex: 0 },
+            { question: "What will be the output of the following CSS code snippet?<pre>span {\n  border: 1px solid red;\n  outline: green dotted thick;\n}</pre>", options: ["All span elements will have a green thick border and a red outline", "All span elements will have a red border and a green dotted outline", "All span elements will have a outer green dotted border and an inner red border", "All span elements will have an outer red border and inner green dotted border"], answerIndex: 2 },
+            { question: "Which of the following is the correct syntax to display the hyperlinks without any underline?", options: ["<code>a {text-decoration : underline;}</code>", "<code>a {decoration : no-underline;}</code>", "<code>a {text-decoration : none;}</code>", "None of the above"], answerIndex: 2 },
+            { question: "Are the negative values allowed in padding property?", options: ["Yes", "No"], answerIndex: 1 },
+            { question: "Are the negative values allowed in margin property?", options: ["Yes", "No"], answerIndex: 0 },
+            { question: "The transparent keyword is equivalent to which RGBA() value in CSS?", options: ["<code>RGBA(0, 0, 0, 1)</code>", "<code>RGBA(255, 255, 255, 1)</code>", "<code>RGBA(0, 0, 0, 0)</code>", "<code>RGBA(255, 255, 255, 0)</code>"], answerIndex: 2 },
+            { question: "Which CSS property is used to specify the space between the words in a text?", options: ["<code>word-spacing</code>", "<code>word-padding</code>", "<code>word-height</code>", "<code>characters-spacing</code>"], answerIndex: 0 },
+            { question: "Which CSS property is used to specify uppercase and lowercase letters in a text?", options: ["<code>text-transform</code>", "<code>text-case</code>", "<code>case</code>", "<code>text-casing</code>"], answerIndex: 0 },
+            { question: "Which is the correct CSS statement to capitalize the first letter Of each word?", options: ["<code>text-transform: uppercase</code>", "<code>text-transform: capitalize</code>", "<code>text-transform: sentence</code>", "Both A and B"], answerIndex: 1 },
+            { question: "CSS stands for --", options: ["Cascade style sheets", "Color and style sheets", "Cascading style sheets", "None of the above"], answerIndex: 2 },
+            { question: "Which of the following is the correct syntax to select all paragraph elements in a div element?", options: ["<code>div p</code>", "<code>p</code>", "<code>div # p</code>", "<code>div ~ p</code>"], answerIndex: 0 },
+            { question: "Which of the following is the correct syntax to select the p siblings of a div element?", options: ["<code>p</code>", "<code>div + p</code>", "<code>div p</code>", "<code>div ~ p</code>"], answerIndex: 3 },
+            { question: "Which of the following CSS property is used to specify whether the table cells share the common or separate border?", options: ["<code>border-collapse</code>", "<code>border-radius</code>", "<code>border-spacing</code>", "None of the above"], answerIndex: 0 },
+            { question: "Which of the following selector in CSS is used to select the elements that do not match the selectors?", options: ["<code>:!</code> selector", "<code>:not</code> selector", "<code>:empty</code> selector", "None of the above"], answerIndex: 1 }
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

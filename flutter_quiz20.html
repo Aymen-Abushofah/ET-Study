@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 20 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Appendix: Material Design</div>
+            <h1>Flutter Quiz 20</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "Which widget is responsible for layout structure?", options: ["Text", "Scaffold", "Icon", "Image"], answerIndex: 1 },{ question: "Which property sets app colors globally?", options: ["body", "title", "theme", "home"], answerIndex: 2 },{ question: "Material Design aims for:", options: ["Random UI", "Consistent UI across apps", "Platform-specific code", "Backend control"], answerIndex: 1 },{ question: "Which widget is mandatory for Material Design?", options: ["Container", "MaterialApp", "Text", "Column"], answerIndex: 1 },{ question: "Cupertino Design belongs to:", options: ["Google", "Apple", "Microsoft", "Meta"], answerIndex: 1 },{ question: "Which gives users comfort and familiarity?", options: ["App size", "Look and Feel", "CPU usage", "API version"], answerIndex: 1 },{ question: "Which is NOT part of â€œFeelâ€?", options: ["Animations", "Transitions", "Fonts", "Feedback"], answerIndex: 2 },{ question: "What does elevation represent?", options: ["Color brightness", "Widget size", "Height and depth", "Font style"], answerIndex: 2 },{ question: "Scaffold helps avoid:", options: ["Animations", "Manual layout building", "Using widgets", "Hot reload"], answerIndex: 1 },{ question: "Which widget supports Drawer?", options: ["Column", "Scaffold", "Container", "Text"], answerIndex: 1 },{ question: "What is the role of ThemeData?", options: ["API config", "App navigation", "Styling and colors", "State management"], answerIndex: 2 },{ question: "MaterialApp helps with:", options: ["Localization", "Routing", "Theme", "All of the above"], answerIndex: 3 },{ question: "Which is more visual-focused?", options: ["Feel", "Look", "Logic", "Backend"], answerIndex: 1 },{ question: "Which animation is typical in iOS?", options: ["Ripple", "Bounce", "Fade", "Slide only"], answerIndex: 2 },{ question: "Scaffold automatically handles:", options: ["Database", "Safe areas", "Network", "Caching"], answerIndex: 1 },{ question: "Material Design improves:", options: ["App logic", "User experience", "Database speed", "API security"], answerIndex: 1 },{ question: "Which widget is optional in Scaffold?", options: ["body", "appBar", "Both A and B", "None"], answerIndex: 2 },{ question: "Look and Feel mainly affect:", options: ["Developers", "Servers", "Users", "Databases"], answerIndex: 2 },{ question: "Which widget creates a complete page layout?", options: ["Text", "Column", "Scaffold", "Padding"], answerIndex: 2 },{ question: "Material Design encourages:", options: ["Random spacing", "Consistent spacing", "No animations", "Heavy images"], answerIndex: 1 },{ question: "Without Scaffold, what is harder to use?", options: ["Text", "SnackBar", "Image", "Icon"], answerIndex: 1 },{ question: "MaterialApp is usually placed:", options: ["Inside Scaffold", "Inside Column", "At the root of app", "Inside AppBar"], answerIndex: 2 },{ question: "Which design feels more â€œnativeâ€ on Android?", options: ["Cupertino", "Fluent", "Material", "Metro"], answerIndex: 2 },{ question: "Which component floats above UI?", options: ["AppBar", "Drawer", "FloatingActionButton", "BottomNavigationBar"], answerIndex: 2 },{ question: "Main purpose of Look and Feel is:", options: ["Performance optimization", "Better user experience", "Smaller app size", "Faster build"], answerIndex: 1 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

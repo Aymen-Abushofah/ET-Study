@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header"><h1>CSS Quiz 6</h1></div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [
+            { question: "Which position removes the element from normal document flow?", options: ["sticky", "static", "relative", "absolute"], answerIndex: 3 },
+            { question: "An absolutely positioned element is positioned relative to:", options: ["the viewport", "the nearest positioned ancestor", "the body", "the parent element always"], answerIndex: 1 },
+            { question: "Which position value sticks an element when scrolling?", options: ["relative", "fixed", "sticky", "absolute"], answerIndex: 2 },
+            { question: "Which property is required for top, left, right, bottom to work?", options: ["float", "display", "overflow", "position"], answerIndex: 3 },
+            { question: "Which position value keeps an element fixed to the viewport?", options: ["sticky", "fixed", "relative", "absolute"], answerIndex: 1 },
+            { question: "Which property changes the main axis direction?", options: ["<code>justify-content</code>", "<code>flex-wrap</code>", "<code>flex-direction</code>", "<code>align-items</code>"], answerIndex: 2 },
+            { question: "Which property controls spacing along the main axis?", options: ["<code>gap</code>", "<code>align-items</code>", "<code>align-content</code>", "<code>justify-content</code>"], answerIndex: 3 },
+            { question: "Which property controls alignment on the cross axis?", options: ["<code>flex-grow</code>", "<code>justify-content</code>", "<code>order</code>", "<code>align-items</code>"], answerIndex: 3 },
+            { question: "Which property allows items to move to a new line?", options: ["<code>order</code>", "<code>flex-basis</code>", "<code>flex-wrap</code>", "<code>flex-grow</code>"], answerIndex: 2 },
+            { question: "Which value prevents flex items from wrapping?", options: ["<code>no-wrap</code>", "<code>wrap</code>", "<code>nowrap</code>", "<code>block</code>"], answerIndex: 2 },
+            { question: "Which shorthand property combines grow, shrink, and basis?", options: ["<code>flex-item</code>", "<code>flex</code>", "<code>box-flex</code>", "<code>flex-box</code>"], answerIndex: 1 },
+            { question: "Which unit represents a fraction of free grid space?", options: ["<code>em</code>", "<code>auto</code>", "%", "<code>fr</code>"], answerIndex: 3 },
+            { question: "Which property controls automatic item placement direction?", options: ["<code>grid-direction</code>", "<code>grid-auto-flow</code>", "<code>grid-wrap</code>", "<code>grid-flow</code>"], answerIndex: 1 },
+            { question: "Which grid value makes columns adjust automatically?", options: ["<code>auto</code>", "<code>minmax</code>", "<code>fr</code>", "<code>fit-content</code>"], answerIndex: 0 },
+            { question: "Which property allows a flex item to grow relative to others?", options: ["<code>flex-shrink</code>", "<code>flex-grow</code>", "<code>flex-basis</code>", "<code>align-self</code>"], answerIndex: 1 },
+            { question: "If two flex items have flex-grow: 1 and flex-grow: 2, what happens?", options: ["Growth is ignored", "First grows twice as much", "Second grows twice as much", "Both grow equally"], answerIndex: 2 },
+            { question: "What does align-self do?", options: ["Overrides align-items for one item", "Changes item order", "Aligns container", "Aligns all items"], answerIndex: 0 },
+            { question: "Which Flexbox property controls spacing between rows when wrapping?", options: ["<code>justify-content</code>", "<code>align-content</code>", "<code>gap</code>", "<code>align-items</code>"], answerIndex: 1 },
+            { question: "What happens if flex-shrink: 0 is applied to an item?", options: ["Item wraps", "Item cannot shrink", "Item cannot grow", "Item is hidden"], answerIndex: 1 },
+            { question: "What does flex: 0 0 auto mean?", options: ["Full width item", "Item grows", "Fixed size item", "Item shrinks"], answerIndex: 2 },
+            { question: "What is the default value of order?", options: ["1", "inherit", "auto", "0"], answerIndex: 3 },
+            { question: "Which value centers items both horizontally and vertically (row layout)?", options: ["<code>gap: center</code>", "<code>flex-wrap: center</code>", "<code>align-content: center</code>", "<code>justify-content: center; align-items: center</code>"], answerIndex: 3 },
+            { question: "What does fr unit represent?", options: ["Fraction of available space", "Percentage", "Fixed size", "Content size"], answerIndex: 0 },
+            { question: "What does grid-template-columns: repeat(3, 1fr) create?", options: ["3 equal columns", "1 column repeated", "3 fixed columns", "Automatic layout"], answerIndex: 0 },
+            { question: "What is the default value of grid-auto-flow?", options: ["dense", "column", "row", "inherit"], answerIndex: 2 }
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

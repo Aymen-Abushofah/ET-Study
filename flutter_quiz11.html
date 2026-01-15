@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 11 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Chapter 5: Navigation & Routing</div>
+            <h1>Flutter Quiz 11</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "What is a widget in Flutter?", options: ["A database", "A screen only", "A basic building block of UI", "A backend service"], answerIndex: 2 },{ question: "Flutter UI is built using:", options: ["Activities", "Fragments", "Widgets", "Controllers"], answerIndex: 2 },{ question: "Which language is used to write Flutter apps?", options: ["Java", "Kotlin", "Dart", "Swift"], answerIndex: 2 },{ question: "Widgets in Flutter are:", options: ["Mutable", "Immutable", "Dynamic only", "Optional"], answerIndex: 1 },{ question: "Which method is mandatory in every widget?", options: ["initState()", "dispose()", "build()", "create()"], answerIndex: 2 },{ question: "StatelessWidget is used when:", options: ["UI changes frequently", "Data never changes", "State is required", "Database is connected"], answerIndex: 1 },{ question: "StatefulWidget is used when:", options: ["UI never changes", "App has no logic", "UI depends on data changes", "No interaction exists"], answerIndex: 2 },{ question: "Which class holds mutable state?", options: ["Widget", "StatelessWidget", "State", "BuildContext"], answerIndex: 2 },{ question: "Which method notifies Flutter to rebuild UI?", options: ["rebuild()", "refresh()", "setState()", "update()"], answerIndex: 2 },{ question: "Where is setState() defined?", options: ["Widget class", "State class", "BuildContext", "MaterialApp"], answerIndex: 1 },{ question: "What does BuildContext represent?", options: ["App theme", "Widget tree location", "App state", "Database connection"], answerIndex: 1 },{ question: "Which widget is the root of a Material app?", options: ["Scaffold", "Container", "MaterialApp", "AppBar"], answerIndex: 2 },{ question: "Which widget provides app structure like AppBar and body?", options: ["Container", "Column", "Scaffold", "Stack"], answerIndex: 2 },{ question: "AppBar is placed inside:", options: ["MaterialApp", "Scaffold", "Column", "Container"], answerIndex: 1 },{ question: "Which widget aligns children vertically?", options: ["Row", "Stack", "Column", "Align"], answerIndex: 2 },{ question: "Which widget aligns children horizontally?", options: ["Column", "Row", "Stack", "Padding"], answerIndex: 1 },{ question: "mainAxisAlignment controls:", options: ["Cross axis", "Child size", "Primary direction alignment", "Widget color"], answerIndex: 2 },{ question: "Which widget adds spacing inside a widget?", options: ["Margin", "Padding", "Align", "Center"], answerIndex: 1 },{ question: "Which widget centers its child?", options: ["Align", "Padding", "Center", "Stack"], answerIndex: 2 },{ question: "Which widget allows overlapping children?", options: ["Column", "Row", "Stack", "ListView"], answerIndex: 2 },{ question: "Which widget is scrollable?", options: ["Column", "Row", "ListView", "Container"], answerIndex: 2 },{ question: "Which widget is used for grids?", options: ["ListView", "Stack", "GridView", "Column"], answerIndex: 2 },{ question: "Which widget displays text?", options: ["Label", "Text", "Paragraph", "String"], answerIndex: 1 },{ question: "Which property limits number of text lines?", options: ["maxText", "maxLines", "overflow", "lines"], answerIndex: 1 },{ question: "Which widget displays images from internet?", options: ["Image.asset", "Image.file", "Image.network", "Image.memory"], answerIndex: 2 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

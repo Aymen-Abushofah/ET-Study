@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 16 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Chapter 6: Networking & Data</div>
+            <h1>Flutter Quiz 16</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "Why are StatefulWidgets often used with gestures?", options: ["Layout", "Animation only", "Update UI after interaction", "Reduce rebuilds"], answerIndex: 2 },{ question: "Where should UI updates occur after gesture?", options: ["initState", "dispose", "setState", "constructor"], answerIndex: 2 },{ question: "Which gesture is best for buttons?", options: ["Pan", "Scale", "Tap", "Drag"], answerIndex: 2 },{ question: "Which class stores movement data?", options: ["Offset", "State", "Widget", "Context"], answerIndex: 0 },{ question: "What does Offset.zero represent?", options: ["Center", "No movement", "Max movement", "Widget size"], answerIndex: 1 },{ question: "Which gesture suits sliders?", options: ["Tap", "DoubleTap", "Drag", "Scale"], answerIndex: 2 },{ question: "Which gesture suits image zoom?", options: ["Drag", "Pan", "Scale", "Tap"], answerIndex: 2 },{ question: "Which layer converts pointer movement into tap?", options: ["Pointer layer", "Gesture layer", "Widget layer", "Render layer"], answerIndex: 1 },{ question: "Which event signals end of interaction?", options: ["PointerMove", "PointerDown", "PointerUp", "PointerStart"], answerIndex: 2 },{ question: "GestureDetector wraps:", options: ["State", "Context", "Child widgets", "RenderObject"], answerIndex: 2 },{ question: "Which widget gives visual + functional feedback?", options: ["GestureDetector", "Listener", "InkWell", "Column"], answerIndex: 2 },{ question: "Which callback runs when scale ends?", options: ["onScaleStart", "onScaleUpdate", "onScaleEnd", "onPanEnd"], answerIndex: 2 },{ question: "Why is Listener rarely used?", options: ["Slow", "Too low-level", "Deprecated", "Limited"], answerIndex: 1 },{ question: "Which gesture is best for scrolling?", options: ["Tap", "Drag", "Pan", "Scale"], answerIndex: 2 },{ question: "Which gesture requires no movement?", options: ["Pan", "Drag", "Tap", "Scale"], answerIndex: 2 },{ question: "Which callback detects tap start?", options: ["onTapUp", "onTapCancel", "onTapDown", "onTapStart"], answerIndex: 2 },{ question: "Which callback runs if tap is canceled?", options: ["onTapCancel", "onTapUp", "onTapDown", "onTapEnd"], answerIndex: 0 },{ question: "What happens inside setState?", options: ["Compile app", "Rebuild UI", "Close widget", "Restart app"], answerIndex: 1 },{ question: "Which gesture best fits maps?", options: ["Tap", "Pan", "Drag", "Scale"], answerIndex: 1 },{ question: "Which widget tree principle applies to gestures?", options: ["Flat UI", "Linear UI", "Nested widgets", "Single widget"], answerIndex: 2 },{ question: "Which gesture counts finger movement?", options: ["Tap", "LongPress", "Drag", "Hover"], answerIndex: 2 },{ question: "Which callback provides drag end details?", options: ["DragStartDetails", "DragUpdateDetails", "DragEndDetails", "PanDetails"], answerIndex: 2 },{ question: "Which gesture works with multitouch?", options: ["Tap", "Drag", "Scale", "LongPress"], answerIndex: 2 },{ question: "Why is scale similar to pan?", options: ["Same callbacks", "Uses multiple pointers", "Same animation", "Same widget"], answerIndex: 1 },{ question: "Which gesture best for reorder list?", options: ["Tap", "LongPress + Drag", "Scale", "DoubleTap"], answerIndex: 1 },{ question: "Which widget is low-level?", options: ["GestureDetector", "InkWell", "Listener", "ElevatedButton"], answerIndex: 2 },{ question: "Which event cancels pointer?", options: ["PointerMoveEvent", "PointerUpEvent", "PointerCancelEvent", "PointerDownEvent"], answerIndex: 2 },{ question: "Which gesture system improves UX?", options: ["Pointer only", "Gesture system", "Render system", "Build system"], answerIndex: 1 },{ question: "Which widget is interaction-focused?", options: ["Padding", "GestureDetector", "Text", "SizedBox"], answerIndex: 1 },{ question: "Flutter gesture system mainly aims to:", options: ["Reduce widgets", "Simplify user interaction handling", "Increase app size", "Replace UI"], answerIndex: 1 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

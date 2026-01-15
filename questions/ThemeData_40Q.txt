@@ -1,0 +1,285 @@
+ThemeData & Flutter MCQs (40 Questions)
+Q1. What is ThemeData in Flutter?
+A. A widget for layouts
+B. A class for app logic
+C. A class that defines app design and styles
+D. A database manager
+Correct Answer: C
+
+Q2. Where is ThemeData usually defined?
+A. Inside Scaffold
+B. Inside MaterialApp
+C. Inside main()
+D. Inside AppBar
+Correct Answer: B
+
+Q3. What does ThemeData mainly control?
+A. App performance
+B. Navigation
+C. UI appearance
+D. Database
+Correct Answer: C
+
+Q4. What does primarySwatch provide?
+A. One color
+B. Font
+C. Color palette
+D. Animation
+Correct Answer: C
+
+Q5. What does fontFamily do in ThemeData?
+A. Change language
+B. Set default font
+C. Resize buttons
+D. Control animation
+Correct Answer: B
+
+Q6. Which widget holds ThemeData?
+A. Scaffold
+B. Column
+C. MaterialApp
+D. Expanded
+Correct Answer: C
+
+Q7. What does ThemeMode.system mean?
+A. Always dark
+B. Always light
+C. Follow device theme
+D. Disable theme
+Correct Answer: C
+
+Q8. What does ElevatedButtonThemeData customize?
+A. Text
+B. Icons
+C. ElevatedButton
+D. AppBar
+
+Correct Answer: C
+
+Q9. What is centralized styling?
+A. Styling each widget
+B. Styling from one place
+C. Styling database
+D. Styling animations
+Correct Answer: B
+
+Q10. Which property hides debug banner?
+A. hideDebug
+B. showDebug
+C. debugShowCheckedModeBanner
+D. debugBanner
+Correct Answer: C
+
+Q11. Expanded widget must be inside?
+A. Stack
+B. Container
+C. Row or Column
+D. ListView
+Correct Answer: C
+
+Q12. What does Expanded do?
+A. Adds padding
+B. Takes remaining space
+C. Shrinks widget
+D. Adds margin
+Correct Answer: B
+
+Q13. Default flex value is?
+A. 0
+B. 1
+C. 2
+D. Auto
+Correct Answer: B
+
+Q14. Expanded in Column expands along?
+A. Horizontal
+B. Vertical
+C. Diagonal
+D. Z-axis
+Correct Answer: B
+
+Q15. Expanded in Row expands along?
+A. Vertical
+B. Horizontal
+C. Circular
+D. Stack
+Correct Answer: B
+
+Q16. Which property styles AppBar globally?
+A. barTheme
+B. appBarTheme
+C. headerTheme
+D. topTheme
+Correct Answer: B
+
+Q17. Which property styles text globally?
+A. textTheme
+B. fontTheme
+C. styleTheme
+D. labelTheme
+Correct Answer: A
+
+Q18. What happens if Expanded used wrongly?
+A. Works
+B. UI ignores
+C. Compile error
+D. Warning
+Correct Answer: C
+
+Q19. primaryColor vs primarySwatch?
+A. Same
+B. Swatch gives palette
+C. Color faster
+D. No difference
+Correct Answer: B
+
+Q20. What does Theme.of(context) return?
+A. Widget
+B. ThemeData
+C. Color
+D. AppBar
+Correct Answer: B
+
+Q21. Which widget gives Material icons/fonts?
+A. Scaffold
+B. ThemeData
+C. MaterialApp
+D. Column
+Correct Answer: C
+
+Q22. darkTheme defines?
+A. Logic
+B. Font
+C. Dark UI
+D. Database
+Correct Answer: C
+
+Q23. Which widget shows first screen?
+A. body
+B. home
+C. appBar
+D. theme
+Correct Answer: B
+
+Q24. What does flex control?
+A. Color
+B. Animation
+C. Space ratio
+D. Height
+Correct Answer: C
+
+Q25. Two Expanded with flex 1 and 2 means?
+
+A. Same size
+B. First bigger
+C. Second bigger
+D. Invisible
+Correct Answer: C
+
+Q26. ThemeData helps mainly with?
+A. Speed
+B. Consistency
+C. Database
+D. Network
+Correct Answer: B
+
+Q27. Which reduces repeated UI code?
+A. Widgets
+B. ThemeData
+C. Hot reload
+D. Routes
+Correct Answer: B
+
+Q28. Changing ThemeData causes?
+A. Restart
+B. Crash
+C. UI rebuild
+D. Data loss
+Correct Answer: C
+
+Q29. Which styles icons globally?
+A. iconTheme
+B. imageTheme
+C. symbolTheme
+D. shapeTheme
+Correct Answer: A
+
+Q30. ThemeMode.dark means?
+A. System
+B. Light
+C. Always dark
+D. Disabled
+Correct Answer: C
+
+Q31. Why primarySwatch preferred?
+A. Smaller
+B. Multiple shades
+C. Faster
+D. Fonts
+Correct Answer: B
+
+Q32. Expanded prevents?
+A. Lag
+B. Overflow
+C. Rebuild
+D. Crash
+Correct Answer: B
+
+Q33. Which axis Row uses?
+A. Vertical
+B. Horizontal
+
+C. Z
+D. Free
+Correct Answer: B
+
+Q34. Which axis Column uses?
+A. Horizontal
+B. Vertical
+C. Z
+D. Free
+Correct Answer: B
+
+Q35. MaterialApp role?
+A. Layout
+B. Theme & navigation
+C. Animation
+D. Storage
+Correct Answer: B
+
+Q36. ThemeData best describes?
+A. Imperative UI
+B. Central UI config
+C. Database layer
+D. Network layer
+Correct Answer: B
+
+Q37. Without ThemeData?
+A. App fails
+B. Manual styling
+C. No widgets
+D. No run
+Correct Answer: B
+
+Q38. Expanded flex must be?
+A. Double
+B. String
+C. int
+D. bool
+Correct Answer: C
+
+Q39. ThemeData supports?
+A. Light only
+B. Dark only
+C. Light & Dark
+D. No modes
+Correct Answer: C
+
+Q40. Best use of ThemeData?
+A. Logic
+B. UI consistency
+C. Storage
+D. API calls
+Correct Answer: B
+
+

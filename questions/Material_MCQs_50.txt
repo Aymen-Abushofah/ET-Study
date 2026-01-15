@@ -1,0 +1,310 @@
+Material Design & Flutter – MCQs (50 Questions)
+
+Q1. What does “Look” refer to in an app?
+A. How fast the app runs
+B. How the app responds to touches
+C. Visual appearance like colors and fonts
+D. App logic
+Correct Answer: C
+Q2. What does “Feel” describe?
+A. App size
+B. Visual layout
+C. User interaction and response
+D. App language
+Correct Answer: C
+Q3. “Look and Feel” together describe:
+A. App performance
+B. User experience
+C. App database
+D. App security
+Correct Answer: B
+Q4. Which design system is used by Android?
+A. Cupertino
+B. Fluent
+C. Material Design
+D. Bootstrap
+Correct Answer: C
+Q5. Which design system is used by iOS?
+A. Material
+B. Cupertino
+C. Fluent
+D. Metro
+Correct Answer: B
+Q6. Material Design was created by:
+A. Apple
+B. Facebook
+C. Microsoft
+D. Google
+Correct Answer: D
+Q7. Material Design is inspired by:
+A. Glass
+B. Metal
+C. Paper and ink
+D. Plastic
+Correct Answer: C
+Q8. What gives depth in Material Design?
+A. Fonts
+B. Shadows and elevation
+
+C. Colors only
+D. Icons
+Correct Answer: B
+Q9. Ripple effect appears mainly in:
+A. iOS buttons
+B. Web apps
+C. Material buttons
+D. Desktop apps
+Correct Answer: C
+Q10. Smooth fade animations are common in:
+A. Android
+B. Material Design
+C. Cupertino (iOS)
+D. Flutter Web
+Correct Answer: C
+Q11. What is MaterialApp in Flutter?
+A. A layout widget
+B. A database tool
+C. Root widget for Material Design apps
+D. Animation widget
+Correct Answer: C
+Q12. MaterialApp usually wraps:
+A. One widget only
+B. The entire Flutter app
+C. Only AppBar
+D. Only Scaffold
+Correct Answer: B
+Q13. Which property defines the first screen in MaterialApp?
+A. theme
+B. title
+C. home
+D. routes
+Correct Answer: C
+Q14. Which widget provides page structure?
+A. Container
+B. Scaffold
+C. Column
+D. Padding
+Correct Answer: B
+Q15. Scaffold is best described as:
+A. App logic manager
+B. App skeleton
+C. Animation engine
+D. Theme controller
+Correct Answer: B
+Q16. Which widget appears at the top of Scaffold?
+A. Body
+B. Drawer
+C. AppBar
+
+D. FloatingActionButton
+Correct Answer: C
+Q17. FloatingActionButton usually appears:
+A. Top-left
+B. Center
+C. Bottom-right
+D. Bottom-left
+Correct Answer: C
+Q18. Which property holds the main content of a Scaffold?
+A. appBar
+B. body
+C. drawer
+D. theme
+Correct Answer: B
+Q19. Without MaterialApp, an app will:
+A. Crash always
+B. Lose Material look and theme
+C. Run faster
+D. Not compile
+Correct Answer: B
+Q20. Which widget hides the debug banner?
+A. Scaffold
+B. ThemeData
+C. debugShowCheckedModeBanner
+D. AppBar
+Correct Answer: C
+Q21. Which feature helps users recognize platform identity?
+A. Database
+B. Look and Feel
+C. API
+D. Compiler
+Correct Answer: B
+Q22. Material Design focuses on:
+A. Flat logic
+B. Realistic motion and depth
+C. Server performance
+D. Network speed
+Correct Answer: B
+Q23. Which widget is NOT part of Scaffold?
+A. AppBar
+B. BottomNavigationBar
+C. ListView
+D. Drawer
+Correct Answer: C
+Q24. MaterialApp provides which of the following automatically?
+A. Database
+B. Navigation and theme
+C. Firebase
+D. API calls
+
+Correct Answer: B
+Q25. What happens when you tap a Material button?
+A. Nothing
+B. Fade animation
+C. Ripple feedback
+D. Page reload
+Correct Answer: C
+Q26. Which widget is responsible for layout structure?
+A. Text
+B. Scaffold
+C. Icon
+D. Image
+Correct Answer: B
+Q27. Which property sets app colors globally?
+A. body
+B. title
+C. theme
+D. home
+Correct Answer: C
+Q28. Material Design aims for:
+A. Random UI
+B. Consistent UI across apps
+C. Platform-specific code
+D. Backend control
+Correct Answer: B
+Q29. Which widget is mandatory for Material Design?
+A. Container
+B. MaterialApp
+C. Text
+D. Column
+Correct Answer: B
+Q30. Cupertino Design belongs to:
+A. Google
+B. Apple
+C. Microsoft
+D. Meta
+Correct Answer: B
+Q31. Which gives users comfort and familiarity?
+A. App size
+B. Look and Feel
+C. CPU usage
+D. API version
+Correct Answer: B
+Q32. Which is NOT part of “Feel”?
+A. Animations
+B. Transitions
+C. Fonts
+D. Feedback
+Correct Answer: C
+
+Q33. What does elevation represent?
+A. Color brightness
+B. Widget size
+C. Height and depth
+D. Font style
+Correct Answer: C
+Q34. Scaffold helps avoid:
+A. Animations
+B. Manual layout building
+C. Using widgets
+D. Hot reload
+Correct Answer: B
+Q35. Which widget supports Drawer?
+A. Column
+B. Scaffold
+C. Container
+D. Text
+Correct Answer: B
+Q36. What is the role of ThemeData?
+A. API config
+B. App navigation
+C. Styling and colors
+D. State management
+Correct Answer: C
+Q37. MaterialApp helps with:
+A. Localization
+B. Routing
+C. Theme
+D. All of the above
+Correct Answer: D
+Q38. Which is more visual-focused?
+A. Feel
+B. Look
+C. Logic
+D. Backend
+Correct Answer: B
+Q39. Which animation is typical in iOS?
+A. Ripple
+B. Bounce
+C. Fade
+D. Slide only
+Correct Answer: C
+Q40. Scaffold automatically handles:
+A. Database
+B. Safe areas
+C. Network
+D. Caching
+Correct Answer: B
+
+Q41. Material Design improves:
+A. App logic
+B. User experience
+C. Database speed
+D. API security
+Correct Answer: B
+Q42. Which widget is optional in Scaffold?
+A. body
+B. appBar
+C. Both A and B
+D. None
+Correct Answer: C
+Q43. Look and Feel mainly affect:
+A. Developers
+B. Servers
+C. Users
+D. Databases
+Correct Answer: C
+Q44. Which widget creates a complete page layout?
+A. Text
+B. Column
+C. Scaffold
+D. Padding
+Correct Answer: C
+Q45. Material Design encourages:
+A. Random spacing
+B. Consistent spacing
+C. No animations
+D. Heavy images
+Correct Answer: B
+Q46. Without Scaffold, what is harder to use?
+A. Text
+B. SnackBar
+C. Image
+D. Icon
+Correct Answer: B
+Q47. MaterialApp is usually placed:
+A. Inside Scaffold
+B. Inside Column
+C. At the root of app
+D. Inside AppBar
+Correct Answer: C
+Q48. Which design feels more “native” on Android?
+A. Cupertino
+B. Fluent
+C. Material
+D. Metro
+Correct Answer: C
+Q49. Which component floats above UI?
+A. AppBar
+
+B. Drawer
+C. FloatingActionButton
+D. BottomNavigationBar
+Correct Answer: C
+Q50. Main purpose of Look and Feel is:
+A. Performance optimization
+B. Better user experience
+C. Smaller app size
+D. Faster build
+Correct Answer: B
+
+

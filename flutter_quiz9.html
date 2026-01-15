@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 9 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Chapter 4: State Management</div>
+            <h1>Flutter Quiz 9</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "Everything in Flutter is a:", options: ["Class", "Function", "Widget", "Object"], answerIndex: 2 },{ question: "Widgets in Flutter are:", options: ["Mutable", "Immutable", "Static", "Dynamic"], answerIndex: 1 },{ question: "StatelessWidget means:", options: ["No UI", "No state", "No build method", "No constructor"], answerIndex: 1 },{ question: "StatefulWidget is used when:", options: ["UI is static", "Data changes", "App starts", "No interaction"], answerIndex: 1 },{ question: "Which method updates the UI?", options: ["build", "redraw", "refresh", "setState"], answerIndex: 3 },{ question: "setState() does:", options: ["Changes widget", "Rebuilds UI", "Updates state and rebuilds", "Navigates"], answerIndex: 2 },{ question: "State class is separated to:", options: ["Save memory", "Preserve state", "Improve UI", "Speed rendering"], answerIndex: 1 },{ question: "How do you access widget inside State?", options: ["this", "context", "widget", "super"], answerIndex: 2 },{ question: "BuildContext provides access to:", options: ["State only", "Navigation and inherited widgets", "Async tasks", "Isolates"], answerIndex: 1 },{ question: "MaterialApp provides:", options: ["Layout only", "Theme and navigation", "Buttons only", "Images only"], answerIndex: 1 },{ question: "Scaffold represents:", options: ["App logic", "Page skeleton", "App state", "Theme"], answerIndex: 1 },{ question: "Which widget arranges children vertically?", options: ["Row", "Stack", "Column", "Grid"], answerIndex: 2 },{ question: "Which widget arranges children horizontally?", options: ["Column", "Row", "Stack", "ListView"], answerIndex: 1 },{ question: "Which widget supports scrolling?", options: ["Column", "Container", "ListView", "Center"], answerIndex: 2 },{ question: "Which widget layers children?", options: ["Row", "Column", "Stack", "Align"], answerIndex: 2 },{ question: "Container can control:", options: ["Padding", "Margin", "Decoration", "All of the above"], answerIndex: 3 },{ question: "Which widget centers its child?", options: ["Align", "Padding", "Center", "Stack"], answerIndex: 2 },{ question: "ElevatedButton is a:", options: ["Flat button", "Raised button", "Text widget", "Icon widget"], answerIndex: 1 },{ question: "FloatingActionButton position is usually:", options: ["Top-left", "Center", "Bottom-right", "Hidden"], answerIndex: 2 },{ question: "Which widget displays text?", options: ["Label", "Text", "String", "Print"], answerIndex: 1 },{ question: "Image.asset loads images from:", options: ["Internet", "Database", "App assets", "Memory"], answerIndex: 2 },{ question: "Keys are mainly used for:", options: ["Styling", "State preservation", "Async calls", "Performance"], answerIndex: 1 },{ question: "Without keys, Flutter may:", options: ["Crash", "Lose state", "Freeze", "Leak memory"], answerIndex: 1 },{ question: "InheritedWidget is used to:", options: ["Handle async", "Share data down the tree", "Draw UI", "Store state"], answerIndex: 1 },{ question: "Theme.of(context) accesses:", options: ["Static data", "InheritedWidget", "Future", "Isolate"], answerIndex: 1 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

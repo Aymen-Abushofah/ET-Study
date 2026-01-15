@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 14 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Chapter 5: Navigation & Routing</div>
+            <h1>Flutter Quiz 14</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "Which widget listens to inherited data changes?", options: ["StatelessWidget", "StatefulWidget", "InheritedWidget", "Stream"], answerIndex: 2 },{ question: "Widgets are rebuilt when:", options: ["App starts only", "State changes", "Code compiles", "App closes"], answerIndex: 1 },{ question: "Flutter follows which architecture?", options: ["MVC", "MVP", "Reactive", "Monolithic"], answerIndex: 2 },{ question: "Which widget is used for spacing between widgets?", options: ["Padding", "SizedBox", "Container", "Align"], answerIndex: 1 },{ question: "SizedBox with height is used in:", options: ["Row", "Column", "Stack", "Grid"], answerIndex: 1 },{ question: "Which widget creates bottom navigation?", options: ["BottomAppBar", "BottomNavigationBar", "AppBar", "TabBar"], answerIndex: 1 },{ question: "BottomNavigationBar is property of:", options: ["Column", "MaterialApp", "Scaffold", "Stack"], answerIndex: 2 },{ question: "Which widget handles orientation changes?", options: ["MediaQuery", "Container", "Align", "Center"], answerIndex: 0 },{ question: "SafeArea prevents:", options: ["Overflows", "UI under system bars", "Crashes", "Animations"], answerIndex: 1 },{ question: "Which widget creates scroll effect?", options: ["ScrollView", "SingleChildScrollView", "Column", "Stack"], answerIndex: 1 },{ question: "SingleChildScrollView is best for:", options: ["Long lists", "Small content", "Grids", "Streams"], answerIndex: 1 },{ question: "Which widget creates shadows?", options: ["Container", "BoxShadow", "Text", "Padding"], answerIndex: 1 },{ question: "Which widget is immutable?", options: ["State", "Widget", "Stream", "Future"], answerIndex: 1 },{ question: "Flutter redraws UI by calling:", options: ["initState", "dispose", "build", "main"], answerIndex: 2 },{ question: "Which widget detects long press?", options: ["GestureDetector", "Listener", "Button", "Ink"], answerIndex: 0 },{ question: "InkWell is used for:", options: ["Gesture effects", "Animations", "Layout", "Styling"], answerIndex: 0 },{ question: "Which widget adds ripple effect?", options: ["GestureDetector", "InkWell", "Container", "Align"], answerIndex: 1 },{ question: "Which widget holds app routes?", options: ["Scaffold", "Navigator", "MaterialApp", "AppBar"], answerIndex: 2 },{ question: "Navigator stack works as:", options: ["Queue", "Stack", "Tree", "Map"], answerIndex: 1 },{ question: "Which widget allows custom painting?", options: ["CustomPaint", "Canvas", "Painter", "Draw"], answerIndex: 0 },{ question: "Which widget improves performance by const?", options: ["StatelessWidget", "const widgets", "StatefulWidget", "Streams"], answerIndex: 1 },{ question: "const widgets are:", options: ["Rebuilt always", "Cached", "Mutable", "Dynamic"], answerIndex: 1 },{ question: "Flutter layouts are based on:", options: ["XML", "HTML", "Widgets", "CSS"], answerIndex: 2 },{ question: "Flutter widgets describe:", options: ["How app looks", "How app behaves", "Both UI and behavior", "Database logic"], answerIndex: 2 },{ question: "Flutter rebuilds widgets:", options: ["Automatically", "When state changes", "When setState is called", "All of the above"], answerIndex: 3 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

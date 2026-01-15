@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 12 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Chapter 5: Navigation & Routing</div>
+            <h1>Flutter Quiz 12</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "Which widget handles user text input?", options: ["Text", "Label", "TextField", "InputBox"], answerIndex: 2 },{ question: "Which widget is a clickable button?", options: ["Text", "ElevatedButton", "Padding", "Align"], answerIndex: 1 },{ question: "FloatingActionButton is usually used for:", options: ["Navigation", "Primary action", "Text input", "Images"], answerIndex: 1 },{ question: "Which widget shows dialogs?", options: ["Alert", "DialogBox", "showDialog", "Popup"], answerIndex: 2 },{ question: "Checkbox is a:", options: ["Layout widget", "Selection widget", "Input widget", "Display widget"], answerIndex: 1 },{ question: "Switch widget is used for:", options: ["Navigation", "Boolean values", "Numbers", "Text"], answerIndex: 1 },{ question: "Slider is used to select:", options: ["Text", "Dates", "Range of values", "Images"], answerIndex: 2 },{ question: "Which widget allows date selection?", options: ["Calendar", "DateWidget", "showDatePicker", "TimePicker"], answerIndex: 2 },{ question: "Cupertino widgets are designed for:", options: ["Android", "Web", "iOS", "Windows"], answerIndex: 2 },{ question: "Material widgets follow:", options: ["Apple design", "Google Material Design", "Microsoft Fluent", "Custom design"], answerIndex: 1 },{ question: "Which widget passes data down the widget tree?", options: ["StatefulWidget", "StatelessWidget", "InheritedWidget", "Container"], answerIndex: 2 },{ question: "Theme.of(context) uses:", options: ["StatelessWidget", "StatefulWidget", "InheritedWidget", "Stream"], answerIndex: 2 },{ question: "Keys are used to:", options: ["Improve UI design", "Identify widgets uniquely", "Change colors", "Handle streams"], answerIndex: 1 },{ question: "Keys are mostly needed when:", options: ["Using Text", "Widgets change order", "App starts", "Using MaterialApp"], answerIndex: 1 },{ question: "Which widget has children property?", options: ["Text", "Image", "Column", "Icon"], answerIndex: 2 },{ question: "Which widget has child (singular) property?", options: ["Column", "Row", "Container", "ListView"], answerIndex: 2 },{ question: "What does Stream represent?", options: ["Single value", "Static data", "Sequence of async data", "UI widget"], answerIndex: 2 },{ question: "Stream.listen() is used to:", options: ["Stop stream", "Create stream", "Receive data", "Delete data"], answerIndex: 2 },{ question: "Streams are useful for:", options: ["Static UI", "Reactive programming", "Layout design", "Styling"], answerIndex: 1 },{ question: "Which widget rebuilds when stream emits data?", options: ["StreamBuilder", "ListView", "Column", "Container"], answerIndex: 0 },{ question: "Widget tree represents:", options: ["App files", "Widget hierarchy", "Database structure", "Folder system"], answerIndex: 1 },{ question: "Hot Reload helps to:", options: ["Restart app", "Install app", "See UI changes instantly", "Compile code"], answerIndex: 2 },{ question: "Hot Restart does:", options: ["Preserves state", "Clears state", "Updates UI only", "Deletes code"], answerIndex: 1 },{ question: "Which widget controls alignment inside Row/Column?", options: ["mainAxisAlignment", "padding", "margin", "size"], answerIndex: 0 },{ question: "Expanded widget is used to:", options: ["Increase font size", "Take available space", "Add padding", "Align widgets"], answerIndex: 1 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

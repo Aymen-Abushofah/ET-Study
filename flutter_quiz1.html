@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 1 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Chapter 1: The Foundation</div>
+            <h1>Flutter Quiz 1</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "What is Flutter?", options: ["A programming language", "A database system", "A framework for building multi-platform apps", "An operating system"], answerIndex: 2 },{ question: "Flutter was created by which company?", options: ["Microsoft", "Apple", "Facebook", "Google"], answerIndex: 3 },{ question: "Which programming language is used by Flutter?", options: ["Java", "Kotlin", "Dart", "Swift"], answerIndex: 2 },{ question: "What is the main advantage of Flutter?", options: ["Separate code for each platform", "One single codebase for multiple platforms", "Uses only WebView", "Requires native UI components"], answerIndex: 1 },{ question: "Which platforms can Flutter target?", options: ["Android only", "Android and iOS only", "Web only", "Android, iOS, Web, Desktop"], answerIndex: 3 },{ question: "What does â€œwrite once, run everywhereâ€ mean in Flutter?", options: ["Code runs only on Android", "Code runs only on iOS", "Same code works on multiple platforms", "Code must be rewritten for each device"], answerIndex: 2 },{ question: "What is a Widget in Flutter?", options: ["Only a button", "Only text", "A building block of the UI", "A database object"], answerIndex: 2 },{ question: "In Flutter, which of the following is a widget?", options: ["Button", "Text", "Layout", "All of the above"], answerIndex: 3 },{ question: "Flutter widgets are:", options: ["Mutable and change directly", "Immutable and rebuilt when data changes", "Stored permanently in memory", "Updated manually"], answerIndex: 1 },{ question: "What is Declarative UI?", options: ["UI updated step by step manually", "UI described based on final state", "UI built only using XML", "UI controlled by WebView"], answerIndex: 1 },{ question: "Which frameworks use Declarative UI?", options: ["Flutter only", "Flutter, React, SwiftUI", "Java Swing only", "Old Android frameworks"], answerIndex: 1 },{ question: "What happens when setState() is called in Flutter?", options: ["The whole app restarts", "Only changed widgets are rebuilt", "The app crashes", "Widgets are permanently deleted"], answerIndex: 1 },{ question: "Does Flutter rebuild the entire UI every time?", options: ["Yes, always", "No, only changed widgets are rebuilt", "Yes, including GPU rendering", "Only in Release mode"], answerIndex: 1 },{ question: "What is Skia in Flutter?", options: ["A database engine", "A programming language", "A 2D graphics rendering engine", "A web framework"], answerIndex: 2 },{ question: "Why does Flutter use Skia?", options: ["To rely on native UI widgets", "To render UI consistently across platforms", "To load web pages", "To reduce Dart usage"], answerIndex: 1 },{ question: "What is a WebView?", options: ["A Flutter widget for animations", "A mini web browser inside an app", "A database viewer", "A state management tool"], answerIndex: 1 },{ question: "Why does Flutter avoid using WebViews for UI?", options: ["They are faster than Flutter widgets", "They give full native control", "They are slower and less consistent", "They improve GPU performance"], answerIndex: 2 },{ question: "What does AOT stand for?", options: ["Ahead Of Time", "After Output Time", "Around Object Tree", "Application Optimization Tool"], answerIndex: 0 },{ question: "Which mode uses AOT compilation?", options: ["Debug mode", "Release mode", "Development mode", "Test mode"], answerIndex: 1 },{ question: "What does JIT stand for?", options: ["Jump In Tree", "Java In Time", "Just In Time", "Job In Thread"], answerIndex: 2 },{ question: "Which mode uses JIT compilation?", options: ["Release mode", "Profile mode", "Debug mode", "Production mode"], answerIndex: 2 },{ question: "What is Hot Reload?", options: ["Restarting the app", "Reinstalling the app", "Seeing code changes instantly", "Compiling with AOT"], answerIndex: 2 },{ question: "Why is JIT useful during development?", options: ["Faster runtime performance", "Smaller app size", "Instant code updates", "No Dart VM"], answerIndex: 2 },{ question: "Which file manages dependencies and assets in Flutter?", options: ["main.dart", "android.gradle", "pubspec.yaml", "config.xml"], answerIndex: 2 },{ question: "What is the main role of Flutter Engine?", options: ["Writing Dart code", "Managing database connections", "Connecting widgets to Skia for rendering", "Running WebView"], answerIndex: 2 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

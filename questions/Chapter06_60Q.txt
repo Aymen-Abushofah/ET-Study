@@ -1,0 +1,371 @@
+Chapter 06 – Flutter Gestures
+60 MCQ (Complete Version)
+Q1. Why are user interactions important in Flutter apps?
+A. To increase app size
+B. To make apps useful and responsive
+C. To reduce widgets
+D. To compile faster
+Correct Answer: B
+Q2. Flutter handles gestures using how many main layers?
+A. One
+B. Two
+C. Three
+D. Four
+Correct Answer: B
+Q3. Which layer collects raw touch data in Flutter?
+A. Gesture layer
+B. UI layer
+C. Pointer layer
+D. Render layer
+Correct Answer: C
+Q4. What does the gesture layer do?
+A. Draws widgets
+B. Interprets pointer movements
+C. Manages state
+D. Builds layouts
+Correct Answer: B
+Q5. Which event occurs when a finger first touches the screen?
+A. PointerMoveEvent
+B. PointerUpEvent
+C. PointerCancelEvent
+D. PointerDownEvent
+Correct Answer: D
+Q6. What is hit testing in Flutter?
+A. Measuring performance
+B. Detecting which widget is touched
+C. Rendering animations
+D. Managing layouts
+Correct Answer: B
+Q7. Which widget listens to raw pointer events?
+A. GestureDetector
+B. InkWell
+C. Listener
+D. Container
+Correct Answer: C
+
+Q8. Why do most apps avoid using pointer layer directly?
+A. Deprecated
+B. Complex and low-level
+C. Slow
+D. Android only
+Correct Answer: B
+Q9. What is a gesture in Flutter?
+A. Widget
+B. Layout
+C. Interpretation of pointer movement
+D. State
+Correct Answer: C
+Q10. Which widget is commonly used to detect gestures?
+A. Listener
+B. GestureDetector
+C. Scaffold
+D. Column
+Correct Answer: B
+Q11. Which gesture detects a quick touch and release?
+A. Long press
+B. Drag
+C. Tap
+D. Scale
+Correct Answer: C
+Q12. Which callback is triggered when tap is detected?
+A. onPressed
+B. onTap
+C. onClick
+D. onTouch
+Correct Answer: B
+Q13. Which gesture involves two quick taps?
+A. Tap
+B. Pan
+C. DoubleTap
+D. Scale
+Correct Answer: C
+Q14. Which callback detects a long press?
+A. onTap
+B. onHold
+C. onLongPress
+D. onPress
+Correct Answer: C
+Q15. Drag gestures are divided into:
+A. One type
+B. Horizontal and vertical
+C. Pan and scale
+D. Touch and click
+Correct Answer: B
+
+Q16. Which drag allows free movement in all directions?
+A. Horizontal
+B. Vertical
+C. Pan
+D. Tap
+Correct Answer: C
+Q17. Which callback fires at start of horizontal drag?
+A. onHorizontalDragUpdate
+B. onHorizontalDragEnd
+C. onHorizontalDragStart
+D. onPanStart
+Correct Answer: C
+Q18. What does DragUpdateDetails.delta represent?
+A. Screen size
+B. Widget size
+C. Movement since last update
+D. Total distance
+Correct Answer: C
+Q19. Which gesture recognizes movement in X and Y axes?
+A. Horizontal drag
+B. Vertical drag
+C. Pan
+D. Tap
+Correct Answer: C
+Q20. Which gesture is used for zooming?
+A. Pan
+B. Drag
+C. Scale
+D. Tap
+Correct Answer: C
+Q21. Scale gesture usually involves:
+A. One finger
+B. Two or more fingers
+C. Mouse only
+D. Stylus only
+Correct Answer: B
+Q22. Which callback gives scale factor?
+A. onScaleStart
+B. onScaleUpdate
+C. onScaleEnd
+D. onPanUpdate
+Correct Answer: B
+Q23. Why can’t drag, pan, and scale be used together?
+A. Syntax error
+B. Performance issue
+C. Gesture conflict
+D. Deprecated
+Correct Answer: C
+
+Q24. Which widget already handles gestures internally?
+A. Text
+B. ElevatedButton
+C. Column
+D. SizedBox
+Correct Answer: B
+Q25. Which widget provides ripple animation?
+A. GestureDetector
+B. Listener
+C. InkWell
+D. Stack
+Correct Answer: C
+Q26. InkWell belongs to which design system?
+A. Cupertino
+B. Fluent
+C. Material
+D. Custom
+Correct Answer: C
+Q27. InkWell must be inside which widget?
+A. Container
+B. Material
+C. Column
+D. Expanded
+Correct Answer: B
+Q28. ElevatedButton internally uses:
+A. GestureDetector
+B. Listener
+C. InkWell
+D. Stack
+Correct Answer: C
+Q29. Which callback is commonly used with InkWell?
+A. onPressed
+B. onTap
+C. onClick
+D. onTouch
+Correct Answer: B
+Q30. Why might you not need GestureDetector?
+A. Slow
+B. Widgets already handle gestures
+C. Deprecated
+D. Breaks UI
+Correct Answer: B
+Q31. Why are StatefulWidgets often used with gestures?
+A. Layout
+B. Animation only
+C. Update UI after interaction
+D. Reduce rebuilds
+Correct Answer: C
+
+Q32. Where should UI updates occur after gesture?
+A. initState
+B. dispose
+C. setState
+D. constructor
+Correct Answer: C
+Q33. Which gesture is best for buttons?
+A. Pan
+B. Scale
+C. Tap
+D. Drag
+Correct Answer: C
+Q34. Which class stores movement data?
+A. Offset
+B. State
+C. Widget
+D. Context
+Correct Answer: A
+Q35. What does Offset.zero represent?
+A. Center
+B. No movement
+C. Max movement
+D. Widget size
+Correct Answer: B
+Q36. Which gesture suits sliders?
+A. Tap
+B. DoubleTap
+C. Drag
+D. Scale
+Correct Answer: C
+Q37. Which gesture suits image zoom?
+A. Drag
+B. Pan
+C. Scale
+D. Tap
+Correct Answer: C
+Q38. Which layer converts pointer movement into tap?
+A. Pointer layer
+B. Gesture layer
+C. Widget layer
+D. Render layer
+Correct Answer: B
+Q39. Which event signals end of interaction?
+A. PointerMove
+B. PointerDown
+C. PointerUp
+D. PointerStart
+Correct Answer: C
+
+Q40. GestureDetector wraps:
+A. State
+B. Context
+C. Child widgets
+D. RenderObject
+Correct Answer: C
+Q41. Which widget gives visual + functional feedback?
+A. GestureDetector
+B. Listener
+C. InkWell
+D. Column
+Correct Answer: C
+Q42. Which callback runs when scale ends?
+A. onScaleStart
+B. onScaleUpdate
+C. onScaleEnd
+D. onPanEnd
+Correct Answer: C
+Q43. Why is Listener rarely used?
+A. Slow
+B. Too low-level
+C. Deprecated
+D. Limited
+Correct Answer: B
+Q44. Which gesture is best for scrolling?
+A. Tap
+B. Drag
+C. Pan
+D. Scale
+Correct Answer: C
+Q45. Which gesture requires no movement?
+A. Pan
+B. Drag
+C. Tap
+D. Scale
+Correct Answer: C
+Q46. Which callback detects tap start?
+A. onTapUp
+B. onTapCancel
+C. onTapDown
+D. onTapStart
+Correct Answer: C
+Q47. Which callback runs if tap is canceled?
+A. onTapCancel
+B. onTapUp
+C. onTapDown
+D. onTapEnd
+Correct Answer: A
+
+Q48. What happens inside setState?
+A. Compile app
+B. Rebuild UI
+C. Close widget
+D. Restart app
+Correct Answer: B
+Q49. Which gesture best fits maps?
+A. Tap
+B. Pan
+C. Drag
+D. Scale
+Correct Answer: B
+Q50. Which widget tree principle applies to gestures?
+A. Flat UI
+B. Linear UI
+C. Nested widgets
+D. Single widget
+Correct Answer: C
+Q51. Which gesture counts finger movement?
+A. Tap
+B. LongPress
+C. Drag
+D. Hover
+Correct Answer: C
+Q52. Which callback provides drag end details?
+A. DragStartDetails
+B. DragUpdateDetails
+C. DragEndDetails
+D. PanDetails
+Correct Answer: C
+Q53. Which gesture works with multitouch?
+A. Tap
+B. Drag
+C. Scale
+D. LongPress
+Correct Answer: C
+Q54. Why is scale similar to pan?
+A. Same callbacks
+B. Uses multiple pointers
+C. Same animation
+D. Same widget
+Correct Answer: B
+Q55. Which gesture best for reorder list?
+A. Tap
+B. LongPress + Drag
+C. Scale
+D. DoubleTap
+Correct Answer: B
+
+Q56. Which widget is low-level?
+A. GestureDetector
+B. InkWell
+C. Listener
+D. ElevatedButton
+Correct Answer: C
+Q57. Which event cancels pointer?
+A. PointerMoveEvent
+B. PointerUpEvent
+C. PointerCancelEvent
+D. PointerDownEvent
+Correct Answer: C
+Q58. Which gesture system improves UX?
+A. Pointer only
+B. Gesture system
+C. Render system
+D. Build system
+Correct Answer: B
+Q59. Which widget is interaction-focused?
+A. Padding
+B. GestureDetector
+C. Text
+D. SizedBox
+Correct Answer: B
+Q60. Flutter gesture system mainly aims to:
+A. Reduce widgets
+B. Simplify user interaction handling
+C. Increase app size
+D. Replace UI
+Correct Answer: B
+
+

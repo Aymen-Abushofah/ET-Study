@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 18 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Appendix: Theming & Styling</div>
+            <h1>Flutter Quiz 18</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "Which widget gives Material icons/fonts?", options: ["Scaffold", "ThemeData", "MaterialApp", "Column"], answerIndex: 2 },{ question: "darkTheme defines?", options: ["Logic", "Font", "Dark UI", "Database"], answerIndex: 2 },{ question: "Which widget shows first screen?", options: ["body", "home", "appBar", "theme"], answerIndex: 1 },{ question: "What does flex control?", options: ["Color", "Animation", "Space ratio", "Height"], answerIndex: 2 },{ question: "Two Expanded with flex 1 and 2 means?", options: ["Same size", "First bigger", "Second bigger", "Invisible"], answerIndex: 2 },{ question: "ThemeData helps mainly with?", options: ["Speed", "Consistency", "Database", "Network"], answerIndex: 1 },{ question: "Which reduces repeated UI code?", options: ["Widgets", "ThemeData", "Hot reload", "Routes"], answerIndex: 1 },{ question: "Changing ThemeData causes?", options: ["Restart", "Crash", "UI rebuild", "Data loss"], answerIndex: 2 },{ question: "Which styles icons globally?", options: ["iconTheme", "imageTheme", "symbolTheme", "shapeTheme"], answerIndex: 0 },{ question: "ThemeMode.dark means?", options: ["System", "Light", "Always dark", "Disabled"], answerIndex: 2 },{ question: "Why primarySwatch preferred?", options: ["Smaller", "Multiple shades", "Faster", "Fonts"], answerIndex: 1 },{ question: "Expanded prevents?", options: ["Lag", "Overflow", "Rebuild", "Crash"], answerIndex: 1 },{ question: "Which axis Row uses?", options: ["Vertical", "Horizontal", "Z", "Free"], answerIndex: 1 },{ question: "Which axis Column uses?", options: ["Horizontal", "Vertical", "Z", "Free"], answerIndex: 1 },{ question: "MaterialApp role?", options: ["Layout", "Theme & navigation", "Animation", "Storage"], answerIndex: 1 },{ question: "ThemeData best describes?", options: ["Imperative UI", "Central UI config", "Database layer", "Network layer"], answerIndex: 1 },{ question: "Without ThemeData?", options: ["App fails", "Manual styling", "No widgets", "No run"], answerIndex: 1 },{ question: "Expanded flex must be?", options: ["Double", "String", "int", "bool"], answerIndex: 2 },{ question: "ThemeData supports?", options: ["Light only", "Dark only", "Light & Dark", "No modes"], answerIndex: 2 },{ question: "Best use of ThemeData?", options: ["Logic", "UI consistency", "Storage", "API calls"], answerIndex: 1 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

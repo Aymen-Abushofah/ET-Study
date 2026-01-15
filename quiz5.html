@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header"><h1>CSS Quiz 1</h1></div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [
+            { question: "What is CSS?", options: ["CSS is a style sheet language", "CSS is designed to separate the presentation and content, including layout,colors, and fonts", "CSS is the language used to style the documents", "All of the mentioned"], answerIndex: 3 },
+            { question: "Which of the following tag is used to embed css in html page?", options: ["<code>&lt;css&gt;</code>", "<code>&lt;!DOCTYPE html&gt;</code>", "<code>&lt;script&gt;</code>", "<code>&lt;style&gt;</code>"], answerIndex: 3 },
+            { question: "Which of the following CSS selectors are used to specify a group of elements?", options: ["<code>tag</code>", "<code>id</code>", "<code>class</code>", "both class and tag"], answerIndex: 2 },
+            { question: "Which of the following has introduced text, list, box, margin, border, color, and background properties?", options: ["HTML", "PHP", "CSS", "Ajax"], answerIndex: 2 },
+            { question: "Which of the following CSS selector is used to specify a rule to bind a particular unique element?", options: ["<code>tag</code>", "<code>id</code>", "<code>class</code>", "both class and tag"], answerIndex: 1 },
+            { question: "Which of the following CSS property is used to make the text bold?", options: ["<code>text-decoration: bold</code>", "<code>font-weight: bold</code>", "<code>font-style: bold</code>", "<code>text-align: bold</code>"], answerIndex: 1 },
+            { question: "What will be the output of following CSS code snippet?<pre>hl {color: &quot;green&quot;;}</pre>", options: ["nothings happen", "error occurs", "heading becomes dark-green", "heading becomes green"], answerIndex: 0 },
+            { question: "Which of the following CSS style property is used to specify an italic text?", options: ["<code>style</code>", "<code>font</code>", "<code>font-style</code>", "<code>@font-face</code>"], answerIndex: 2 },
+            { question: "What will be the output of following CSS code snippet?<pre>hl {color: red text-decoration: underline; font-style: italic;}</pre>", options: ["color: red, text-decoration: underline works", "only font-style: italic works", "color: red, text-decoration: underline and font-style: italic all works", "text-decoration: underline and font-style: italic works"], answerIndex: 1 },
+            { question: "Which of the following is the correct syntax to link an external style sheet in the HTML file?", options: ["<code>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;</code>", "<code>&lt;link rel=&quot;stylesheet&quot; src=&quot;style.css&quot; /&gt;</code>", "<code>&lt;style rel=&quot;stylesheet&quot; src=&quot;style.css&quot; /&gt;</code>", "<code>&lt;style rel=&quot;stylesheet&quot; link=&quot;style.css&quot; /&gt;</code>"], answerIndex: 0 },
+            { question: "Which of the following function defines a linear gradient as a CSS image?", options: ["<code>gradient()</code>", "<code>linear-gradient()</code>", "<code>grayscale()</code>", "<code>image()</code>"], answerIndex: 1 },
+            { question: "Which of the following CSS property can be used to set the image as a border instead of the border style?", options: ["<code>background-image-source</code>", "<code>background-image</code>", "<code>border-image-source</code>", "<code>border-image</code>"], answerIndex: 3 },
+            { question: "Which of the following CSS property defines the different properties of all four sides of an element's border in a single declaration?", options: ["<code>border-collapse</code>", "<code>border-width</code>", "<code>padding</code>", "<code>border</code>"], answerIndex: 3 },
+            { question: "Which of the following is the correct way to apply CSS Styles?", options: ["in an external CSS file", "inside an HTML element", "inside the <code>&lt;head&gt;</code> section of an HTML page", "all of the mentioned"], answerIndex: 3 },
+            { question: "Which of the following CSS property sets the font size of text?", options: ["<code>font-size</code>", "<code>text-size</code>", "<code>text</code>", "<code>size</code>"], answerIndex: 0 },
+            { question: "Which of the following CSS property sets what kind of line decorations are added to an element, such as underlines, overlines, etc?", options: ["<code>text-decoration</code>", "<code>text-style</code>", "<code>text-decoration-line</code>", "<code>text-line</code>"], answerIndex: 0 },
+            { question: "Which of the following CSS property specifies the look and design of an outline?", options: ["<code>outline-style</code>", "<code>outline-format</code>", "<code>outline-font</code>", "none of the mentioned"], answerIndex: 0 },
+            { question: "Which of the following CSS property sets the shadow for a box element?", options: ["<code>set-shadow</code>", "<code>box-shadow</code>", "<code>shadow-box</code>", "<code>canvas-shadow</code>"], answerIndex: 1 },
+            { question: "Which of the following CSS property is used to set the color of the text?", options: ["<code>text-decoration</code>", "<code>pallet</code>", "<code>colour</code>", "<code>color</code>"], answerIndex: 3 },
+            { question: "Which of the following CSS Property controls how an element is positioned?", options: ["<code>static</code>", "<code>position</code>", "<code>fix</code>", "<code>set</code>"], answerIndex: 1 },
+            { question: "Which of the following is an appropriate value for the overflow element?", options: ["<code>scroll</code>", "<code>hidden</code>", "<code>auto</code>", "all of the mentioned"], answerIndex: 3 },
+            { question: "Which of the following CSS property is used to specify table borders in CSS?", options: ["<code>table:border</code>", "<code>table</code>", "<code>border</code>", "none of the mentioned"], answerIndex: 2 },
+            { question: "Which of the following property is used to align the text in a table?", options: ["<code>text-align</code>", "<code>align</code>", "<code>text</code>", "none of the mentioned"], answerIndex: 0 },
+            { question: "Which of the following CSS Property sets the stacking order of positioned elements?", options: ["<code>y-index</code>", "<code>z-index</code>", "<code>x-index</code>", "all of the mentioned"], answerIndex: 1 },
+            { question: "What will be the output of the following CSS code?<pre>div { border-width:5px;border-style:dotted solid double dashed;}</pre>", options: ["Box having dotted bottom outline, solid right outline, double top outline and dashed left outline", "Box having dotted bottom outline, solid left outline, double top outline and dashed leftoutline", "Box having dotted top outline, solid right outline, double bottom outline and dashed left outline", "Box having dotted top outline, solid left outline, double bottom outline and dashedright outline"], answerIndex: 2 }
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+

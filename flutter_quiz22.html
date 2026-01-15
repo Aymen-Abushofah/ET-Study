@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Quiz 22 | ET-Study</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* Flutter Theme Override */
+         :root {
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #3b82f6;
+         }
+         .quiz-header { background: var(--bg-dark); }
+         .card:hover { border-color: rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header">
+            <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Appendix: Gradle Build System</div>
+            <h1>Flutter Quiz 22</h1>
+        </div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [{ question: "What does build automation mean?", options: ["Designing UI", "Automatic compiling and packaging", "Manual testing", "Writing code"], answerIndex: 1 },{ question: "Which tool produces APK/AAB?", options: ["Flutter", "Dart VM", "Gradle", "Emulator"], answerIndex: 2 },{ question: "Which code is compiled first?", options: ["Java", "Kotlin", "Dart", "XML"], answerIndex: 2 },{ question: "What does Gradle package?", options: ["Dart files only", "Assets, resources, manifest", "Widgets only", "UI code"], answerIndex: 1 },{ question: "Which file lists dependencies with native code?", options: ["main.dart", "pubspec.yaml", "build.gradle", "analysis_options.yaml"], answerIndex: 1 },{ question: "Firebase plugins need Gradle because they:", options: ["Are UI-based", "Contain native Android code", "Replace Flutter", "Use Dart only"], answerIndex: 1 },{ question: "Which output is used for Play Store?", options: [".apk", ".zip", ".aab", ".jar"], answerIndex: 2 },{ question: "What happens after Dart compilation?", options: ["App launches", "Gradle builds Android", "App signs", "Upload starts"], answerIndex: 1 },{ question: "Where does Gradle run?", options: ["lib/", "ios/", "android/", "build/"], answerIndex: 2 },{ question: "Which is correct about Gradle?", options: ["Optional tool", "Android build system", "Dart compiler", "UI engine"], answerIndex: 1 },{ question: "Correct build sequence?", options: ["Gradle â†’ Flutter", "Flutter â†’ Gradle â†’ APK", "Flutter only", "Gradle only"], answerIndex: 1 },{ question: "Why does Flutter use Gradle?", options: ["Flutter is slow", "Gradle is Androidâ€™s build system", "Dart is deprecated", "Android Studio requires it"], answerIndex: 1 },{ question: "What fails without Gradle?", options: ["Hot reload", "Dart syntax", "Native plugin compilation", "Widget tree"], answerIndex: 2 },{ question: "Why canâ€™t Flutter build APK alone?", options: ["No Dart support", "No Android packaging/signing", "No UI", "No assets"], answerIndex: 1 },{ question: "Which task is ONLY Gradleâ€™s?", options: ["Dart compilation", "Widget rendering", "Java/Kotlin compilation", "Hot reload"], answerIndex: 2 },{ question: "Native plugins are integrated by:", options: ["Flutter", "Dart VM", "Gradle", "Skia"], answerIndex: 2 },{ question: "Why Flutter still needs Gradle?", options: ["UI limitation", "Platform-specific build needed", "Dart is weak", "Widgets depend on it"], answerIndex: 1 },{ question: "Why is .aab handled by Gradle?", options: ["Flutter doesnâ€™t support files", "Itâ€™s Android-specific packaging", "Itâ€™s debug-only", "Dart limitation"], answerIndex: 1 },{ question: "Which statement is most accurate?", options: ["Flutter builds Android runtime shell", "Gradle builds Dart", "Flutter builds Dart, Gradle builds Android runtime", "Both do same job"], answerIndex: 2 },{ question: "If Gradle is removed, what breaks first?", options: ["UI", "Dart compilation", "Android dependency resolution", "Hot reload"], answerIndex: 2 }];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

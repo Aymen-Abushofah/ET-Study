@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar-container"><div id="progress-bar"></div></div>
+        <div class="quiz-header"><h1>CSS Quiz 7</h1></div>
+        <div id="card-container"></div>
+        <div id="results-container" class="hidden"></div>
+        <div id="navigation">
+            <button id="prev-btn" class="nav-btn secondary">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+            <button id="finish-btn" class="nav-btn hidden">Finish Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        window.quizData = [
+            { question: "What happens when grid-auto-flow: column is used?", options: ["Grid breaks", "Items fill columns first", "Items fill rows first", "Items overlap"], answerIndex: 1 },
+            { question: "What does grid-column: 1 / 3 do?", options: ["Occupies column 1 only", "Starts at column 3", "Spans 3 columns", "Spans columns 1 and 2"], answerIndex: 3 },
+            { question: "What does minmax(100px, 1fr) mean?", options: ["Between 100px and available space", "Exactly 1fr", "Fixed 100px", "Responsive rows only"], answerIndex: 0 },
+            { question: "Which property aligns items inside grid cells horizontally?", options: ["<code>justify-content</code>", "<code>align-items</code>", "<code>place-content</code>", "<code>justify-items</code>"], answerIndex: 3 },
+            { question: "Which property aligns the entire grid horizontally inside the container?", options: ["<code>justify-items</code>", "<code>justify-self</code>", "<code>align-content</code>", "<code>justify-content</code>"], answerIndex: 3 },
+            { question: "What does grid-area allow you to do?", options: ["Set gap", "Define rows only", "Control wrapping", "Name and place items"], answerIndex: 3 },
+            { question: "What happens if grid rows are not defined?", options: ["Grid becomes flex", "Items overlap", "Error occurs", "Rows auto-generate"], answerIndex: 3 },
+            { question: "Which property is REQUIRED for a CSS transition to work?", options: ["<code>transition-duration</code>", "<code>transition-property</code>", "<code>transition-timing-function</code>", "<code>transition-delay</code>"], answerIndex: 0 },
+            { question: "What happens if transition-duration is not specified?", options: ["Transition defaults to 1s", "Transition does not occur", "Transition runs instantly", "Browser chooses duration"], answerIndex: 1 },
+            { question: "Which property defines how fast or slow the transition changes over time?", options: ["<code>transition-delay</code>", "<code>transition-timing-function</code>", "<code>transition-duration</code>", "<code>transition-property</code>"], answerIndex: 1 },
+            { question: "What does transition-delay: 1s do?", options: ["Slows the transition", "Delays animation frames", "Delays hover detection", "Delays the start of transition"], answerIndex: 3 },
+            { question: "Which shorthand is correct?", options: ["<code>transition: ease 0.5s all;</code>", "<code>transition: all 0.5s ease;</code>", "<code>transition: ease all 0.5s;</code>", "<code>transition: 0.5s all;</code>"], answerIndex: 1 },
+            { question: "Transitions are triggered when:", options: ["A property value changes", "JavaScript runs", "Keyframes are defined", "Page loads"], answerIndex: 0 },
+            { question: "Which transform moves an element visually without affecting layout?", options: ["<code>position</code>", "<code>margin</code>", "<code>padding</code>", "<code>translate</code>"], answerIndex: 3 },
+            { question: "What does scale(2) do?", options: ["Doubles height only", "Doubles both width and height", "Doubles font size only", "Doubles width only"], answerIndex: 1 },
+            { question: "Which transform rotates an element clockwise?", options: ["<code>rotate(-45deg)</code>", "<code>scale(45deg)</code>", "<code>rotate(45deg)</code>", "<code>skew(45deg)</code>"], answerIndex: 2 },
+            { question: "What unit is commonly used for rotate()?", options: ["em", "deg", "%", "px"], answerIndex: 1 },
+            { question: "Can multiple transforms be applied at once?", options: ["Yes, comma-separated", "No", "Only one allowed", "Yes, space-separated"], answerIndex: 3 },
+            { question: "Which property defines how long one animation cycle lasts?", options: ["<code>animation-iteration-count</code>", "<code>animation-delay</code>", "<code>animation-duration</code>", "<code>animation-fill-mode</code>"], answerIndex: 2 },
+            { question: "What does animation-iteration-count: infinite do?", options: ["Loops forever", "Runs twice", "Stops animation", "Runs once"], answerIndex: 0 },
+            { question: "Which property defines animation direction (forward or reverse)?", options: ["<code>animation-play-state</code>", "<code>animation-fill-mode</code>", "<code>animation-timing-function</code>", "<code>animation-direction</code>"], answerIndex: 3 },
+            { question: "What is the default value of animation-iteration-count?", options: ["auto", "infinite", "1", "0"], answerIndex: 2 },
+            { question: "Which is TRUE about transitions vs animations?", options: ["Animations need hover", "Animations can run automatically", "Transitions loop automatically", "Transitions use keyframes"], answerIndex: 1 },
+            { question: "Which shorthand is valid?", options: ["<code>animation: move 2s ease infinite;</code>", "<code>animation: infinite move ease;</code>", "<code>animation: 2s infinite;</code>", "<code>animation: ease move 2s infinite;</code>"], answerIndex: 0 },
+            { question: "Which property pauses and resumes an animation?", options: ["<code>animation-direction</code>", "<code>animation-delay</code>", "<code>animation-play-state</code>", "<code>animation-fill-mode</code>"], answerIndex: 2 }
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

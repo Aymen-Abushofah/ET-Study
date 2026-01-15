@@ -1,0 +1,711 @@
+Dart & Flutter – 100 MCQ Questions
+English – Each question includes options and the correct answer.
+Q1. What is Dart?
+A. A database system
+B. A UI framework
+C. A programming language
+D. An operating system
+Correct Answer: C
+
+Q2. Dart is mainly used with which framework?
+A. React Native
+B. Flutter
+C. Xamarin
+D. Angular
+Correct Answer: B
+
+Q3. Everything in Dart is:
+A. A function
+B. A file
+C. An object
+D. A widget
+Correct Answer: C
+
+Q4. What is an object?
+A. A file
+B. A variable only
+C. Data and methods
+D. A constructor
+Correct Answer: C
+
+Q5. What is a class?
+A. An object
+B. A blueprint for objects
+C. A function
+D. A package
+Correct Answer: B
+
+Q6. Which keyword is used for inheritance in Dart?
+A. inherit
+B. implements
+C. extends
+D. with
+Correct Answer: C
+
+Q7. Dart supports which inheritance type?
+A. Multiple inheritance
+B. Single inheritance
+C. No inheritance
+D. Hybrid inheritance
+Correct Answer: B
+
+Q8. Which symbol makes a variable private in Dart?
+A. #
+B. $
+C. _
+D. @
+Correct Answer: C
+
+Q9. What is the purpose of a constructor?
+A. Delete objects
+B. Initialize objects
+C. Print values
+D. Import files
+Correct Answer: B
+
+Q10. Which constructor can return an existing object?
+A. Default
+B. Named
+C. Factory
+D. Static
+Correct Answer: C
+
+Q11. Dart supports constructor overloading like Java.
+A. True
+B. False
+C. Sometimes
+D. Only with static
+Correct Answer: B
+
+Q12. What is a named constructor?
+A. Constructor without parameters
+B. Constructor with custom name
+C. Constructor without body
+D. Static constructor
+Correct Answer: B
+
+Q13. Which annotation is used to override a method?
+A. override
+B. @change
+C. @override
+D. replace
+Correct Answer: C
+
+Q14. What is polymorphism?
+A. Multiple classes
+B. Same object, different behavior
+C. Multiple constructors
+D. Data hiding
+Correct Answer: B
+
+Q15. What is an abstract class?
+A. Can create objects
+B. Cannot be inherited
+C. Cannot create objects
+D. Has no methods
+Correct Answer: C
+
+Q16. Which keyword is used to implement an interface?
+A. extends
+B. with
+C. implements
+D. abstract
+Correct Answer: C
+
+Q17. What is a mixin used for?
+A. Database access
+B. Multiple inheritance
+C. Code reuse
+D. UI design
+Correct Answer: C
+
+Q18. Which keyword applies a mixin?
+A. mixin
+B. extends
+C. implements
+D. with
+Correct Answer: D
+
+Q19. What is an enum?
+A. A function
+B. A fixed set of values
+
+C. A class
+D. A variable
+Correct Answer: B
+
+Q20. What does List mean?
+A. List of any type
+B. List of integers
+C. List of strings only
+D. Nullable list
+Correct Answer: C
+
+Q21. What does String? represent?
+A. Constant string
+B. Nullable string
+C. Static string
+D. Final string
+Correct Answer: B
+
+Q22. What keyword allows late initialization?
+A. final
+B. const
+C. late
+D. async
+Correct Answer: C
+
+Q23. What does the ! operator mean in Dart?
+A. Negation
+B. Null assertion
+C. Casting
+D. Comparison
+Correct Answer: B
+
+Q24. Functions in Dart are:
+A. Not objects
+B. First-class objects
+C. Static only
+D. Private only
+Correct Answer: B
+
+Q25. Passing a function as a parameter is called:
+A. Inheritance
+B. Callback
+C. Override
+D. Mixin
+
+Correct Answer: B
+
+Q26. Static members belong to:
+A. Object
+B. Instance
+C. Class
+D. File
+Correct Answer: C
+
+Q27. Static methods can access instance variables.
+A. True
+B. False
+C. Sometimes
+D. Only with this
+Correct Answer: B
+
+Q28. Which keyword defines a constant at compile time?
+A. final
+B. var
+C. const
+D. static
+Correct Answer: C
+
+Q29. Which feature hides data in Dart?
+A. Inheritance
+B. Polymorphism
+C. Encapsulation
+D. Abstraction
+Correct Answer: C
+
+Q30. Which OOP concept allows code reuse without inheritance?
+A. Interface
+B. Mixin
+C. Enum
+D. Factory
+Correct Answer: B
+
+Q31. Dart is primarily:
+A. Multi-threaded
+B. Single-threaded
+C. Dual-threaded
+D. Threadless
+Correct Answer: B
+
+Q32. What is a Future?
+A. Past value
+B. Immediate value
+C. Value available later
+D. Static value
+Correct Answer: C
+
+Q33. Which keyword marks an async function?
+A. await
+B. async
+C. Future
+D. isolate
+Correct Answer: B
+
+Q34. await is used to:
+A. Block UI
+B. Stop execution
+C. Wait without blocking
+D. End function
+Correct Answer: C
+
+Q35. async functions always return:
+A. void
+B. int
+C. Future
+D. Stream
+Correct Answer: C
+
+Q36. Why async is important in Flutter?
+A. Styling
+B. Navigation
+C. Prevent UI freezing
+D. Memory cleanup
+Correct Answer: C
+
+Q37. What handles async task scheduling in Dart?
+A. GPU
+B. Event Loop
+C. Thread Manager
+D. Isolate
+Correct Answer: B
+
+Q38. Which function causes blocking?
+A. Future.delayed
+B. await
+C. sleep
+D. async
+Correct Answer: C
+
+Q39. What is an isolate?
+A. Widget
+B. Async function
+C. Parallel worker
+D. Stream
+Correct Answer: C
+
+Q40. Isolates share memory.
+A. True
+B. False
+C. Sometimes
+D. Only static
+Correct Answer: B
+
+Q41. Communication between isolates uses:
+A. Shared variables
+B. Global state
+C. Messages
+D. Futures
+Correct Answer: C
+
+Q42. Which method creates a new isolate?
+A. Isolate.create
+B. Isolate.start
+C. Isolate.spawn
+D. Isolate.run
+Correct Answer: C
+
+Q43. Isolates are best for:
+A. UI updates
+B. HTTP calls
+C. Heavy CPU tasks
+D. Delays
+Correct Answer: C
+
+Q44. async/await provides:
+A. Parallelism
+B. Concurrency
+
+C. Multithreading
+D. Isolates
+Correct Answer: B
+
+Q45. Which runs in true parallel?
+A. async
+B. Future
+C. await
+D. isolate
+Correct Answer: D
+
+Q46. What does Stream represent?
+A. Single value
+B. Multiple values over time
+C. Widget tree
+D. Static data
+Correct Answer: B
+
+Q47. Which method listens to stream data?
+A. watch
+B. read
+C. listen
+D. await
+Correct Answer: C
+
+Q48. Streams are common in:
+A. Layout
+B. Firebase
+C. Styling
+D. Navigation
+Correct Answer: B
+
+Q49. onPressed expects:
+A. Widget
+B. Value
+C. Callback function
+D. Stream
+Correct Answer: C
+
+Q50. Callback means:
+A. Returned value
+B. Function passed as argument
+C. Widget
+D. State
+
+Correct Answer: B
+
+Q51. Everything in Flutter is a:
+A. Class
+B. Function
+C. Widget
+D. Object
+Correct Answer: C
+
+Q52. Widgets in Flutter are:
+A. Mutable
+B. Immutable
+C. Static
+D. Dynamic
+Correct Answer: B
+
+Q53. StatelessWidget means:
+A. No UI
+B. No state
+C. No build method
+D. No constructor
+Correct Answer: B
+
+Q54. StatefulWidget is used when:
+A. UI is static
+B. Data changes
+C. App starts
+D. No interaction
+Correct Answer: B
+
+Q55. Which method updates the UI?
+A. build
+B. redraw
+C. refresh
+D. setState
+Correct Answer: D
+
+Q56. setState() does:
+A. Changes widget
+B. Rebuilds UI
+C. Updates state and rebuilds
+D. Navigates
+Correct Answer: C
+
+Q57. State class is separated to:
+A. Save memory
+B. Preserve state
+C. Improve UI
+D. Speed rendering
+Correct Answer: B
+
+Q58. How do you access widget inside State?
+A. this
+B. context
+C. widget
+D. super
+Correct Answer: C
+
+Q59. BuildContext provides access to:
+A. State only
+B. Navigation and inherited widgets
+C. Async tasks
+D. Isolates
+Correct Answer: B
+
+Q60. MaterialApp provides:
+A. Layout only
+B. Theme and navigation
+C. Buttons only
+D. Images only
+Correct Answer: B
+
+Q61. Scaffold represents:
+A. App logic
+B. Page skeleton
+C. App state
+D. Theme
+Correct Answer: B
+
+Q62. Which widget arranges children vertically?
+A. Row
+B. Stack
+C. Column
+D. Grid
+Correct Answer: C
+
+Q63. Which widget arranges children horizontally?
+A. Column
+B. Row
+C. Stack
+D. ListView
+Correct Answer: B
+
+Q64. Which widget supports scrolling?
+A. Column
+B. Container
+C. ListView
+D. Center
+Correct Answer: C
+
+Q65. Which widget layers children?
+A. Row
+B. Column
+C. Stack
+D. Align
+Correct Answer: C
+
+Q66. Container can control:
+A. Padding
+B. Margin
+C. Decoration
+D. All of the above
+Correct Answer: D
+
+Q67. Which widget centers its child?
+A. Align
+B. Padding
+C. Center
+D. Stack
+Correct Answer: C
+
+Q68. ElevatedButton is a:
+A. Flat button
+B. Raised button
+C. Text widget
+D. Icon widget
+Correct Answer: B
+
+Q69. FloatingActionButton position is usually:
+A. Top-left
+B. Center
+
+C. Bottom-right
+D. Hidden
+Correct Answer: C
+
+Q70. Which widget displays text?
+A. Label
+B. Text
+C. String
+D. Print
+Correct Answer: B
+
+Q71. Image.asset loads images from:
+A. Internet
+B. Database
+C. App assets
+D. Memory
+Correct Answer: C
+
+Q72. Keys are mainly used for:
+A. Styling
+B. State preservation
+C. Async calls
+D. Performance
+Correct Answer: B
+
+Q73. Without keys, Flutter may:
+A. Crash
+B. Lose state
+C. Freeze
+D. Leak memory
+Correct Answer: B
+
+Q74. InheritedWidget is used to:
+A. Handle async
+B. Share data down the tree
+C. Draw UI
+D. Store state
+Correct Answer: B
+
+Q75. Theme.of(context) accesses:
+A. Static data
+B. InheritedWidget
+C. Future
+D. Isolate
+
+Correct Answer: B
+
+Q76. Widgets rebuild when:
+A. App starts
+B. setState is called
+C. App closes
+D. Isolate runs
+Correct Answer: B
+
+Q77. Flutter UI style is:
+A. Imperative
+B. Declarative
+C. Sequential
+D. Static
+Correct Answer: B
+
+Q78. Declarative UI means:
+A. Manual updates
+B. Describe final UI state
+C. No rebuilds
+D. No state
+Correct Answer: B
+
+Q79. Flutter rendering engine is:
+A. HTML
+B. WebView
+C. Skia
+D. Canvas only
+Correct Answer: C
+
+Q80. Flutter avoids WebView mainly for:
+A. Security
+B. Performance and control
+C. Size
+D. Plugins
+Correct Answer: B
+
+Q81. pubspec.yaml is used for:
+A. UI layout
+B. Dependencies and assets
+C. State
+D. Navigation
+Correct Answer: B
+
+Q82. Hot Reload works because of:
+A. AOT
+B. JIT
+C. Isolate
+D. Skia
+Correct Answer: B
+
+Q83. Release mode uses:
+A. JIT
+B. Debug VM
+C. AOT
+D. Interpreter
+Correct Answer: C
+
+Q84. Widgets are lightweight because they are:
+A. Static
+B. Immutable
+C. Cached
+D. Global
+Correct Answer: B
+
+Q85. build() must return a:
+A. State
+B. Context
+C. Widget
+D. Future
+Correct Answer: C
+
+Q86. StreamBuilder is used to:
+A. Create streams
+B. Build UI from stream data
+C. Stop streams
+D. Convert futures
+Correct Answer: B
+
+Q87. TextField is used for:
+A. Output
+B. Input
+C. Styling
+D. Navigation
+Correct Answer: B
+
+Q88. ListView.builder is used for:
+A. Static lists
+B. Lazy lists
+C. Animations
+D. Forms
+Correct Answer: B
+
+Q89. GridView is best for:
+A. Single widget
+B. Vertical list
+C. Grid layout
+D. Stack layout
+Correct Answer: C
+
+Q90. Padding adds space:
+A. Outside widget
+B. Inside widget
+C. Around screen
+D. Between pages
+Correct Answer: B
+
+Q91. Margin is space:
+A. Inside widget
+B. Outside widget
+C. Text only
+D. Image only
+Correct Answer: B
+
+Q92. Flutter rebuilds widgets but reuses:
+A. Widgets
+B. Render objects
+C. State only
+D. GPU
+Correct Answer: B
+
+Q93. StatelessWidget can call setState().
+A. True
+B. False
+C. Sometimes
+D. Only async
+Correct Answer: B
+
+Q94. Which widget provides AppBar?
+A. MaterialApp
+B. Scaffold
+
+C. Column
+D. Center
+Correct Answer: B
+
+Q95. Which widget is root of most apps?
+A. Scaffold
+B. Container
+C. MaterialApp
+D. Column
+Correct Answer: C
+
+Q96. Which widget handles navigation routes?
+A. Scaffold
+B. MaterialApp
+C. Container
+D. Stack
+Correct Answer: B
+
+Q97. Streams are best for:
+A. One-time results
+B. Continuous updates
+C. Layout
+D. Styling
+Correct Answer: B
+
+Q98. Which widget shows dialogs?
+A. AlertDialog
+B. Text
+C. Column
+D. Container
+Correct Answer: A
+
+Q99. Flutter apps are built using:
+A. XML
+B. HTML
+C. Widget tree
+D. Native UI only
+Correct Answer: C
+
+Q100. Flutter performance is high because it:
+A. Uses WebView
+B. Uses native UI
+C. Controls its own rendering
+D. Uses JavaScript
+
+Correct Answer: C
+
+
