@@ -139,7 +139,7 @@ A. List of any type
 B. List of integers
 C. List of strings only
 D. Nullable list
-Correct Answer: C
+Correct Answer: A
 
 Q21. What does String? represent?
 A. Constant string
