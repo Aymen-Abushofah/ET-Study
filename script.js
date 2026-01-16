@@ -207,10 +207,17 @@ function showResults() {
     // Calculate Score
     const percentage = Math.round((score / quizData.length) * 100);
     
-    // Determine subject based on page title
-    const isCSS = document.title.includes("CSS");
-    const subject = isCSS ? "CSS" : "HTML";
-    const article = isCSS ? "a" : "an"; // "a CSS..." vs "an HTML..."
+    // Determine subject dynamically from page title
+    const title = document.title;
+    const match = title.match(/^([A-Za-z]+)\s+(Quiz|Mastery)/i);
+    let subject = "HTML";
+    if (match && match[1]) {
+        subject = match[1];
+    }
+    
+    // Handle "a" vs "an" - "an HTML", "a Flutter", "a CSS", "a Dart"
+    // H is a vowel sound in HTML (aitch)
+    const article = (['A', 'E', 'I', 'O', 'U', 'H'].includes(subject[0].toUpperCase())) ? "an" : "a";
 
     let feedback = "Good effort! Every master was once a beginner.";
     if (percentage === 100) feedback = `Flawless Victory! You're ${article} ${subject} expert!`;
@@ -230,30 +237,50 @@ function showResults() {
     `;
     
     // Try to add Next Quiz button if applicable
-    try {
-        const path = window.location.pathname;
-        const filename = path.substring(path.lastIndexOf('/') + 1);
-        // Match prefix (optional) + "quiz" + number
-        const match = filename.match(/^(.*?)quiz(\d+)\.html$/i);
-        
-        if (match && match[2]) {
-            const prefix = match[1] || ""; // e.g., "flutter_" or empty
-            const currentQuizNum = parseInt(match[2], 10);
-            const nextQuizNum = currentQuizNum + 1;
+    const addNextQuizButton = async () => {
+        try {
+            const path = window.location.pathname;
+            const filename = path.substring(path.lastIndexOf('/') + 1);
+            const match = filename.match(/^(.*?)quiz(\d+)\.html$/i);
             
-            // Simple check - assuming reasonable max limit for any series
-            if (currentQuizNum < 50) { 
+            if (match && match[2]) {
+                const prefix = match[1] || "";
+                const currentQuizNum = parseInt(match[2], 10);
+                const nextQuizNum = currentQuizNum + 1;
                 const nextQuizUrl = `${prefix}quiz${nextQuizNum}.html`;
-                const nextQuizBtn = document.createElement('button');
-                nextQuizBtn.className = 'nav-btn';
-                nextQuizBtn.textContent = 'Next Quiz';
-                nextQuizBtn.onclick = () => location.href = nextQuizUrl;
-                elements.resultsContainer.querySelector('.results-actions').appendChild(nextQuizBtn);
+                
+                // Verify if the next quiz exists
+                try {
+                    const response = await fetch(nextQuizUrl, { method: 'HEAD' });
+                    if (response.ok) {
+                        const nextQuizBtn = document.createElement('button');
+                        nextQuizBtn.className = 'nav-btn';
+                        nextQuizBtn.textContent = 'Next Quiz';
+                        nextQuizBtn.onclick = () => location.href = nextQuizUrl;
+                        elements.resultsContainer.querySelector('.results-actions').appendChild(nextQuizBtn);
+                    }
+                } catch (e) {
+                    // For file:// URLs, fetch might throw - attempt a simple GET if HEAD fails
+                    try {
+                        const response = await fetch(nextQuizUrl);
+                        if (response.ok) {
+                            const nextQuizBtn = document.createElement('button');
+                            nextQuizBtn.className = 'nav-btn';
+                            nextQuizBtn.textContent = 'Next Quiz';
+                            nextQuizBtn.onclick = () => location.href = nextQuizUrl;
+                            elements.resultsContainer.querySelector('.results-actions').appendChild(nextQuizBtn);
+                        }
+                    } catch (err) {
+                        console.log("Next quiz does not exist or cannot be reached.");
+                    }
+                }
             }
+        } catch (e) {
+            console.error("Error determining next quiz:", e);
         }
-    } catch (e) {
-        console.error("Could not create 'Next Quiz' button:", e);
-    }
+    };
+
+    addNextQuizButton();
 
     // Dynamically add the Home button after the innerHTML is set
     const homeBtn = document.createElement('button');
